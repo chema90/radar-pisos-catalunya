@@ -93,13 +93,17 @@
 @media(max-width:720px){.municipality-heading{align-items:flex-start}.municipality-heading-actions{width:116px;flex-basis:116px}.municipality-heading-actions .icon-button{min-height:31px;padding:5px;font-size:9px}}
 
 
-/* v34 · Accesos Google Maps / Earth desde el punto rojo de una dirección */
-.address-marker-popup{display:grid;gap:4px;min-width:190px;color:#263b59;font-size:12px;line-height:1.3}
-.address-marker-popup>strong{font-size:13px;color:#13274d}
-.address-marker-popup>span{color:#6b778b;font-size:11px}
+/* v40 · Tarjeta siempre visible para el punto rojo de una dirección */
+.address-actions-card{position:absolute;z-index:650;top:76px;right:18px;width:min(340px,calc(100% - 36px));padding:14px;background:#fff;border:1px solid #d5dce5;border-radius:9px;box-shadow:0 7px 24px #172e5138;color:#263b59}
+.address-actions-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+.address-actions-head>div{display:grid;gap:3px;min-width:0}
+.address-actions-head strong{overflow:hidden;text-overflow:ellipsis;color:#13274d;font-size:14px;line-height:1.25}
+.address-actions-head span{color:#6b778b;font-size:11px}
+.address-actions-head .icon-button{flex:0 0 36px;width:36px;min-width:36px;height:36px}
 .address-marker-actions{display:flex;gap:6px;margin-top:5px;flex-wrap:wrap}
-.address-marker-actions a{display:inline-flex;align-items:center;justify-content:center;min-height:30px;padding:5px 8px;border:1px solid #cbd5e1;border-radius:6px;background:#fff;color:#17375e;font-size:11px;font-weight:700;text-decoration:none}
+.address-marker-actions a{display:inline-flex;flex:1 1 125px;align-items:center;justify-content:center;min-height:38px;padding:7px 10px;border:1px solid #cbd5e1;border-radius:6px;background:#fff;color:#17375e;font-size:12px;font-weight:700;text-decoration:none}
 .address-marker-actions a:hover,.address-marker-actions a:focus-visible{border-color:#8da0b7;background:#f1f5f9;outline:0}
+.detail-head-actions{display:flex;align-items:center;gap:7px;flex:0 0 auto}
 
 /* v39 · phone-first presentation. The map comes first on a phone, while the
    full selector remains directly below it without hiding any existing control. */
@@ -121,6 +125,9 @@
   .legend{top:10px;right:10px;padding:9px;max-width:145px}
   .detail{left:8px;right:8px;bottom:calc(8px + env(safe-area-inset-bottom));max-height:45vh;overflow:auto;padding:13px 14px}
   .detail h2{font-size:22px}.detail p{font-size:12px}
+  .detail-head-actions{gap:5px}.detail-head-actions .icon-button{min-width:42px;height:42px}
+  .address-actions-card{top:58px;left:10px;right:10px;width:auto;padding:12px}
+  .address-marker-actions{margin-top:9px}.address-marker-actions a{min-height:44px;font-size:13px}
   .zone-row{min-height:56px}.zone-open{padding:9px 4px}
 }
 @media(max-width:390px){

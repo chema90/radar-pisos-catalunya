@@ -18,6 +18,7 @@ import './styles.css';
 type Catalog = { municipalities: Municipality[]; source: string; accessedAt: string };
 type KnownZone = { municipality: string; name: string; kind: string; official: boolean; source?: string; sourceUrl?: string; district?: string };
 type ZoneRow = { id: string; name: string; kind: ZoneKind; quality: ZoneQuality; feature?: ZoneFeature; preference?: Preference; known?: KnownZone };
+type SearchAddress = { label: string; municipalityId: string; municipalityName: string; latitude: number; longitude: number };
 const app = document.querySelector<HTMLDivElement>('#app')!;
 const colors = ['#2e7d8a','#4c6fb3','#d78b2d','#7656a8','#d55f58','#4d8b62','#a96589','#63869e','#9b7749'];
 let catalog: Catalog;
@@ -34,6 +35,7 @@ let layerVisibility: LayerVisibility = { municipalityBoundary: true, barri: true
 let properties: SeenProperty[] = [];
 let map: L.Map | undefined;
 let searchAddressMarker: L.CircleMarker | undefined;
+let activeSearchAddress: SearchAddress | undefined;
 let municipalityLayer: L.GeoJSON | undefined;
 let layers = new Map<string, L.GeoJSON>();
 let selected = new Set<string>();
@@ -47,6 +49,7 @@ let drawLayer: L.Polygon | undefined;
 let sourceLoadError: string | undefined;
 let sourceLoading = false;
 let municipalityContextVisible = false;
+let zoneDetailHistoryActive = false;
 const norm = normalizeText;
 const municipalityNorm = normalizeMunicipalityName;
 const esc = (value: string) => value.replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[char]!));
@@ -89,10 +92,29 @@ function externalPointUrl(lat:number,lng:number,provider:ExternalMapProvider){
     ?`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`
     :`https://earth.google.com/web/search/${encodeURIComponent(query)}`;
 }
-function searchAddressPopup(label:string,municipality:string,lat:number,lng:number){
-  const maps=externalPointUrl(lat,lng,'maps');
-  const earth=externalPointUrl(lat,lng,'earth');
-  return `<div class="address-marker-popup"><strong>${esc(label)}</strong><span>${esc(municipality)}</span><div class="address-marker-actions"><a href="${esc(maps)}" target="_blank" rel="noopener noreferrer" title="Abrir este punto en Google Maps">Google Maps ↗</a><a href="${esc(earth)}" target="_blank" rel="noopener noreferrer" title="Abrir este punto en Google Earth">Google Earth ↗</a></div></div>`;
+function searchAddressCard(address:SearchAddress){
+  const maps=externalPointUrl(address.latitude,address.longitude,'maps');
+  const earth=externalPointUrl(address.latitude,address.longitude,'earth');
+  return `<div class="address-actions-head"><div><p class="eyebrow">Dirección localizada</p><strong>${esc(address.label)}</strong><span>${esc(address.municipalityName)}</span></div><button type="button" class="icon-button" id="close-address-actions" aria-label="Cerrar accesos de la dirección">×</button></div><div class="address-marker-actions"><a href="${esc(maps)}" target="_blank" rel="noopener noreferrer" title="Abrir este punto en Google Maps">Google Maps ↗</a><a href="${esc(earth)}" target="_blank" rel="noopener noreferrer" title="Abrir este punto en Google Earth">Google Earth ↗</a></div>`;
+}
+function showSearchAddressCard(address=activeSearchAddress){
+  document.querySelector('.address-actions-card')?.remove();
+  const region=document.querySelector<HTMLElement>('.map-region');
+  if(!region||!address||address.municipalityId!==active.id)return;
+  const card=document.createElement('article');
+  card.className='address-actions-card';
+  card.setAttribute('aria-label','Accesos externos para la dirección localizada');
+  card.innerHTML=searchAddressCard(address);
+  region.append(card);
+  card.querySelector('#close-address-actions')?.addEventListener('click',()=>card.remove());
+}
+function mountSearchAddress(address:SearchAddress){
+  if(!map||address.municipalityId!==active.id)return;
+  searchAddressMarker?.remove();
+  searchAddressMarker=L.circleMarker([address.latitude,address.longitude],{radius:9,color:'#13274d',weight:3,fillColor:'#f4614c',fillOpacity:.95}).addTo(map);
+  searchAddressMarker.bindTooltip(`<b>${esc(address.label)}</b><br>${esc(address.municipalityName)}<br><small>Toca para ver Maps / Earth</small>`,{direction:'top'});
+  searchAddressMarker.on('click',event=>{L.DomEvent.stopPropagation(event);showSearchAddressCard(address)});
+  showSearchAddressCard(address);
 }
 
 async function init() {
@@ -202,6 +224,7 @@ async function reloadZoneSources(resetVisibility = false) {
 }
 
 async function selectMunicipality(municipality: Municipality, zoneName?: string) {
+  if (active?.id && active.id !== municipality.id) activeSearchAddress = undefined;
   active = municipality;
   activeNote = await getNote(active.id);
   sourceLoadError = undefined;
@@ -446,6 +469,7 @@ function defaultDetailHtml(){return `<div class="detail-placeholder"><div><p cla
 function mountMap(){
   map?.remove(); searchAddressMarker=undefined; layers=new Map();
   map=L.map('map',{zoomControl:true,attributionControl:false,preferCanvas:true});
+  map.on('click',()=>{if(document.querySelector('#close-zone-detail'))closeZoneDetail()});
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,crossOrigin:true}).addTo(map);
   if(active.geometry){municipalityLayer=L.geoJSON(active.geometry,{style:{color:'#152b52',weight:2.2,fillColor:'#f4614c',fillOpacity:.035,dashArray:'7 4'}});if(layerVisibility.municipalityBoundary)municipalityLayer.addTo(map);map.fitBounds(municipalityLayer.getBounds(),{padding:[36,36]})}
   const permanentLabels=!focused && (zones?.features.filter(feature=>featureLayer(feature)!=='icgcIndustrial').length??0)<=120;
@@ -471,6 +495,7 @@ function mountMap(){
     const color=item.status==='liked'?'#2f8a58':item.status==='disliked'?'#c44d4d':'#d78b2d';
     L.circleMarker([item.latitude!,item.longitude!],{radius:8,color:'#fff',weight:2,fillColor:color,fillOpacity:1}).addTo(map!).bindTooltip(item.name).on('click',()=>showProperty(item));
   });
+  if(activeSearchAddress)mountSearchAddress(activeSearchAddress);
 }
 function zoneStyle(feature:ZoneFeature,index:number):L.PathOptions{
   const chosen=selected.has(feature.id), activeZone=focused===feature.id, reference=feature.properties.reference;
@@ -546,10 +571,8 @@ async function chooseFirst(value:string){
     if(!result){if(panel)panel.innerHTML='<p>No se ha localizado esa dirección dentro de Catalunya.</p>';return}
     if(result.municipality.id!==active.id)await selectMunicipality(result.municipality);
     if(!map)return;
-    searchAddressMarker?.remove();
-    searchAddressMarker=L.circleMarker([result.latitude,result.longitude],{radius:9,color:'#13274d',weight:3,fillColor:'#f4614c',fillOpacity:.95}).addTo(map);
-    searchAddressMarker.bindTooltip(`<b>${esc(trimmed)}</b><br>${esc(result.municipality.name)}<br><small>Clic para Maps / Earth</small>`,{direction:'top'}).openTooltip();
-    searchAddressMarker.bindPopup(searchAddressPopup(trimmed,result.municipality.name,result.latitude,result.longitude),{maxWidth:280});
+    activeSearchAddress={label:trimmed,municipalityId:result.municipality.id,municipalityName:result.municipality.name,latitude:result.latitude,longitude:result.longitude};
+    mountSearchAddress(activeSearchAddress);
     map.setView([result.latitude,result.longitude],16,{animate:true});
     const freshPanel=document.querySelector<HTMLDivElement>('#search-results');if(freshPanel)freshPanel.hidden=true;
   }catch(error){
@@ -575,9 +598,11 @@ function zoomZone(id:string){
 }
 async function showZone(row:ZoneRow){
   const note=await getNote(row.id), detail=document.querySelector<HTMLDivElement>('#detail')!, currentInterest=zoneInterest(row);
-  detail.innerHTML=`<div class="detail-head"><div><p class="eyebrow">${qLabel(row.quality)} · ${zoneKindLabel(row.kind)} · ${interestLabel(currentInterest)}</p><h2>${esc(row.name)}</h2><p>${esc(active.name)} · ${row.feature?'visible en el mapa':'sin polígono disponible'}${row.feature?.properties.sourceCategory?' · '+esc(row.feature.properties.sourceCategory):''}</p></div><button class="icon-button" id="favorite-zone">${note.favorite?'♥':'♡'}</button></div><div class="detail-actions">${row.feature?'':`<button class="primary" id="create-zone-boundary">Crear o importar límite</button>`}<button class="primary" id="add-property-zone">＋ Añadir piso o promoción</button><label>Interés<select id="zone-interest"><option value="normal" ${currentInterest==='normal'?'selected':''}>Normal</option><option value="top" ${currentInterest==='top'?'selected':''}>TOP</option><option value="interesting" ${currentInterest==='interesting'?'selected':''}>Interesante</option><option value="discarded" ${currentInterest==='discarded'?'selected':''}>Descartada</option></select></label><label>Nota 1–5<select id="rating"><option value="">Sin valorar</option>${[1,2,3,4,5].map(value=>`<option value="${value}" ${note.rating===value?'selected':''}>${value} / 5</option>`).join('')}</select></label><label class="grow">Notas<input id="zone-note" value="${esc(note.text??'')}" placeholder="Ruido, transporte, aparcamiento…"/></label><button class="secondary" id="save-zone-note">Guardar</button></div>`;
+  detail.innerHTML=`<div class="detail-head"><div><p class="eyebrow">${qLabel(row.quality)} · ${zoneKindLabel(row.kind)} · ${interestLabel(currentInterest)}</p><h2>${esc(row.name)}</h2><p>${esc(active.name)} · ${row.feature?'visible en el mapa':'sin polígono disponible'}${row.feature?.properties.sourceCategory?' · '+esc(row.feature.properties.sourceCategory):''}</p></div><div class="detail-head-actions"><button class="icon-button" id="favorite-zone" aria-label="${note.favorite?'Quitar de':'Añadir a'} favoritos">${note.favorite?'♥':'♡'}</button><button class="icon-button" id="close-zone-detail" aria-label="Cerrar selector de zona">×</button></div></div><div class="detail-actions">${row.feature?'':`<button class="primary" id="create-zone-boundary">Crear o importar límite</button>`}<button class="primary" id="add-property-zone">＋ Añadir piso o promoción</button><label>Interés<select id="zone-interest"><option value="normal" ${currentInterest==='normal'?'selected':''}>Normal</option><option value="top" ${currentInterest==='top'?'selected':''}>TOP</option><option value="interesting" ${currentInterest==='interesting'?'selected':''}>Interesante</option><option value="discarded" ${currentInterest==='discarded'?'selected':''}>Descartada</option></select></label><label>Nota 1–5<select id="rating"><option value="">Sin valorar</option>${[1,2,3,4,5].map(value=>`<option value="${value}" ${note.rating===value?'selected':''}>${value} / 5</option>`).join('')}</select></label><label class="grow">Notas<input id="zone-note" value="${esc(note.text??'')}" placeholder="Ruido, transporte, aparcamiento…"/></label><button class="secondary" id="save-zone-note">Guardar</button></div>`;
+  openZoneDetailHistory();
   document.querySelector('#create-zone-boundary')?.addEventListener('click',openBreakdown);
   document.querySelector('#favorite-zone')!.addEventListener('click',async()=>{const next={...note,favorite:!note.favorite};await saveNote(row.id,next);allNotes[row.id]=next;void showZone(row)});
+  document.querySelector('#close-zone-detail')!.addEventListener('click',()=>closeZoneDetail());
   document.querySelector('#save-zone-note')!.addEventListener('click',async()=>{const interest=(document.querySelector('#zone-interest') as HTMLSelectElement).value as ZoneInterest;const rating=Number((document.querySelector('#rating') as HTMLSelectElement).value)||undefined;const text=(document.querySelector('#zone-note') as HTMLInputElement).value.trim();const next={...note,interest,rating,text};await saveNote(row.id,next);allNotes[row.id]=next;render();const fresh=zoneRows().find(item=>item.id===row.id);if(fresh)void showZone(fresh)});
   document.querySelector('#add-property-zone')!.addEventListener('click',()=>openPropertyForm(row));
 }
@@ -618,6 +643,23 @@ function showProperty(item:SeenProperty){
   document.querySelector('#close-detail')!.addEventListener('click',defaultDetail);
   document.querySelectorAll<HTMLButtonElement>('[data-property-status]').forEach(button=>button.addEventListener('click',async()=>{const updated={...item,status:button.dataset.propertyStatus as SeenProperty['status']};updated.status==='liked'?comparison.add(updated.id):comparison.delete(updated.id);await saveSeenProperty(updated);properties=await getSeenProperties();render();showProperty(updated)}));
 }
+function openZoneDetailHistory(){
+  if(zoneDetailHistoryActive)return;
+  history.pushState({...history.state,radarZoneDetail:true},'');
+  zoneDetailHistoryActive=true;
+}
+function closeZoneDetail(updateHistory=true){
+  if(!document.querySelector('#close-zone-detail'))return;
+  focused=undefined;
+  refreshStyles();
+  defaultDetail();
+  if(updateHistory&&zoneDetailHistoryActive){zoneDetailHistoryActive=false;history.back()}
+}
+window.addEventListener('popstate',()=>{
+  if(!zoneDetailHistoryActive)return;
+  zoneDetailHistoryActive=false;
+  closeZoneDetail(false);
+});
 function defaultDetail(){const detail=document.querySelector<HTMLDivElement>('#detail');if(detail){detail.classList.remove('comparison');detail.innerHTML=defaultDetailHtml()}document.querySelector('#add-property-empty')?.addEventListener('click',()=>openPropertyForm())}
 function openBreakdown(){
   const detail=document.querySelector<HTMLDivElement>('#detail')!, suggestions=interests().map(item=>item.name), source=officialSource();

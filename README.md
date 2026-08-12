@@ -40,6 +40,12 @@ El service worker guarda la interfaz y los índices consultados. Las teselas de 
 - `.github/workflows/deploy-pages.yml` compila y publica la web en GitHub Pages al actualizar `main`.
 - El manifiesto permite añadir el Radar a la pantalla de inicio desde un navegador móvil compatible.
 
+## Cambios v40 · controles móviles
+
+- El selector de zona se puede cerrar con una X, tocando una zona vacía del mapa o usando Atrás en Android; la elección no fuerza el cierre y puede rectificarse antes de salir.
+- Las direcciones buscadas muestran una tarjeta táctil sobre el mapa con accesos directos a Google Maps y Google Earth mediante las coordenadas exactas del punto rojo.
+- La tarjeta se puede cerrar y vuelve a mostrarse al tocar de nuevo el punto rojo.
+
 
 ## Cambios v6
 
