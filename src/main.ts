@@ -3,7 +3,7 @@ import L from 'leaflet';
 import { getNote, getNotes, getSeenProperties, saveNote, saveSeenProperty, type ZoneInterest, type ZoneNote } from './storage';
 import { appendCustomFeature, createUserFeature, fetchGeoJsonUrl, fetchOnlineZones, loadZones, normalizeImportedCollection, saveImportedCollection, zoneKey } from './zone-data';
 import type { MapLayer, Municipality, Preference, SeenProperty, ZoneCollection, ZoneFeature, ZoneKind, ZoneLayer, ZoneQuality } from './types';
-import { findMunicipalityAtPoint, findZoneAtPoint, geocodeAddress, geocodeSearchAddress, isLikelyAddressQuery } from './geocoding';
+import { findMunicipalityAtPoint, findZoneAtPoint, geocodeAddress, geocodePostalCode, geocodeSearchAddress, isLikelyAddressQuery, isPostalCodeQuery, reverseGeocodeLocation, type ReverseGeocodeResult } from './geocoding';
 import { loadIcgcZones } from './icgc-zone-data';
 import { loadLayerVisibility, saveLayerVisibility, type LayerVisibility } from './layer-visibility';
 import { findMunicipalityByName, normalizeMunicipalityName, normalizeText, preferenceMunicipalityTarget } from './municipality-matching';
@@ -19,6 +19,7 @@ type Catalog = { municipalities: Municipality[]; source: string; accessedAt: str
 type KnownZone = { municipality: string; name: string; kind: string; official: boolean; source?: string; sourceUrl?: string; district?: string };
 type ZoneRow = { id: string; name: string; kind: ZoneKind; quality: ZoneQuality; feature?: ZoneFeature; preference?: Preference; known?: KnownZone };
 type SearchAddress = { label: string; municipalityId: string; municipalityName: string; latitude: number; longitude: number };
+type PropertyDraft = { name: string; latitude: number; longitude: number; locationSource: string; locationLabel?: string };
 const app = document.querySelector<HTMLDivElement>('#app')!;
 const colors = ['#2e7d8a','#4c6fb3','#d78b2d','#7656a8','#d55f58','#4d8b62','#a96589','#63869e','#9b7749'];
 let catalog: Catalog;
@@ -438,7 +439,7 @@ function render(){
   const rows=zoneRows(), seen=municipalityProperties();
   app.innerHTML=`
   <header class="topbar"><a class="brand" href="#"><span class="pin">⌖</span> Radar de pisos</a><nav><button class="plain" id="favorites">♡ Barrios</button><button class="plain" id="compare-liked">⇄ Comparar <span class="nav-count">${properties.filter(item=>item.status==='liked').length}</span></button><button class="plain" id="seen">⌂ Vistos <span class="nav-count">${properties.length}</span></button></nav></header>
-  <main><section class="search-area"><label class="search"><span>⌕</span><input id="query" autocomplete="off" placeholder="Busca municipio, barrio o dirección"/><button id="search-button">Buscar</button></label><div class="search-results" id="search-results" hidden></div></section>
+  <main><section class="search-area"><label class="search"><span>⌕</span><input id="query" autocomplete="off" inputmode="search" placeholder="Busca municipio, barrio, dirección o CP"/><button id="search-button">Buscar</button></label><div class="search-results" id="search-results" hidden></div></section>
   <section class="workspace"><aside class="sidebar">
     <div class="municipality-heading"><div><h1>${esc(active.name)}</h1><p>${active.entityType==='emd'?`EMD de ${esc(active.parentMunicipalityName??'Sant Cugat del Vallès')} · `:''}${esc(active.county)} · ${esc(active.province)}</p></div><div class="municipality-heading-actions"><button id="toggle-top-municipality" class="icon-button municipality-top-toggle ${activeNote.top ? 'active ' : ''}top-toggle" title="Marca ${active.entityType==='emd'?'esta EMD':'el municipio completo'} como prioritario. No modifica la valoración de sus barrios o zonas.">${activeNote.top ? `⭐ ${active.entityType==='emd'?'EMD':'Municipio'} TOP` : `☆ ${active.entityType==='emd'?'EMD':'Municipio'} TOP`}</button><button id="toggle-municipality-context" class="icon-button municipality-context-toggle ${municipalityContextVisible?'active':''}" aria-pressed="${municipalityContextVisible}" title="Muestra los límites y nombres de los municipios del entorno. Es una capa orientativa y no afecta a los barrios.">◫ Municipios vecinos</button></div></div>
     <div class="coverage-row"><p class="coverage"><i></i>${coverage()}</p><button class="secondary compact" id="create-breakdown">Crear desglose</button></div>
@@ -544,19 +545,34 @@ function searchResults(value:string){
   const zoneHits=preferences.filter(item=>norm(`${item.name} ${item.municipality??''}`).includes(needle)).slice(0,7).map(zone=>({type:'zone' as const,zone}));return [...municipalities,...knownHits,...zoneHits];
 }
 function renderSearch(value:string){
-  const panel=document.querySelector<HTMLDivElement>('#search-results')!, results=searchResults(value);panel.hidden=!value.trim();
+  const panel=document.querySelector<HTMLDivElement>('#search-results')!, results=searchResults(value),postalCode=isPostalCodeQuery(value);panel.hidden=!value.trim();
   panel.innerHTML=results.length?results.map(result=>result.type==='municipality'
     ?`<button data-municipality="${result.municipality.id}"><b>${esc(result.municipality.name)} ${allNotes[result.municipality.id]?.top?'<span class="top-badge">TOP</span>':''}</b><span>${result.municipality.entityType==='emd'?'EMD':'Municipio'} · ${esc(result.municipality.county)}</span></button>`
     :result.type==='known'
       ?`<button data-known="${esc(result.known.name)}" data-known-municipality="${esc(result.known.municipality)}"><b>${esc(result.known.name)}</b><span>${esc(result.known.municipality)}${result.known.district?' · '+esc(result.known.district):''} · ${esc(result.known.kind)}</span></button>`
-      :`<button data-preference="${result.zone.id}"><b>${esc(result.zone.name)}</b><span>${result.zone.kind==='municipality'?'Municipio objetivo':esc(result.zone.municipality??'Zona personal')+' · zona'}</span></button>`).join(''):'<p>Sin coincidencias locales. Pulsa <b>Buscar</b> para localizar una dirección.</p>';
+      :`<button data-preference="${result.zone.id}"><b>${esc(result.zone.name)}</b><span>${result.zone.kind==='municipality'?'Municipio objetivo':esc(result.zone.municipality??'Zona personal')+' · zona'}</span></button>`).join(''):postalCode?`<button id="search-postal-code"><b>Código postal ${esc(value.trim())}</b><span>Buscar municipio</span></button>`:'<p>Sin coincidencias locales. Pulsa <b>Buscar</b> para localizar una dirección.</p>';
   panel.querySelectorAll<HTMLButtonElement>('[data-municipality]').forEach(button=>button.addEventListener('click',async()=>{const municipality=catalog.municipalities.find(item=>item.id===button.dataset.municipality);if(municipality)await selectMunicipality(municipality)}));
   panel.querySelectorAll<HTMLButtonElement>('[data-known]').forEach(button=>button.addEventListener('click',async()=>{const municipality=findMunicipality(button.dataset.knownMunicipality??null);if(municipality)await selectMunicipality(municipality,button.dataset.known)}));
   panel.querySelectorAll<HTMLButtonElement>('[data-preference]').forEach(button=>button.addEventListener('click',async()=>{const preference=preferences.find(item=>item.id===button.dataset.preference);const municipality=preference?findMunicipality(preferenceMunicipalityTarget(preference)):undefined;if(municipality&&preference)await selectMunicipality(municipality,preference.kind==='municipality'?undefined:preference.name)}));
+  panel.querySelector('#search-postal-code')?.addEventListener('click',()=>{void choosePostalCode(value.trim())});
 }
 function findMunicipality(name:string|null){return findMunicipalityByName(catalog.municipalities,name)}
+async function choosePostalCode(postalCode:string){
+  const panel=document.querySelector<HTMLDivElement>('#search-results');
+  if(panel){panel.hidden=false;panel.innerHTML=`<p>Buscando el municipio del código postal ${esc(postalCode)}…</p>`}
+  try{
+    const matches=await geocodePostalCode(postalCode,catalog.municipalities);
+    if(!matches.length){if(panel)panel.innerHTML='<p>No se ha encontrado ese código postal dentro de Catalunya.</p>';return}
+    if(matches.length===1){await selectMunicipality(matches[0].municipality);return}
+    if(panel){
+      panel.innerHTML=`<p>Este código postal coincide con varias poblaciones:</p>${matches.map(match=>`<button data-postal-municipality="${match.municipality.id}"><b>${esc(match.municipality.name)}</b><span>${esc(match.municipality.county)} · ${esc(postalCode)}</span></button>`).join('')}`;
+      panel.querySelectorAll<HTMLButtonElement>('[data-postal-municipality]').forEach(button=>button.addEventListener('click',async()=>{const municipality=catalog.municipalities.find(item=>item.id===button.dataset.postalMunicipality);if(municipality)await selectMunicipality(municipality)}));
+    }
+  }catch(error){if(panel)panel.innerHTML=`<p>${esc(error instanceof Error?error.message:'No se pudo buscar el código postal.')}</p>`}
+}
 async function chooseFirst(value:string){
   const trimmed=value.trim();if(!trimmed)return;
+  if(isPostalCodeQuery(trimmed)){await choosePostalCode(trimmed);return}
   // "Berguedà, 3" is an address, not the similarly named local result.
   const first=isLikelyAddressQuery(trimmed)?undefined:searchResults(trimmed)[0];
   if(first){
@@ -607,27 +623,31 @@ async function showZone(row:ZoneRow){
   document.querySelector('#save-zone-note')!.addEventListener('click',async()=>{const interest=(document.querySelector('#zone-interest') as HTMLSelectElement).value as ZoneInterest;const rating=Number((document.querySelector('#rating') as HTMLSelectElement).value)||undefined;const text=(document.querySelector('#zone-note') as HTMLInputElement).value.trim();const next={...note,interest,rating,text};await saveNote(row.id,next);allNotes[row.id]=next;render();const fresh=zoneRows().find(item=>item.id===row.id);if(fresh)void showZone(fresh)});
   document.querySelector('#add-property-zone')!.addEventListener('click',()=>openPropertyForm(row));
 }
-function openPropertyForm(zone?:ZoneRow){
+function openPropertyForm(zone?:ZoneRow,draft?:PropertyDraft){
   removeZoneDetailBackdrop();
   const rows=zoneRows(), detail=document.querySelector<HTMLDivElement>('#detail')!;
-  detail.innerHTML=`<div class="detail-head"><div><p class="eyebrow">Registro personal</p><h2>Añadir piso o promoción</h2><p>La dirección se geocodifica automáticamente y se asigna a la zona que contiene el punto.</p></div><button class="icon-button" id="close-detail">×</button></div><form class="property-form" id="property-form">
-  <label>Tipo<select name="kind"><option value="flat">Piso</option><option value="development">Promoción</option></select></label><label class="wide">Dirección o promoción<input name="name" required placeholder="Carrer de Mallorca 401, Barcelona"/></label><label>Precio<input name="price" type="number" min="0" step="1000" placeholder="€"/></label><label>Superficie<input name="areaM2" type="number" min="1" step="1" placeholder="m²"/></label><label>Estado del inmueble<select name="condition"><option value="">Sin indicar</option><option>Obra nueva</option><option>Reformado</option><option>Buen estado</option><option>A reformar</option></select></label><label>Valoración<select name="status"><option value="pending">Pendiente</option><option value="liked">Me gusta</option><option value="disliked">No me gusta</option></select></label><label>Zona (opcional)<select name="zone"><option value="">Detección automática</option>${rows.map(row=>`<option value="${esc(row.id)}" ${zone?.id===row.id?'selected':''}>${zoneKindLabel(row.kind)} · ${esc(row.name)}</option>`).join('')}</select></label><label class="wide">Enlace<input name="url" type="url" placeholder="https://…"/></label><label class="wide notes-field">Notas<textarea name="notes" placeholder="Qué te gustó, visita, contacto…"></textarea></label><div class="form-buttons"><button type="button" class="secondary" id="cancel-property">Cancelar</button><button class="primary" type="submit">Localizar y guardar</button></div></form>`;
+  detail.innerHTML=`<div class="detail-head"><div><p class="eyebrow">Registro personal</p><h2>Añadir piso o promoción</h2><p>${draft?'Comprueba y corrige la dirección aproximada antes de guardar.':'La dirección se geocodifica automáticamente y se asigna a la zona que contiene el punto.'}</p></div><button class="icon-button" id="close-detail">×</button></div><form class="property-form" id="property-form">
+  <label>Tipo<select name="kind"><option value="flat">Piso</option><option value="development">Promoción</option></select></label><label class="wide">Dirección o promoción<input name="name" required value="${esc(draft?.name??'')}" placeholder="Carrer de Mallorca 401, Barcelona"/></label><label>Precio<input name="price" type="number" min="0" step="1000" placeholder="€"/></label><label>Superficie<input name="areaM2" type="number" min="1" step="1" placeholder="m²"/></label><label>Estado del inmueble<select name="condition"><option value="">Sin indicar</option><option>Obra nueva</option><option>Reformado</option><option>Buen estado</option><option>A reformar</option></select></label><label>Valoración<select name="status"><option value="pending">Pendiente</option><option value="liked">Me gusta</option><option value="disliked">No me gusta</option></select></label><label>Zona (opcional)<select name="zone"><option value="">Detección automática</option>${rows.map(row=>`<option value="${esc(row.id)}" ${zone?.id===row.id?'selected':''}>${zoneKindLabel(row.kind)} · ${esc(row.name)}</option>`).join('')}</select></label><label class="wide">Enlace<input name="url" type="url" placeholder="https://…"/></label><label class="wide notes-field">Notas<textarea name="notes" placeholder="Qué te gustó, visita, contacto…"></textarea></label><div class="form-buttons"><button type="button" class="secondary" id="cancel-property">Cancelar</button><button class="primary" type="submit">${draft?'Guardar piso':'Localizar y guardar'}</button></div></form>`;
   document.querySelector('#close-detail')!.addEventListener('click',defaultDetail);document.querySelector('#cancel-property')!.addEventListener('click',defaultDetail);
   document.querySelector<HTMLFormElement>('#property-form')!.addEventListener('submit',async event=>{
     event.preventDefault();
     const form=event.currentTarget as HTMLFormElement, submit=form.querySelector<HTMLButtonElement>('button[type="submit"]')!, data=new FormData(form);
     const name=String(data.get('name')).trim(), zoneId=String(data.get('zone')??'');
-    let selectedZone=rows.find(row=>row.id===zoneId), latitude:number|undefined, longitude:number|undefined, locationSource:string|undefined, locationLabel:string|undefined;
+    let selectedZone=rows.find(row=>row.id===zoneId), latitude=draft?.latitude, longitude=draft?.longitude, locationSource=draft?.locationSource, locationLabel=draft?.locationLabel;
+    if(latitude!==undefined&&longitude!==undefined){const detected=findZoneAtPoint(zones,longitude,latitude);if(detected)selectedZone=rows.find(row=>row.id===detected.id)??selectedZone}
     submit.disabled=true;submit.textContent='Localizando…';
     try {
+      const draftWasEdited=draft&&norm(name)!==norm(draft.name);
+      if(!draft||draftWasEdited){
       const geocoded=await geocodeAddress(name,active);
       if(geocoded){
         latitude=geocoded.latitude;longitude=geocoded.longitude;locationSource=geocoded.source;locationLabel=geocoded.displayName;
         const detected=findZoneAtPoint(zones,longitude,latitude);
         if(detected) selectedZone=rows.find(row=>row.id===detected.id)??selectedZone;
       }
+      }
     } catch(error) {
-      locationSource=error instanceof Error?error.message:'No se pudo geocodificar';
+      locationSource=locationSource??(error instanceof Error?error.message:'No se pudo geocodificar');
     }
     if(latitude===undefined||longitude===undefined){
       const fallback=selectedZone?.feature?layers.get(selectedZone.id)?.getBounds().getCenter():map?.getCenter();
@@ -748,15 +768,17 @@ function locate(){
   navigator.geolocation.getCurrentPosition(async position=>{
     const latitude=position.coords.latitude,longitude=position.coords.longitude;
     const municipality=findMunicipalityAtPoint(catalog.municipalities,longitude,latitude);
+    const addressPromise=reverseGeocodeLocation(latitude,longitude).catch(()=>undefined);
     try{
       if(municipality&&municipality.id!==active.id)await selectMunicipality(municipality);
       if(!map)return;
+      const address=await addressPromise;
       const point=L.latLng(latitude,longitude);
       locationLayer?.remove();
       const accuracy=L.circle(point,{radius:position.coords.accuracy,color:'#1765e8',weight:1.5,fillColor:'#6fa0f4',fillOpacity:.13});
       const marker=L.circleMarker(point,{radius:8,color:'#fff',weight:3,fillColor:'#1765e8',fillOpacity:1});
       locationLayer=L.layerGroup([accuracy,marker]).addTo(map);
-      marker.bindPopup(`${municipality?`Estás en ${esc(municipality.name)}`:'Ubicación aproximada'} · precisión ${Math.round(position.coords.accuracy)} m`).openPopup();
+      marker.bindPopup(locationPopup(municipality,address,latitude,longitude,position.coords.accuracy),{minWidth:240,maxWidth:310,autoPanPadding:[18,18]}).openPopup();
       map.setView(point,14);
     }catch{
       alert('Se obtuvo la ubicación, pero no se pudo abrir el municipio correspondiente.');
@@ -768,6 +790,19 @@ function locate(){
     if(button){button.disabled=false;button.classList.remove('locating');button.removeAttribute('aria-busy')}
     alert('No se pudo obtener la ubicación. Revisa el permiso de localización del navegador.');
   },{enableHighAccuracy:true,timeout:12000,maximumAge:30000});
+}
+function locationPopup(municipality:Municipality|undefined,address:ReverseGeocodeResult|undefined,latitude:number,longitude:number,accuracy:number){
+  const popup=document.createElement('div');popup.className='location-popup';
+  const title=document.createElement('strong');title.textContent=municipality?`Estás en ${municipality.name}`:'Ubicación aproximada';
+  const addressLine=document.createElement('span');addressLine.className='location-popup-address';addressLine.textContent=address?.addressLabel??'No se pudo obtener la dirección postal.';
+  const note=document.createElement('small');note.textContent=`Dirección aproximada · precisión GPS ${Math.round(accuracy)} m${address&&!address.houseNumber?' · portal no confirmado':''}`;
+  const add=document.createElement('button');add.type='button';add.className='primary';add.textContent='＋ Añadir piso aquí';
+  add.addEventListener('click',()=>{
+    map?.closePopup();
+    const detected=findZoneAtPoint(zones,longitude,latitude),zone=zoneRows().find(row=>row.id===detected?.id);
+    openPropertyForm(zone,{name:address?.addressLabel??municipality?.name??'Ubicación GPS',latitude,longitude,locationSource:'GPS del dispositivo · dirección aproximada de OpenStreetMap Nominatim',locationLabel:address?.displayName});
+  });
+  popup.append(title,addressLine,note,add);return popup;
 }
 async function openSaved(){removeZoneDetailBackdrop();const notes=await getNotes(),rows=zoneRows().filter(row=>notes[row.id]?.favorite),detail=document.querySelector<HTMLDivElement>('#detail')!;detail.innerHTML=`<div class="detail-head"><div><p class="eyebrow">En este dispositivo</p><h2>Barrios guardados</h2><p>${rows.length?rows.length+' favoritos':'Todavía no has guardado barrios.'}</p></div><button class="icon-button" id="close-detail">×</button></div>${rows.length?`<div class="saved-list">${rows.map(row=>savedRow(row,notes[row.id])).join('')}</div>`:''}`;document.querySelector('#close-detail')!.addEventListener('click',defaultDetail);detail.querySelectorAll<HTMLButtonElement>('[data-saved-zone]').forEach(button=>button.addEventListener('click',()=>focusZone(button.dataset.savedZone!)))}
 function savedRow(row:ZoneRow,note:ZoneNote){const summary=[note.rating?note.rating+' / 5':'',note.text?esc(note.text):'Sin observaciones'].filter(Boolean).join(' · ');return `<button class="saved-row" data-saved-zone="${row.id}"><span><strong>${esc(row.name)}</strong><small>${esc(active.name)}</small></span><em>${summary}</em></button>`}

@@ -9,7 +9,28 @@ export type GeocodeResult = {
 
 export type AddressSearchResult = GeocodeResult & { municipality: Municipality };
 
-type NominatimResult = { lat: string; lon: string; display_name: string };
+export type ReverseGeocodeResult = GeocodeResult & {
+  addressLabel: string;
+  houseNumber?: string;
+  postcode?: string;
+};
+
+export type PostalCodeMunicipalityResult = { municipality: Municipality; displayName: string };
+
+type NominatimAddress = {
+  house_number?: string;
+  road?: string;
+  pedestrian?: string;
+  residential?: string;
+  footway?: string;
+  postcode?: string;
+  city?: string;
+  town?: string;
+  village?: string;
+  municipality?: string;
+};
+
+type NominatimResult = { lat: string; lon: string; display_name: string; address?: NominatimAddress };
 
 /**
  * A street plus portal number must be resolved as an address before looking
@@ -17,6 +38,10 @@ type NominatimResult = { lat: string; lon: string; display_name: string };
  */
 export function isLikelyAddressQuery(value: string): boolean {
   return /(?:,|\s)\s*\d{1,5}[a-z]?(?:\s*(?:-|\/)\s*\d{1,5}[a-z]?)?\s*$/i.test(value.trim());
+}
+
+export function isPostalCodeQuery(value: string): boolean {
+  return /^\d{5}$/.test(value.trim());
 }
 
 export async function geocodeAddress(address: string, municipality: Municipality): Promise<GeocodeResult | undefined> {
@@ -74,6 +99,62 @@ export async function geocodeSearchAddress(address: string, activeMunicipality: 
   return undefined;
 }
 
+export async function geocodePostalCode(postalCode: string, municipalities: Municipality[]): Promise<PostalCodeMunicipalityResult[]> {
+  if (!isPostalCodeQuery(postalCode)) return [];
+  const params = new URLSearchParams({
+    format: 'jsonv2',
+    postalcode: postalCode,
+    limit: '12',
+    addressdetails: '1',
+    countrycodes: 'es',
+    layer: 'address',
+  });
+  const results = await fetchNominatim(params);
+  const matches = new Map<string, PostalCodeMunicipalityResult>();
+  for (const result of results) {
+    const latitude = Number(result.lat);
+    const longitude = Number(result.lon);
+    if (!Number.isFinite(latitude) || !Number.isFinite(longitude)) continue;
+    const municipality = findMunicipalityAtPoint(municipalities.filter(item => item.entityType !== 'emd'), longitude, latitude);
+    if (municipality && !matches.has(municipality.id)) matches.set(municipality.id, { municipality, displayName: result.display_name });
+  }
+  return [...matches.values()].sort((left, right) => left.municipality.name.localeCompare(right.municipality.name, 'ca'));
+}
+
+export async function reverseGeocodeLocation(latitude: number, longitude: number): Promise<ReverseGeocodeResult | undefined> {
+  const params = new URLSearchParams({
+    format: 'jsonv2',
+    lat: String(latitude),
+    lon: String(longitude),
+    zoom: '18',
+    addressdetails: '1',
+  });
+  const response = await fetch(`https://nominatim.openstreetmap.org/reverse?${params}`, {
+    headers: nominatimHeaders(),
+  });
+  if (!response.ok) throw new Error(`El geocodificador no respondio (${response.status}).`);
+  const result = await response.json() as NominatimResult & { error?: string };
+  if (result.error || !result.display_name) return undefined;
+  return {
+    latitude: Number(result.lat),
+    longitude: Number(result.lon),
+    displayName: result.display_name,
+    addressLabel: formatReverseAddress(result.address, result.display_name),
+    houseNumber: result.address?.house_number,
+    postcode: result.address?.postcode,
+    source: 'OpenStreetMap Nominatim',
+  };
+}
+
+export function formatReverseAddress(address: NominatimAddress | undefined, fallback: string): string {
+  if (!address) return fallback;
+  const road = address.road ?? address.pedestrian ?? address.residential ?? address.footway;
+  const street = [road, address.house_number].filter(Boolean).join(' ');
+  const locality = address.city ?? address.town ?? address.village ?? address.municipality;
+  const place = [address.postcode, locality].filter(Boolean).join(' ');
+  return [street, place].filter(Boolean).join(' · ') || fallback;
+}
+
 export function findMunicipalityAtPoint(municipalities: Municipality[], longitude: number, latitude: number): Municipality | undefined {
   return municipalities
     .filter(municipality => municipalityContainsPoint(municipality, longitude, latitude))
@@ -95,10 +176,14 @@ export function municipalityContainsPoint(municipality: Municipality, longitude:
 
 async function fetchNominatim(params: URLSearchParams): Promise<NominatimResult[]> {
   const response = await fetch(`https://nominatim.openstreetmap.org/search?${params}`, {
-    headers: { Accept: 'application/json', 'Accept-Language': 'ca,es;q=0.9' },
+    headers: nominatimHeaders(),
   });
   if (!response.ok) throw new Error(`El geocodificador no respondio (${response.status}).`);
   return response.json() as Promise<NominatimResult[]>;
+}
+
+function nominatimHeaders(): HeadersInit {
+  return { Accept: 'application/json', 'Accept-Language': 'ca,es;q=0.9' };
 }
 
 export function findZoneAtPoint(collection: ZoneCollection | undefined, longitude: number, latitude: number): ZoneFeature | undefined {

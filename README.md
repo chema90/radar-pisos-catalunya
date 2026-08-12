@@ -60,6 +60,13 @@ El service worker guarda la interfaz y los índices consultados. Las teselas de 
 - Los campos y acciones principales, la importación GIS y el control de la fuente oficial se presentan en filas compactas.
 - `Municipio TOP`, `Municipios vecinos` y `Crear desglose` tienen exactamente la misma anchura y alineación.
 
+## Cambios v43 · dirección GPS y códigos postales
+
+- Los controles de zoom quedan detrás de los paneles de añadir vivienda y crear desglose, sin tapar sus textos ni campos.
+- La localización muestra la dirección postal aproximada disponible, incluido portal y código postal cuando OpenStreetMap los proporciona.
+- El bocadillo de ubicación permite abrir `Añadir piso` con la dirección y las coordenadas GPS ya preparadas y editables.
+- El buscador reconoce códigos postales de cinco cifras y abre el municipio correspondiente; si hay más de una coincidencia, permite elegir.
+
 
 ## Cambios v6
 
