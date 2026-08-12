@@ -104,6 +104,8 @@
 .address-marker-actions a{display:inline-flex;flex:1 1 125px;align-items:center;justify-content:center;min-height:38px;padding:7px 10px;border:1px solid #cbd5e1;border-radius:6px;background:#fff;color:#17375e;font-size:12px;font-weight:700;text-decoration:none}
 .address-marker-actions a:hover,.address-marker-actions a:focus-visible{border-color:#8da0b7;background:#f1f5f9;outline:0}
 .detail-head-actions{display:flex;align-items:center;gap:7px;flex:0 0 auto}
+.zone-detail-backdrop{position:absolute;inset:0;z-index:410;width:100%;height:100%;padding:0;border:0;background:transparent;cursor:default}
+.detail{z-index:430}
 
 /* v39 · phone-first presentation. The map comes first on a phone, while the
    full selector remains directly below it without hiding any existing control. */
