@@ -3,7 +3,7 @@ import L from 'leaflet';
 import { getNote, getNotes, getSeenProperties, saveNote, saveSeenProperty, type ZoneInterest, type ZoneNote } from './storage';
 import { appendCustomFeature, createUserFeature, fetchGeoJsonUrl, fetchOnlineZones, loadZones, normalizeImportedCollection, saveImportedCollection, zoneKey } from './zone-data';
 import type { MapLayer, Municipality, Preference, SeenProperty, ZoneCollection, ZoneFeature, ZoneKind, ZoneLayer, ZoneQuality } from './types';
-import { findZoneAtPoint, geocodeAddress, geocodeSearchAddress, isLikelyAddressQuery } from './geocoding';
+import { findMunicipalityAtPoint, findZoneAtPoint, geocodeAddress, geocodeSearchAddress, isLikelyAddressQuery } from './geocoding';
 import { loadIcgcZones } from './icgc-zone-data';
 import { loadLayerVisibility, saveLayerVisibility, type LayerVisibility } from './layer-visibility';
 import { findMunicipalityByName, normalizeMunicipalityName, normalizeText, preferenceMunicipalityTarget } from './municipality-matching';
@@ -34,6 +34,7 @@ let zones: ZoneCollection | undefined;
 let layerVisibility: LayerVisibility = { municipalityBoundary: true, barri: true, sector: false, municipalOther: true, references: false, icgcPopulation: true, icgcIndustrial: true };
 let properties: SeenProperty[] = [];
 let map: L.Map | undefined;
+let locationLayer: L.LayerGroup | undefined;
 let searchAddressMarker: L.CircleMarker | undefined;
 let activeSearchAddress: SearchAddress | undefined;
 let municipalityLayer: L.GeoJSON | undefined;
@@ -441,12 +442,12 @@ function render(){
   <section class="workspace"><aside class="sidebar">
     <div class="municipality-heading"><div><h1>${esc(active.name)}</h1><p>${active.entityType==='emd'?`EMD de ${esc(active.parentMunicipalityName??'Sant Cugat del Vallès')} · `:''}${esc(active.county)} · ${esc(active.province)}</p></div><div class="municipality-heading-actions"><button id="toggle-top-municipality" class="icon-button municipality-top-toggle ${activeNote.top ? 'active ' : ''}top-toggle" title="Marca ${active.entityType==='emd'?'esta EMD':'el municipio completo'} como prioritario. No modifica la valoración de sus barrios o zonas.">${activeNote.top ? `⭐ ${active.entityType==='emd'?'EMD':'Municipio'} TOP` : `☆ ${active.entityType==='emd'?'EMD':'Municipio'} TOP`}</button><button id="toggle-municipality-context" class="icon-button municipality-context-toggle ${municipalityContextVisible?'active':''}" aria-pressed="${municipalityContextVisible}" title="Muestra los límites y nombres de los municipios del entorno. Es una capa orientativa y no afecta a los barrios.">◫ Municipios vecinos</button></div></div>
     <div class="coverage-row"><p class="coverage"><i></i>${coverage()}</p><button class="secondary compact" id="create-breakdown">Crear desglose</button></div>
-    <div class="facts"><span><small>TIPO</small>${active.entityType==='emd'?'EMD':'Municipio'}</span><span><small>FUENTE</small>${municipalCoverageLabel()}</span><span><small>ÁREA</small>${active.areaM2?active.areaM2.toFixed(1)+' km²':'—'}</span></div>
+    <div class="facts"><span><small>Tipo</small>${active.entityType==='emd'?'EMD':'Municipio'}</span><span><small>Fuente</small>${municipalCoverageLabel()}</span><span><small>Área</small>${active.areaM2?active.areaM2.toFixed(1)+' km²':'—'}</span></div>
     ${layerControls()}
     <div class="sidebar-tabs"><button class="${sidebar==='zones'?'active':''}" id="zones-tab">${rows.some(row=>!['barri','interest'].includes(row.kind))?'Zonas':'Barrios'} <span>${rows.length}</span></button><button class="${sidebar==='properties'?'active':''}" id="properties-tab">Pisos vistos <span>${seen.length}</span></button></div>
     ${sidebar==='zones'?zoneList(rows):propertyList(seen)}
     <p class="source-note">${active.entityType==='emd'?(localZones?.features.length?'Fuente EMD: '+esc(localZones.source.title):'Fuente oficial de nombres: EMD de Valldoreix · polígonos todavía pendientes'):hasCompleteMunicipalCoverage()&&localZones?.source?.official?'Capa municipal prioritaria: '+esc(localZones.source.title):ambZones?.features.length?'Respaldo activo: '+esc(ambAemSource.title)+(localZones?.features.length?' · existe además una capa local parcial/no validada':''):localZones?.features.length?'Capa local no validada como completa: '+esc(localZones.source.title):'Base general: ICGC Àrees de poblament'}<br>${active.entityType==='emd'?'Valldoreix se mantiene separado de Sant Cugat en el Radar.': 'AMB nunca sustituye una capa municipal validada. ICGC sigue siendo complementaria y la industria nunca se elimina.'}${sourceLoadError?'<br><span class="source-error">'+esc(sourceLoadError)+'</span>':''}</p>
-  </aside><section class="map-region"><div id="map"></div><div class="map-tools"><button id="locate">◎ Localizarme</button><button id="add-property-map">＋ Añadir piso o promoción</button></div>
+  </aside><section class="map-region"><div id="map"></div><div class="map-tools"><button id="locate" class="location-button" type="button" aria-label="Localización" title="Localización" data-tooltip="Localización"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" fill="#dfe9fb"/><circle cx="12" cy="12" r="4" fill="#1765e8"/><path d="M12 1v3M12 20v3M1 12h3M20 12h3" stroke="#1765e8" stroke-width="2" stroke-linecap="round"/></svg></button><button id="add-property-map">＋ Añadir piso o promoción</button></div>
   <div class="legend"><strong>Capas</strong><span><i class="legend-swatch selected"></i><b id="selected-count">${selected.size}</b> seleccionados</span>${active.geometry?`<span><i class="legend-line official"></i>${active.entityType==='emd'?'Límite EMD':'Límite municipal'}</span>`:''}</div>
   <article class="detail" id="detail">${defaultDetailHtml()}</article></section></section></main>`;
   mountMap(); bindEvents();
@@ -465,9 +466,9 @@ function propertyList(items: SeenProperty[]){
   const compareCount=items.filter(item=>comparison.has(item.id)).length;
   return `<div class="property-toolbar"><span>${items.length?items.length+' guardados':'Aún no hay pisos guardados'}</span><span class="toolbar-actions"><button class="secondary compact" id="compare-selected" ${compareCount<2?'disabled':''}>Comparar ${compareCount?`(${compareCount})`:''}</button><button class="primary compact" id="add-property-sidebar">＋ Añadir</button></span></div>${items.length?`<div class="property-list">${items.map(item=>`<div class="property-row ${comparison.has(item.id)?'comparing':''}"><label class="compare-check" title="Añadir a comparación"><input type="checkbox" data-compare-property="${item.id}" ${comparison.has(item.id)?'checked':''}/><span></span></label><button class="property-open" data-property-id="${item.id}"><span class="property-status ${item.status}">${statusIcon(item.status)}</span><span><strong>${esc(item.name)}</strong><small>${item.kind==='development'?'Promoción':'Piso'}${item.zoneName?' · '+esc(item.zoneName):''}${item.price?' · '+item.price.toLocaleString('es-ES')+' €':''}</small></span><em>${statusLabel(item.status)}</em></button></div>`).join('')}</div>`:'<div class="empty-state slim"><p>Guarda anuncios, direcciones o promociones y marca si te gustaron.</p></div>'}`;
 }
-function defaultDetailHtml(){return `<div class="detail-placeholder"><div><p class="eyebrow">Mapa interactivo</p><h2>Selecciona una zona</h2><p>Activa varios barrios o sectores para compararlos o registra un piso que hayas visto.</p></div><button class="primary" id="add-property-empty">Añadir piso o promoción</button></div>`}
+function defaultDetailHtml(){return `<div class="detail-placeholder map-default-action"><div><p class="eyebrow">Viviendas</p><h2>Registra una vivienda</h2><p>Guarda aquí un piso o una promoción. Después podrás compararlos desde «Comparar».</p></div><button class="primary" id="add-property-empty">＋ Añadir piso</button></div>`}
 function mountMap(){
-  map?.remove(); searchAddressMarker=undefined; layers=new Map();
+  map?.remove(); locationLayer=undefined; searchAddressMarker=undefined; layers=new Map();
   map=L.map('map',{zoomControl:true,attributionControl:false,preferCanvas:true});
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,crossOrigin:true}).addTo(map);
   if(active.geometry){municipalityLayer=L.geoJSON(active.geometry,{style:{color:'#152b52',weight:2.2,fillColor:'#f4614c',fillOpacity:.035,dashArray:'7 4'}});if(layerVisibility.municipalityBoundary)municipalityLayer.addTo(map);map.fitBounds(municipalityLayer.getBounds(),{padding:[36,36]})}
@@ -721,7 +722,34 @@ function openComparison(ids?:string[]){
   document.querySelector('#comparison-map')!.addEventListener('click',async()=>{const target=catalog.municipalities.find(municipality=>municipality.id===items[0].municipalityId);if(target&&target.id!==active.id)await selectMunicipality(target);const points=items.filter(item=>item.municipalityId===active.id&&item.latitude!==undefined&&item.longitude!==undefined).map(item=>L.latLng(item.latitude!,item.longitude!));if(points.length&&map)map.fitBounds(L.latLngBounds(points),{padding:[80,80],maxZoom:16});openComparison(items.map(item=>item.id))});
 }
 
-function locate(){if(!navigator.geolocation||!map)return;navigator.geolocation.getCurrentPosition(position=>{const point=L.latLng(position.coords.latitude,position.coords.longitude);L.circle(point,{radius:position.coords.accuracy,color:'#2f78c4',fillOpacity:.1}).addTo(map!);L.marker(point).addTo(map!).bindPopup(`Ubicación aproximada · precisión ${Math.round(position.coords.accuracy)} m`).openPopup();map!.setView(point,14)},()=>alert('No se pudo obtener la ubicación.'))}
+function locate(){
+  if(!navigator.geolocation||!map){alert('La localización no está disponible en este navegador.');return}
+  const button=document.querySelector<HTMLButtonElement>('#locate');
+  if(button){button.disabled=true;button.classList.add('locating');button.setAttribute('aria-busy','true')}
+  navigator.geolocation.getCurrentPosition(async position=>{
+    const latitude=position.coords.latitude,longitude=position.coords.longitude;
+    const municipality=findMunicipalityAtPoint(catalog.municipalities,longitude,latitude);
+    try{
+      if(municipality&&municipality.id!==active.id)await selectMunicipality(municipality);
+      if(!map)return;
+      const point=L.latLng(latitude,longitude);
+      locationLayer?.remove();
+      const accuracy=L.circle(point,{radius:position.coords.accuracy,color:'#1765e8',weight:1.5,fillColor:'#6fa0f4',fillOpacity:.13});
+      const marker=L.circleMarker(point,{radius:8,color:'#fff',weight:3,fillColor:'#1765e8',fillOpacity:1});
+      locationLayer=L.layerGroup([accuracy,marker]).addTo(map);
+      marker.bindPopup(`${municipality?`Estás en ${esc(municipality.name)}`:'Ubicación aproximada'} · precisión ${Math.round(position.coords.accuracy)} m`).openPopup();
+      map.setView(point,14);
+    }catch{
+      alert('Se obtuvo la ubicación, pero no se pudo abrir el municipio correspondiente.');
+    }finally{
+      const currentButton=document.querySelector<HTMLButtonElement>('#locate');
+      if(currentButton){currentButton.disabled=false;currentButton.classList.remove('locating');currentButton.removeAttribute('aria-busy')}
+    }
+  },()=>{
+    if(button){button.disabled=false;button.classList.remove('locating');button.removeAttribute('aria-busy')}
+    alert('No se pudo obtener la ubicación. Revisa el permiso de localización del navegador.');
+  },{enableHighAccuracy:true,timeout:12000,maximumAge:30000});
+}
 async function openSaved(){removeZoneDetailBackdrop();const notes=await getNotes(),rows=zoneRows().filter(row=>notes[row.id]?.favorite),detail=document.querySelector<HTMLDivElement>('#detail')!;detail.innerHTML=`<div class="detail-head"><div><p class="eyebrow">En este dispositivo</p><h2>Barrios guardados</h2><p>${rows.length?rows.length+' favoritos':'Todavía no has guardado barrios.'}</p></div><button class="icon-button" id="close-detail">×</button></div>${rows.length?`<div class="saved-list">${rows.map(row=>savedRow(row,notes[row.id])).join('')}</div>`:''}`;document.querySelector('#close-detail')!.addEventListener('click',defaultDetail);detail.querySelectorAll<HTMLButtonElement>('[data-saved-zone]').forEach(button=>button.addEventListener('click',()=>focusZone(button.dataset.savedZone!)))}
 function savedRow(row:ZoneRow,note:ZoneNote){const summary=[note.rating?note.rating+' / 5':'',note.text?esc(note.text):'Sin observaciones'].filter(Boolean).join(' · ');return `<button class="saved-row" data-saved-zone="${row.id}"><span><strong>${esc(row.name)}</strong><small>${esc(active.name)}</small></span><em>${summary}</em></button>`}
 if(import.meta.env.PROD && 'serviceWorker' in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register(import.meta.env.BASE_URL+'sw.js',{scope:import.meta.env.BASE_URL}));

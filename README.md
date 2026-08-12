@@ -46,6 +46,13 @@ El service worker guarda la interfaz y los índices consultados. Las teselas de 
 - Las direcciones buscadas muestran una tarjeta táctil sobre el mapa con accesos directos a Google Maps y Google Earth mediante las coordenadas exactas del punto rojo.
 - La tarjeta se puede cerrar y vuelve a mostrarse al tocar de nuevo el punto rojo.
 
+## Cambios v41 · mapa móvil más despejado
+
+- `Localizarme` se sustituye por un botón compacto con icono, texto de ayuda `Localización` y una posición que no se cruza con el zoom del mapa.
+- Al localizar el teléfono, el Radar activa automáticamente el municipio en el que se encuentra el punto y centra allí el mapa.
+- La ficha inferior queda dedicada a registrar viviendas y se reduce a una acción breve; la comparación continúa en el botón `Comparar`.
+- Los datos de tipo, fuente y área se presentan como una fila compacta en teléfono.
+
 
 ## Cambios v6
 

@@ -136,3 +136,36 @@
   .brand{font-size:16px}.plain{padding:7px 3px;font-size:10px}.nav-count{min-width:16px;height:16px;font-size:9px}
   .map-region{height:51svh;min-height:380px}.municipality-heading h1{font-size:27px}
 }
+
+/* v41 · compact map controls and phone information density */
+.map-tools{left:62px}
+.map-tools .location-button{position:relative;display:grid;place-items:center;width:42px;height:42px;min-width:42px;padding:0;border-color:#c9d3e0;border-radius:10px}
+.location-button svg{width:25px;height:25px}
+.location-button::after{content:attr(data-tooltip);position:absolute;top:calc(100% + 7px);left:0;display:none;padding:5px 8px;border-radius:5px;background:var(--navy);color:#fff;font-size:11px;font-weight:600;white-space:nowrap;box-shadow:0 3px 9px #172e5138}
+.location-button:hover::after,.location-button:focus-visible::after{display:block}
+.location-button:focus-visible{outline:3px solid #1765e84a;outline-offset:2px}
+.location-button:disabled{cursor:wait;opacity:.72}
+.location-button.locating svg{animation:location-pulse 1s ease-in-out infinite}
+@keyframes location-pulse{50%{transform:scale(.78);opacity:.55}}
+
+@media(max-width:900px){.map-tools{left:62px;top:12px}}
+
+@media(max-width:720px){
+  .map-tools{left:10px;top:82px;max-width:none}
+  .map-tools #add-property-map{display:none}
+  .map-tools .location-button{width:44px;height:44px;min-width:44px;padding:0;border-radius:11px}
+  .location-button svg{width:27px;height:27px}
+  .location-button::after{top:4px;left:calc(100% + 8px)}
+
+  .detail:has(.map-default-action){overflow:visible;padding:9px 10px}
+  .map-default-action{align-items:center;gap:10px}
+  .map-default-action>div{min-width:0}
+  .map-default-action .eyebrow,.map-default-action p{display:none}
+  .map-default-action h2{font-family:'DM Sans',system-ui,sans-serif;font-size:15px;line-height:1.15;letter-spacing:0}
+  .map-default-action .primary{min-height:38px;padding:7px 11px;font-size:12px;white-space:nowrap}
+
+  .facts{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:6px;border:0}
+  .facts span{min-width:0;padding:7px 8px;border:1px solid #d9e0e8!important;border-radius:6px;background:#f8fafc;font-size:11px;line-height:1.2}
+  .facts small{display:inline;margin:0 4px 0 0;font-size:8px;letter-spacing:.25px;text-transform:uppercase}
+  .facts small::after{content:':'}
+}
