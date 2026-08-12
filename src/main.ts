@@ -50,7 +50,7 @@ let drawLayer: L.Polygon | undefined;
 let sourceLoadError: string | undefined;
 let sourceLoading = false;
 let municipalityContextVisible = false;
-let zoneDetailHistoryActive = false;
+let detailHistoryMode: 'zone' | 'breakdown' | undefined;
 const norm = normalizeText;
 const municipalityNorm = normalizeMunicipalityName;
 const esc = (value: string) => value.replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[char]!));
@@ -647,44 +647,63 @@ function showProperty(item:SeenProperty){
   document.querySelectorAll<HTMLButtonElement>('[data-property-status]').forEach(button=>button.addEventListener('click',async()=>{const updated={...item,status:button.dataset.propertyStatus as SeenProperty['status']};updated.status==='liked'?comparison.add(updated.id):comparison.delete(updated.id);await saveSeenProperty(updated);properties=await getSeenProperties();render();showProperty(updated)}));
 }
 function openZoneDetailHistory(){
-  if(zoneDetailHistoryActive)return;
-  history.pushState({...history.state,radarZoneDetail:true},'');
-  zoneDetailHistoryActive=true;
+  openDetailHistory('zone');
+}
+function openDetailHistory(mode:'zone'|'breakdown'){
+  if(detailHistoryMode){detailHistoryMode=mode;history.replaceState({...history.state,radarDetail:mode},'');return}
+  history.pushState({...history.state,radarDetail:mode},'');
+  detailHistoryMode=mode;
+}
+function leaveDetailHistory(updateHistory=true){
+  if(!detailHistoryMode)return;
+  detailHistoryMode=undefined;
+  if(updateHistory)history.back();
 }
 function removeZoneDetailBackdrop(){document.querySelector('.zone-detail-backdrop')?.remove()}
-function showZoneDetailBackdrop(){
+function showDetailBackdrop(label:string,close:()=>void){
   removeZoneDetailBackdrop();
   const region=document.querySelector<HTMLElement>('.map-region');if(!region)return;
   const backdrop=document.createElement('button');
-  backdrop.type='button';backdrop.className='zone-detail-backdrop';backdrop.setAttribute('aria-label','Cerrar selector de zona');
-  backdrop.addEventListener('click',()=>closeZoneDetail());
+  backdrop.type='button';backdrop.className='zone-detail-backdrop';backdrop.setAttribute('aria-label',label);
+  backdrop.addEventListener('click',close);
   region.append(backdrop);
 }
+function showZoneDetailBackdrop(){showDetailBackdrop('Cerrar selector de zona',()=>closeZoneDetail())}
 function closeZoneDetail(updateHistory=true){
   if(!document.querySelector('#close-zone-detail'))return;
   focused=undefined;
   refreshStyles();
   defaultDetail();
-  if(updateHistory&&zoneDetailHistoryActive){zoneDetailHistoryActive=false;history.back()}
+  leaveDetailHistory(updateHistory);
+}
+function closeBreakdown(updateHistory=true){
+  const detail=document.querySelector<HTMLDivElement>('#detail');
+  if(!detail?.classList.contains('breakdown-detail'))return;
+  defaultDetail();
+  leaveDetailHistory(updateHistory);
 }
 window.addEventListener('popstate',()=>{
-  if(!zoneDetailHistoryActive)return;
-  zoneDetailHistoryActive=false;
-  closeZoneDetail(false);
+  const mode=detailHistoryMode;
+  if(!mode)return;
+  detailHistoryMode=undefined;
+  if(mode==='zone')closeZoneDetail(false);else closeBreakdown(false);
 });
-function defaultDetail(){removeZoneDetailBackdrop();const detail=document.querySelector<HTMLDivElement>('#detail');if(detail){detail.classList.remove('comparison');detail.innerHTML=defaultDetailHtml()}document.querySelector('#add-property-empty')?.addEventListener('click',()=>openPropertyForm())}
+function defaultDetail(){removeZoneDetailBackdrop();const detail=document.querySelector<HTMLDivElement>('#detail');if(detail){detail.classList.remove('comparison','breakdown-detail');detail.innerHTML=defaultDetailHtml();detail.scrollTop=0}document.querySelector('#add-property-empty')?.addEventListener('click',()=>openPropertyForm())}
 function openBreakdown(){
   removeZoneDetailBackdrop();
   const detail=document.querySelector<HTMLDivElement>('#detail')!, suggestions=interests().map(item=>item.name), source=officialSource();
-  detail.innerHTML=`<div class="detail-head"><div><p class="eyebrow">Cobertura bajo demanda</p><h2>Crear desglose de ${esc(active.name)}</h2><p>Importa polígonos desde Internet o archivo, búscalos en OpenStreetMap o dibújalos.</p></div><button class="icon-button" id="close-detail">×</button></div><div class="breakdown-form"><div class="breakdown-fields"><label>Nombre del barrio o sector<input id="draw-zone-name" list="zone-suggestions" placeholder="Ej. Centre o Sector Nord"/><datalist id="zone-suggestions">${suggestions.map(name=>`<option value="${esc(name)}"></option>`).join('')}</datalist></label><label>Tipo de zona<select id="draw-zone-kind"><option value="barri">Barrio</option><option value="sector">Sector</option><option value="zone">Zona</option><option value="district">Distrito</option></select></label></div><div class="breakdown-actions-row"><button class="primary" id="online-zones">Buscar límites online</button><span class="divider-text">o</span><button class="secondary" id="start-drawing">Dibujar</button><button class="secondary" id="import-geojson">Importar archivo</button></div><input id="geojson-file" type="file" accept=".json,.geojson,application/geo+json" hidden/></div>${source?.vector && source.autoLoad !== false?`<div class="official-source-card"><div><strong>1ª fuente · Ayuntamiento</strong><span>${esc(source.title)}</span></div><button class="primary" id="import-official-source">Cargar polígonos oficiales</button></div>`:'' }${isAmbMunicipality(active)?`<div class="official-source-card fallback-source-card"><div><strong>2ª fuente · AMB</strong><span>${esc(ambAemSource.title)}${hasCompleteMunicipalCoverage()?' · respaldo disponible, no necesario':' · respaldo activo si falta cobertura municipal'}</span></div><button class="secondary" id="import-amb-source" ${hasCompleteMunicipalCoverage()?'disabled title="La fuente municipal ya ha pasado la validación"':''}>${hasCompleteMunicipalCoverage()?'Municipal validada':'Cargar respaldo AMB'}</button></div>`:'' }<div class="url-import"><label>URL de GeoJSON, API CKAN/OData, WFS o capa ArcGIS<input id="geojson-url" type="url" placeholder="https://…/resource/… o …/FeatureServer/0"/></label><button class="secondary" id="import-geojson-url">Importar desde Internet</button></div><p class="detail-foot">${source?`Fuente territorial verificada: <a href="${esc(source.url)}" target="_blank" rel="noreferrer">${esc(source.title)} ↗</a>. ${source.vector?(source.autoLoad===false?'Existe una fuente vectorial oficial, pero está marcada como cobertura incompleta y no se autoimporta.':'Existe una fuente vectorial oficial que la aplicación puede intentar cargar automáticamente.'):'La fuente oficial no publica una capa vectorial integrable directamente; usa su visor/PDF o una URL WFS si la facilita.'}${source.note?' '+esc(source.note):''}`:'No consta una capa municipal oficial de barrios. La búsqueda online usa OpenStreetMap y se identifica como comunitaria.'}<br>La importación detecta automáticamente campos de barrio, sector, zona o distrito. Las URLs CKAN/OData con geometría WKT, GeoJSON y ArcGIS se detectan automáticamente; el servidor debe permitir CORS.</p>`;
-  document.querySelector('#close-detail')!.addEventListener('click',defaultDetail);
+  detail.classList.remove('comparison');detail.classList.add('breakdown-detail');detail.scrollTop=0;
+  detail.innerHTML=`<div class="detail-head breakdown-head"><div><p class="eyebrow">Cobertura bajo demanda</p><h2>Desglose de ${esc(active.name)}</h2><p>Busca, importa o dibuja los límites de sus barrios y sectores.</p></div><button class="icon-button" id="close-breakdown" aria-label="Cerrar desglose">×</button></div><div class="breakdown-scroll"><div class="breakdown-form"><div class="breakdown-fields"><label>Nombre del barrio o sector<input id="draw-zone-name" list="zone-suggestions" placeholder="Ej. Centre o Sector Nord"/><datalist id="zone-suggestions">${suggestions.map(name=>`<option value="${esc(name)}"></option>`).join('')}</datalist></label><label>Tipo<select id="draw-zone-kind"><option value="barri">Barrio</option><option value="sector">Sector</option><option value="zone">Zona</option><option value="district">Distrito</option></select></label></div><div class="breakdown-actions-row"><button class="primary" id="online-zones">Buscar online</button><button class="secondary" id="start-drawing">Dibujar</button><button class="secondary" id="import-geojson">Importar</button></div><input id="geojson-file" type="file" accept=".json,.geojson,application/geo+json" hidden/></div>${source?.vector && source.autoLoad !== false?`<div class="official-source-card"><div><strong>1ª fuente · Ayuntamiento</strong><span>${esc(source.title)}</span></div><button class="primary" id="import-official-source">Cargar oficiales</button></div>`:'' }${isAmbMunicipality(active)?`<div class="official-source-card fallback-source-card"><div><strong>2ª fuente · AMB</strong><span>${esc(ambAemSource.title)}${hasCompleteMunicipalCoverage()?' · respaldo disponible, no necesario':' · respaldo activo si falta cobertura municipal'}</span></div><button class="secondary" id="import-amb-source" ${hasCompleteMunicipalCoverage()?'disabled title="La fuente municipal ya ha pasado la validación"':''}>${hasCompleteMunicipalCoverage()?'Municipal validada':'Cargar AMB'}</button></div>`:'' }<div class="url-import"><label><span>URL de GeoJSON, CKAN/OData, WFS o ArcGIS</span><input id="geojson-url" type="url" aria-label="URL de GeoJSON, WFS o ArcGIS" placeholder="https://…/FeatureServer/0"/></label><button class="secondary" id="import-geojson-url">Importar URL</button></div><details class="breakdown-help"><summary>Información sobre fuentes y formatos</summary><p class="detail-foot">${source?`Fuente territorial verificada: <a href="${esc(source.url)}" target="_blank" rel="noreferrer">${esc(source.title)} ↗</a>. ${source.vector?(source.autoLoad===false?'Existe una fuente vectorial oficial, pero está marcada como cobertura incompleta y no se autoimporta.':'Existe una fuente vectorial oficial que la aplicación puede intentar cargar automáticamente.'):'La fuente oficial no publica una capa vectorial integrable directamente; usa su visor/PDF o una URL WFS si la facilita.'}${source.note?' '+esc(source.note):''}`:'No consta una capa municipal oficial de barrios. La búsqueda online usa OpenStreetMap y se identifica como comunitaria.'}<br>La importación detecta automáticamente campos de barrio, sector, zona o distrito. Las URLs CKAN/OData con geometría WKT, GeoJSON y ArcGIS se detectan automáticamente; el servidor debe permitir CORS.</p></details></div>`;
+  openDetailHistory('breakdown');
+  showDetailBackdrop('Cerrar desglose',()=>closeBreakdown());
+  document.querySelector('#close-breakdown')!.addEventListener('click',()=>closeBreakdown());
   document.querySelector('#import-official-source')?.addEventListener('click',async()=>{const configured=officialSources[active.id];if(!configured)return;const button=document.querySelector<HTMLButtonElement>('#import-official-source')!;button.disabled=true;button.textContent='Cargando capa oficial…';try{await autoLoadOfficialMunicipalZones(active,configured);await reloadZoneSources(false);const defaults=defaultVisibility();for(const layer of ['barri','sector','municipalOther'] as ZoneLayer[]){if(defaults[layer])layerVisibility[layer]=true}if(hasCompleteMunicipalCoverage())layerVisibility.icgcPopulation=false;saveLayerVisibility(active.id,layerVisibility);rebuildVisibleZones();selected=new Set(zones?.features.map(feature=>feature.id)??[]);render()}catch(error){detail.querySelector('.detail-foot')!.textContent=error instanceof Error?error.message:'No se pudo cargar la capa oficial.';button.disabled=false;button.textContent='Reintentar capa oficial'}});
   document.querySelector('#import-amb-source')?.addEventListener('click',async()=>{if(hasCompleteMunicipalCoverage())return;const button=document.querySelector<HTMLButtonElement>('#import-amb-source')!;button.disabled=true;button.textContent='Cargando AMB…';try{ambZones=await fetchAmbZonesNow(active);const defaults=defaultVisibility();for(const layer of ['barri','sector','municipalOther'] as ZoneLayer[]){if(defaults[layer])layerVisibility[layer]=true}rebuildVisibleZones();selected=new Set(zones?.features.map(feature=>feature.id)??[]);render()}catch(error){detail.querySelector('.detail-foot')!.textContent=error instanceof Error?error.message:'No se pudo cargar la capa AMB.';button.disabled=false;button.textContent='Reintentar AMB'}});
-  document.querySelector('#online-zones')!.addEventListener('click',async()=>{const button=document.querySelector<HTMLButtonElement>('#online-zones')!;button.disabled=true;button.textContent='Buscando…';try{await fetchOnlineZones(active);await reloadZoneSources(false);selected=new Set(zones?.features.map(feature=>feature.id)??[]);render()}catch(error){detail.querySelector('.detail-foot')!.textContent=error instanceof Error?error.message:'No se pudieron obtener límites online.';button.disabled=false;button.textContent='Buscar límites online'}});
+  document.querySelector('#online-zones')!.addEventListener('click',async()=>{const button=document.querySelector<HTMLButtonElement>('#online-zones')!;button.disabled=true;button.textContent='Buscando…';try{await fetchOnlineZones(active);await reloadZoneSources(false);selected=new Set(zones?.features.map(feature=>feature.id)??[]);render()}catch(error){detail.querySelector('.detail-foot')!.textContent=error instanceof Error?error.message:'No se pudieron obtener límites online.';button.disabled=false;button.textContent='Buscar online'}});
   document.querySelector('#start-drawing')!.addEventListener('click',()=>{const input=document.querySelector<HTMLInputElement>('#draw-zone-name')!,type=document.querySelector<HTMLSelectElement>('#draw-zone-kind')!,name=input.value.trim();if(!name){input.focus();return}startDrawing(name,type.value as ZoneKind)});
   const file=document.querySelector<HTMLInputElement>('#geojson-file')!;document.querySelector('#import-geojson')!.addEventListener('click',()=>file.click());
   file.addEventListener('change',async()=>{const selectedFile=file.files?.[0];if(!selectedFile)return;try{const collection=normalizeImportedCollection(JSON.parse(await selectedFile.text()) as GeoJSON.GeoJSON,active);await saveImportedCollection(active,collection);await reloadZoneSources(false);selected=new Set(zones?.features.map(feature=>feature.id)??[]);render()}catch(error){detail.querySelector('.detail-foot')!.textContent=error instanceof Error?error.message:'No se pudo importar el archivo.'}});
-  document.querySelector('#import-geojson-url')!.addEventListener('click',async()=>{const input=document.querySelector<HTMLInputElement>('#geojson-url')!,button=document.querySelector<HTMLButtonElement>('#import-geojson-url')!,url=input.value.trim();if(!url){input.focus();return}button.disabled=true;button.textContent='Importando…';try{await fetchGeoJsonUrl(url,active);await reloadZoneSources(false);selected=new Set(zones?.features.map(feature=>feature.id)??[]);render()}catch(error){detail.querySelector('.detail-foot')!.textContent=error instanceof Error?error.message:'No se pudo importar la URL.';button.disabled=false;button.textContent='Importar desde Internet'}});
+  document.querySelector('#import-geojson-url')!.addEventListener('click',async()=>{const input=document.querySelector<HTMLInputElement>('#geojson-url')!,button=document.querySelector<HTMLButtonElement>('#import-geojson-url')!,url=input.value.trim();if(!url){input.focus();return}button.disabled=true;button.textContent='Importando…';try{await fetchGeoJsonUrl(url,active);await reloadZoneSources(false);selected=new Set(zones?.features.map(feature=>feature.id)??[]);render()}catch(error){detail.querySelector('.detail-foot')!.textContent=error instanceof Error?error.message:'No se pudo importar la URL.';button.disabled=false;button.textContent='Importar URL'}});
   mountAdvancedGisTools(detail,active,source,async()=>{await reloadZoneSources(false);selected=new Set(zones?.features.map(feature=>feature.id)??[]);render()});
 }
 function startDrawing(name:string,kind:ZoneKind='barri'){drawName=name;drawKind=kind;drawPoints=[];drawLayer?.remove();drawLayer=undefined;map?.getContainer().classList.add('drawing');map?.on('click',drawClick);drawingPanel()}

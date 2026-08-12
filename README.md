@@ -53,6 +53,13 @@ El service worker guarda la interfaz y los índices consultados. Las teselas de 
 - La ficha inferior queda dedicada a registrar viviendas y se reduce a una acción breve; la comparación continúa en el botón `Comparar`.
 - Los datos de tipo, fuente y área se presentan como una fila compacta en teléfono.
 
+## Cambios v42 · desglose móvil accesible
+
+- El panel de desglose queda contenido dentro del mapa, con la cabecera y la X siempre visibles y desplazamiento independiente para su contenido.
+- En Android se cierra con la X, tocando fuera o usando el botón o gesto Atrás.
+- Los campos y acciones principales, la importación GIS y el control de la fuente oficial se presentan en filas compactas.
+- `Municipio TOP`, `Municipios vecinos` y `Crear desglose` tienen exactamente la misma anchura y alineación.
+
 
 ## Cambios v6
 

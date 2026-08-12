@@ -32,13 +32,13 @@ export function mountAdvancedGisTools(detail: HTMLDivElement, municipality: Muni
       <span id="import-reset-text"></span>
       <button class="secondary compact danger" id="reset-local-zones">Borrar desglose local</button>
     </div>
-    ${source ? `<div class="source-monitor"><span class="source-status ${check?.status ?? 'unknown'}"></span><div><strong>Control de la fuente oficial</strong><small>${escapeHtml(check?.detail ?? 'Pendiente de primera comprobación semanal')}</small></div><button class="secondary compact" id="check-source-now">Comprobar ahora</button></div>` : ''}
+    ${source ? `<div class="source-monitor"><span class="source-status ${check?.status ?? 'unknown'}"></span><div><strong>Control de la fuente oficial</strong><small>${escapeHtml(check?.detail ?? 'Pendiente de primera comprobación semanal')}</small></div><button class="secondary compact" id="check-source-now">Comprobar</button></div>` : ''}
     <div class="source-assistant">
       <div class="assistant-copy"><strong>Asistente de geoportales</strong><span>Descubre capas de barrios desde un visor, WFS o servicio ArcGIS.</span></div>
-      <div class="assistant-form"><input id="geoportal-url" type="url" value="${escapeHtml(source?.url ?? '')}" placeholder="https://geoportal…"><button class="secondary" id="discover-layers">Descubrir capas</button></div>
+      <div class="assistant-form"><input id="geoportal-url" type="url" value="${escapeHtml(source?.url ?? '')}" placeholder="https://geoportal…"><button class="secondary" id="discover-layers">Descubrir</button></div>
       <div class="discovery-results" id="discovery-results" aria-live="polite"></div>
     </div>`;
-  foot.before(section);
+  (foot.closest('.breakdown-help') ?? foot).before(section);
 
   const cleanup = section.querySelector<HTMLDivElement>('#import-cleanup')!;
   const cleanupText = section.querySelector<HTMLSpanElement>('#import-cleanup-text')!;
@@ -106,7 +106,7 @@ export function mountAdvancedGisTools(detail: HTMLDivElement, municipality: Muni
     status.className = `source-status ${result.status}`;
     section.querySelector<HTMLElement>('.source-monitor small')!.textContent = result.detail;
     button.disabled = false;
-    button.textContent = 'Comprobar ahora';
+    button.textContent = 'Comprobar';
   });
 
   const discoverButton = section.querySelector<HTMLButtonElement>('#discover-layers')!;
@@ -141,7 +141,7 @@ export function mountAdvancedGisTools(detail: HTMLDivElement, municipality: Muni
       results.innerHTML = `<p class="source-error">${escapeHtml(error instanceof Error ? error.message : 'No se pudo analizar el geoportal.')}</p>`;
     } finally {
       discoverButton.disabled = false;
-      discoverButton.textContent = 'Descubrir capas';
+      discoverButton.textContent = 'Descubrir';
     }
   });
 }
