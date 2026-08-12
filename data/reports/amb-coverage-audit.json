@@ -1,0 +1,366 @@
+{
+  "generatedAt": "2026-08-12T07:53:50.407Z",
+  "municipalityCount": 36,
+  "rows": [
+    {
+      "id": "080155",
+      "municipality": "Badalona",
+      "municipalFeatures": 34,
+      "municipalOfficialFeatures": 34,
+      "municipalSource": "Barris de Badalona · WFS/GML",
+      "ambActiveFeatures": 0,
+      "ambCandidateFeatures": 14,
+      "decision": "MUNICIPAL_PRIORITARIA"
+    },
+    {
+      "id": "089045",
+      "municipality": "Badia del Vallès",
+      "municipalFeatures": 0,
+      "municipalOfficialFeatures": 0,
+      "municipalSource": null,
+      "ambActiveFeatures": 0,
+      "ambCandidateFeatures": 1,
+      "decision": "REVISAR_CANDIDATO_AMB"
+    },
+    {
+      "id": "082520",
+      "municipality": "Barberà del Vallès",
+      "municipalFeatures": 0,
+      "municipalOfficialFeatures": 0,
+      "municipalSource": null,
+      "ambActiveFeatures": 0,
+      "ambCandidateFeatures": 7,
+      "decision": "REVISAR_CANDIDATO_AMB"
+    },
+    {
+      "id": "080193",
+      "municipality": "Barcelona",
+      "municipalFeatures": 73,
+      "municipalOfficialFeatures": 73,
+      "municipalSource": "Unitats administratives de la ciutat de Barcelona: barris",
+      "ambActiveFeatures": 0,
+      "ambCandidateFeatures": 73,
+      "decision": "MUNICIPAL_PRIORITARIA"
+    },
+    {
+      "id": "080207",
+      "municipality": "Begues",
+      "municipalFeatures": 0,
+      "municipalOfficialFeatures": 0,
+      "municipalSource": null,
+      "ambActiveFeatures": 0,
+      "ambCandidateFeatures": 2,
+      "decision": "REVISAR_CANDIDATO_AMB"
+    },
+    {
+      "id": "080543",
+      "municipality": "Castellbisbal",
+      "municipalFeatures": 0,
+      "municipalOfficialFeatures": 0,
+      "municipalSource": null,
+      "ambActiveFeatures": 0,
+      "ambCandidateFeatures": 3,
+      "decision": "REVISAR_CANDIDATO_AMB"
+    },
+    {
+      "id": "080569",
+      "municipality": "Castelldefels",
+      "municipalFeatures": 0,
+      "municipalOfficialFeatures": 0,
+      "municipalSource": null,
+      "ambActiveFeatures": 0,
+      "ambCandidateFeatures": 5,
+      "decision": "REVISAR_CANDIDATO_AMB"
+    },
+    {
+      "id": "082665",
+      "municipality": "Cerdanyola del Vallès",
+      "municipalFeatures": 0,
+      "municipalOfficialFeatures": 0,
+      "municipalSource": null,
+      "ambActiveFeatures": 0,
+      "ambCandidateFeatures": 9,
+      "decision": "REVISAR_CANDIDATO_AMB"
+    },
+    {
+      "id": "080689",
+      "municipality": "Cervelló",
+      "municipalFeatures": 0,
+      "municipalOfficialFeatures": 0,
+      "municipalSource": null,
+      "ambActiveFeatures": 0,
+      "ambCandidateFeatures": 3,
+      "decision": "REVISAR_CANDIDATO_AMB"
+    },
+    {
+      "id": "080728",
+      "municipality": "Corbera de Llobregat",
+      "municipalFeatures": 0,
+      "municipalOfficialFeatures": 0,
+      "municipalSource": null,
+      "ambActiveFeatures": 0,
+      "ambCandidateFeatures": 7,
+      "decision": "REVISAR_CANDIDATO_AMB"
+    },
+    {
+      "id": "080734",
+      "municipality": "Cornellà de Llobregat",
+      "municipalFeatures": 0,
+      "municipalOfficialFeatures": 0,
+      "municipalSource": null,
+      "ambActiveFeatures": 0,
+      "ambCandidateFeatures": 7,
+      "decision": "REVISAR_CANDIDATO_AMB"
+    },
+    {
+      "id": "081580",
+      "municipality": "el Papiol",
+      "municipalFeatures": 0,
+      "municipalOfficialFeatures": 0,
+      "municipalSource": null,
+      "ambActiveFeatures": 0,
+      "ambCandidateFeatures": 1,
+      "decision": "REVISAR_CANDIDATO_AMB"
+    },
+    {
+      "id": "081691",
+      "municipality": "el Prat de Llobregat",
+      "municipalFeatures": 0,
+      "municipalOfficialFeatures": 0,
+      "municipalSource": null,
+      "ambActiveFeatures": 0,
+      "ambCandidateFeatures": 9,
+      "decision": "REVISAR_CANDIDATO_AMB"
+    },
+    {
+      "id": "080771",
+      "municipality": "Esplugues de Llobregat",
+      "municipalFeatures": 0,
+      "municipalOfficialFeatures": 0,
+      "municipalSource": null,
+      "ambActiveFeatures": 0,
+      "ambCandidateFeatures": 5,
+      "decision": "REVISAR_CANDIDATO_AMB"
+    },
+    {
+      "id": "080898",
+      "municipality": "Gavà",
+      "municipalFeatures": 0,
+      "municipalOfficialFeatures": 0,
+      "municipalSource": null,
+      "ambActiveFeatures": 0,
+      "ambCandidateFeatures": 5,
+      "decision": "REVISAR_CANDIDATO_AMB"
+    },
+    {
+      "id": "081017",
+      "municipality": "l'Hospitalet de Llobregat",
+      "municipalFeatures": 13,
+      "municipalOfficialFeatures": 13,
+      "municipalSource": "Divisions territorials · Barris · API CKAN/OData",
+      "ambActiveFeatures": 0,
+      "ambCandidateFeatures": 13,
+      "decision": "MUNICIPAL_PRIORITARIA"
+    },
+    {
+      "id": "089058",
+      "municipality": "la Palma de Cervelló",
+      "municipalFeatures": 0,
+      "municipalOfficialFeatures": 0,
+      "municipalSource": null,
+      "ambActiveFeatures": 0,
+      "ambCandidateFeatures": 1,
+      "decision": "REVISAR_CANDIDATO_AMB"
+    },
+    {
+      "id": "081234",
+      "municipality": "Molins de Rei",
+      "municipalFeatures": 0,
+      "municipalOfficialFeatures": 0,
+      "municipalSource": null,
+      "ambActiveFeatures": 0,
+      "ambCandidateFeatures": 5,
+      "decision": "REVISAR_CANDIDATO_AMB"
+    },
+    {
+      "id": "081252",
+      "municipality": "Montcada i Reixac",
+      "municipalFeatures": 0,
+      "municipalOfficialFeatures": 0,
+      "municipalSource": null,
+      "ambActiveFeatures": 0,
+      "ambCandidateFeatures": 6,
+      "decision": "REVISAR_CANDIDATO_AMB"
+    },
+    {
+      "id": "081265",
+      "municipality": "Montgat",
+      "municipalFeatures": 0,
+      "municipalOfficialFeatures": 0,
+      "municipalSource": null,
+      "ambActiveFeatures": 0,
+      "ambCandidateFeatures": 4,
+      "decision": "REVISAR_CANDIDATO_AMB"
+    },
+    {
+      "id": "081574",
+      "municipality": "Pallejà",
+      "municipalFeatures": 0,
+      "municipalOfficialFeatures": 0,
+      "municipalSource": null,
+      "ambActiveFeatures": 0,
+      "ambCandidateFeatures": 4,
+      "decision": "REVISAR_CANDIDATO_AMB"
+    },
+    {
+      "id": "081803",
+      "municipality": "Ripollet",
+      "municipalFeatures": 0,
+      "municipalOfficialFeatures": 0,
+      "municipalSource": null,
+      "ambActiveFeatures": 0,
+      "ambCandidateFeatures": 7,
+      "decision": "REVISAR_CANDIDATO_AMB"
+    },
+    {
+      "id": "081944",
+      "municipality": "Sant Adrià de Besòs",
+      "municipalFeatures": 0,
+      "municipalOfficialFeatures": 0,
+      "municipalSource": null,
+      "ambActiveFeatures": 0,
+      "ambCandidateFeatures": 6,
+      "decision": "REVISAR_CANDIDATO_AMB"
+    },
+    {
+      "id": "081960",
+      "municipality": "Sant Andreu de la Barca",
+      "municipalFeatures": 8,
+      "municipalOfficialFeatures": 8,
+      "municipalSource": "Mapa de divisió dels actuals barris",
+      "ambActiveFeatures": 0,
+      "ambCandidateFeatures": 5,
+      "decision": "MUNICIPAL_PRIORITARIA"
+    },
+    {
+      "id": "082009",
+      "municipality": "Sant Boi de Llobregat",
+      "municipalFeatures": 0,
+      "municipalOfficialFeatures": 0,
+      "municipalSource": null,
+      "ambActiveFeatures": 0,
+      "ambCandidateFeatures": 6,
+      "decision": "REVISAR_CANDIDATO_AMB"
+    },
+    {
+      "id": "082042",
+      "municipality": "Sant Climent de Llobregat",
+      "municipalFeatures": 0,
+      "municipalOfficialFeatures": 0,
+      "municipalSource": null,
+      "ambActiveFeatures": 0,
+      "ambCandidateFeatures": 1,
+      "decision": "REVISAR_CANDIDATO_AMB"
+    },
+    {
+      "id": "082055",
+      "municipality": "Sant Cugat del Vallès",
+      "municipalFeatures": 53,
+      "municipalOfficialFeatures": 53,
+      "municipalSource": "GeoServer municipal · DIVTER_BARRIS · geometria nativa (revisió 15/04/2024)",
+      "ambActiveFeatures": 0,
+      "ambCandidateFeatures": 0,
+      "decision": "ESPERAR_BARRIOS_MUNICIPALES"
+    },
+    {
+      "id": "082114",
+      "municipality": "Sant Feliu de Llobregat",
+      "municipalFeatures": 10,
+      "municipalOfficialFeatures": 0,
+      "municipalSource": "BARRIS_2014",
+      "ambActiveFeatures": 0,
+      "ambCandidateFeatures": 8,
+      "decision": "REVISAR_CANDIDATO_AMB"
+    },
+    {
+      "id": "082172",
+      "municipality": "Sant Joan Despí",
+      "municipalFeatures": 0,
+      "municipalOfficialFeatures": 0,
+      "municipalSource": null,
+      "ambActiveFeatures": 0,
+      "ambCandidateFeatures": 7,
+      "decision": "REVISAR_CANDIDATO_AMB"
+    },
+    {
+      "id": "082212",
+      "municipality": "Sant Just Desvern",
+      "municipalFeatures": 0,
+      "municipalOfficialFeatures": 0,
+      "municipalSource": null,
+      "ambActiveFeatures": 0,
+      "ambCandidateFeatures": 5,
+      "decision": "REVISAR_CANDIDATO_AMB"
+    },
+    {
+      "id": "082634",
+      "municipality": "Sant Vicenç dels Horts",
+      "municipalFeatures": 0,
+      "municipalOfficialFeatures": 0,
+      "municipalSource": null,
+      "ambActiveFeatures": 0,
+      "ambCandidateFeatures": 5,
+      "decision": "REVISAR_CANDIDATO_AMB"
+    },
+    {
+      "id": "082444",
+      "municipality": "Santa Coloma de Cervelló",
+      "municipalFeatures": 0,
+      "municipalOfficialFeatures": 0,
+      "municipalSource": null,
+      "ambActiveFeatures": 0,
+      "ambCandidateFeatures": 6,
+      "decision": "REVISAR_CANDIDATO_AMB"
+    },
+    {
+      "id": "082457",
+      "municipality": "Santa Coloma de Gramenet",
+      "municipalFeatures": 0,
+      "municipalOfficialFeatures": 0,
+      "municipalSource": null,
+      "ambActiveFeatures": 0,
+      "ambCandidateFeatures": 11,
+      "decision": "REVISAR_CANDIDATO_AMB"
+    },
+    {
+      "id": "082824",
+      "municipality": "Tiana",
+      "municipalFeatures": 0,
+      "municipalOfficialFeatures": 0,
+      "municipalSource": null,
+      "ambActiveFeatures": 0,
+      "ambCandidateFeatures": 1,
+      "decision": "REVISAR_CANDIDATO_AMB"
+    },
+    {
+      "id": "082896",
+      "municipality": "Torrelles de Llobregat",
+      "municipalFeatures": 0,
+      "municipalOfficialFeatures": 0,
+      "municipalSource": null,
+      "ambActiveFeatures": 0,
+      "ambCandidateFeatures": 3,
+      "decision": "REVISAR_CANDIDATO_AMB"
+    },
+    {
+      "id": "083015",
+      "municipality": "Viladecans",
+      "municipalFeatures": 13,
+      "municipalOfficialFeatures": 13,
+      "municipalSource": "Població per Barris · FeatureServer municipal",
+      "ambActiveFeatures": 0,
+      "ambCandidateFeatures": 7,
+      "decision": "MUNICIPAL_PRIORITARIA"
+    }
+  ]
+}

@@ -1,0 +1,301 @@
+{
+  "generatedAt": "2026-08-10T14:50:53.876Z",
+  "source": "https://geoportal.amb.cat/geoserveis/rest/services/PEstrategica/mascara_ambits_estadistics_3857/MapServer/1",
+  "validPolygons": 269,
+  "municipalityCount": 36,
+  "mode": "CANDIDATE_ONLY",
+  "documentedAemCount": 268,
+  "countMismatch": true,
+  "note": "No se ha sustituido ninguna capa municipal ni ningún AMB activo. Sant Cugat no genera ni fichero candidato: sus AEM quedan solo en el bruto AMB para auditoría.",
+  "rows": [
+    {
+      "id": "080155",
+      "municipality": "Badalona",
+      "candidateCount": 14,
+      "currentAmbCount": 0,
+      "candidateFile": "public\\data\\amb-aem-candidates\\badalona.geojson",
+      "status": "CANDIDATO"
+    },
+    {
+      "id": "089045",
+      "municipality": "Badia del Vallès",
+      "candidateCount": 1,
+      "currentAmbCount": 0,
+      "candidateFile": "public\\data\\amb-aem-candidates\\badia-del-valles.geojson",
+      "status": "CANDIDATO"
+    },
+    {
+      "id": "082520",
+      "municipality": "Barberà del Vallès",
+      "candidateCount": 7,
+      "currentAmbCount": 0,
+      "candidateFile": "public\\data\\amb-aem-candidates\\barbera-del-valles.geojson",
+      "status": "CANDIDATO"
+    },
+    {
+      "id": "080193",
+      "municipality": "Barcelona",
+      "candidateCount": 73,
+      "currentAmbCount": 0,
+      "candidateFile": "public\\data\\amb-aem-candidates\\barcelona.geojson",
+      "status": "CANDIDATO"
+    },
+    {
+      "id": "080207",
+      "municipality": "Begues",
+      "candidateCount": 2,
+      "currentAmbCount": 0,
+      "candidateFile": "public\\data\\amb-aem-candidates\\begues.geojson",
+      "status": "CANDIDATO"
+    },
+    {
+      "id": "080543",
+      "municipality": "Castellbisbal",
+      "candidateCount": 3,
+      "currentAmbCount": 0,
+      "candidateFile": "public\\data\\amb-aem-candidates\\castellbisbal.geojson",
+      "status": "CANDIDATO"
+    },
+    {
+      "id": "080569",
+      "municipality": "Castelldefels",
+      "candidateCount": 5,
+      "currentAmbCount": 0,
+      "candidateFile": "public\\data\\amb-aem-candidates\\castelldefels.geojson",
+      "status": "CANDIDATO"
+    },
+    {
+      "id": "082665",
+      "municipality": "Cerdanyola del Vallès",
+      "candidateCount": 9,
+      "currentAmbCount": 0,
+      "candidateFile": "public\\data\\amb-aem-candidates\\cerdanyola-del-valles.geojson",
+      "status": "CANDIDATO"
+    },
+    {
+      "id": "080689",
+      "municipality": "Cervelló",
+      "candidateCount": 3,
+      "currentAmbCount": 0,
+      "candidateFile": "public\\data\\amb-aem-candidates\\cervello.geojson",
+      "status": "CANDIDATO"
+    },
+    {
+      "id": "080728",
+      "municipality": "Corbera de Llobregat",
+      "candidateCount": 7,
+      "currentAmbCount": 0,
+      "candidateFile": "public\\data\\amb-aem-candidates\\corbera-de-llobregat.geojson",
+      "status": "CANDIDATO"
+    },
+    {
+      "id": "080734",
+      "municipality": "Cornellà de Llobregat",
+      "candidateCount": 7,
+      "currentAmbCount": 0,
+      "candidateFile": "public\\data\\amb-aem-candidates\\cornella-de-llobregat.geojson",
+      "status": "CANDIDATO"
+    },
+    {
+      "id": "081580",
+      "municipality": "el Papiol",
+      "candidateCount": 1,
+      "currentAmbCount": 0,
+      "candidateFile": "public\\data\\amb-aem-candidates\\el-papiol.geojson",
+      "status": "CANDIDATO"
+    },
+    {
+      "id": "081691",
+      "municipality": "el Prat de Llobregat",
+      "candidateCount": 9,
+      "currentAmbCount": 0,
+      "candidateFile": "public\\data\\amb-aem-candidates\\el-prat-de-llobregat.geojson",
+      "status": "CANDIDATO"
+    },
+    {
+      "id": "080771",
+      "municipality": "Esplugues de Llobregat",
+      "candidateCount": 5,
+      "currentAmbCount": 0,
+      "candidateFile": "public\\data\\amb-aem-candidates\\esplugues-de-llobregat.geojson",
+      "status": "CANDIDATO"
+    },
+    {
+      "id": "080898",
+      "municipality": "Gavà",
+      "candidateCount": 5,
+      "currentAmbCount": 0,
+      "candidateFile": "public\\data\\amb-aem-candidates\\gava.geojson",
+      "status": "CANDIDATO"
+    },
+    {
+      "id": "081017",
+      "municipality": "l'Hospitalet de Llobregat",
+      "candidateCount": 13,
+      "currentAmbCount": 0,
+      "candidateFile": "public\\data\\amb-aem-candidates\\l-hospitalet-de-llobregat.geojson",
+      "status": "CANDIDATO"
+    },
+    {
+      "id": "089058",
+      "municipality": "la Palma de Cervelló",
+      "candidateCount": 1,
+      "currentAmbCount": 0,
+      "candidateFile": "public\\data\\amb-aem-candidates\\la-palma-de-cervello.geojson",
+      "status": "CANDIDATO"
+    },
+    {
+      "id": "081234",
+      "municipality": "Molins de Rei",
+      "candidateCount": 5,
+      "currentAmbCount": 0,
+      "candidateFile": "public\\data\\amb-aem-candidates\\molins-de-rei.geojson",
+      "status": "CANDIDATO"
+    },
+    {
+      "id": "081252",
+      "municipality": "Montcada i Reixac",
+      "candidateCount": 6,
+      "currentAmbCount": 0,
+      "candidateFile": "public\\data\\amb-aem-candidates\\montcada-i-reixac.geojson",
+      "status": "CANDIDATO"
+    },
+    {
+      "id": "081265",
+      "municipality": "Montgat",
+      "candidateCount": 4,
+      "currentAmbCount": 0,
+      "candidateFile": "public\\data\\amb-aem-candidates\\montgat.geojson",
+      "status": "CANDIDATO"
+    },
+    {
+      "id": "081574",
+      "municipality": "Pallejà",
+      "candidateCount": 4,
+      "currentAmbCount": 0,
+      "candidateFile": "public\\data\\amb-aem-candidates\\palleja.geojson",
+      "status": "CANDIDATO"
+    },
+    {
+      "id": "081803",
+      "municipality": "Ripollet",
+      "candidateCount": 7,
+      "currentAmbCount": 0,
+      "candidateFile": "public\\data\\amb-aem-candidates\\ripollet.geojson",
+      "status": "CANDIDATO"
+    },
+    {
+      "id": "081944",
+      "municipality": "Sant Adrià de Besòs",
+      "candidateCount": 6,
+      "currentAmbCount": 0,
+      "candidateFile": "public\\data\\amb-aem-candidates\\sant-adria-de-besos.geojson",
+      "status": "CANDIDATO"
+    },
+    {
+      "id": "081960",
+      "municipality": "Sant Andreu de la Barca",
+      "candidateCount": 5,
+      "currentAmbCount": 0,
+      "candidateFile": "public\\data\\amb-aem-candidates\\sant-andreu-de-la-barca.geojson",
+      "status": "CANDIDATO"
+    },
+    {
+      "id": "082009",
+      "municipality": "Sant Boi de Llobregat",
+      "candidateCount": 6,
+      "currentAmbCount": 0,
+      "candidateFile": "public\\data\\amb-aem-candidates\\sant-boi-de-llobregat.geojson",
+      "status": "CANDIDATO"
+    },
+    {
+      "id": "082042",
+      "municipality": "Sant Climent de Llobregat",
+      "candidateCount": 1,
+      "currentAmbCount": 0,
+      "candidateFile": "public\\data\\amb-aem-candidates\\sant-climent-de-llobregat.geojson",
+      "status": "CANDIDATO"
+    },
+    {
+      "id": "082055",
+      "municipality": "Sant Cugat del Vallès",
+      "candidateCount": 7,
+      "currentAmbCount": 0,
+      "candidateFile": null,
+      "status": "BLOQUEADO_SIN_FICHERO_CANDIDATO",
+      "note": "Sant Cugat usa su capa municipal de barrios. Los AEM permanecen únicamente en el bruto AMB para auditoría."
+    },
+    {
+      "id": "082114",
+      "municipality": "Sant Feliu de Llobregat",
+      "candidateCount": 8,
+      "currentAmbCount": 0,
+      "candidateFile": "public\\data\\amb-aem-candidates\\sant-feliu-de-llobregat.geojson",
+      "status": "CANDIDATO"
+    },
+    {
+      "id": "082172",
+      "municipality": "Sant Joan Despí",
+      "candidateCount": 7,
+      "currentAmbCount": 0,
+      "candidateFile": "public\\data\\amb-aem-candidates\\sant-joan-despi.geojson",
+      "status": "CANDIDATO"
+    },
+    {
+      "id": "082212",
+      "municipality": "Sant Just Desvern",
+      "candidateCount": 5,
+      "currentAmbCount": 0,
+      "candidateFile": "public\\data\\amb-aem-candidates\\sant-just-desvern.geojson",
+      "status": "CANDIDATO"
+    },
+    {
+      "id": "082634",
+      "municipality": "Sant Vicenç dels Horts",
+      "candidateCount": 5,
+      "currentAmbCount": 0,
+      "candidateFile": "public\\data\\amb-aem-candidates\\sant-vicenc-dels-horts.geojson",
+      "status": "CANDIDATO"
+    },
+    {
+      "id": "082444",
+      "municipality": "Santa Coloma de Cervelló",
+      "candidateCount": 6,
+      "currentAmbCount": 0,
+      "candidateFile": "public\\data\\amb-aem-candidates\\santa-coloma-de-cervello.geojson",
+      "status": "CANDIDATO"
+    },
+    {
+      "id": "082457",
+      "municipality": "Santa Coloma de Gramenet",
+      "candidateCount": 11,
+      "currentAmbCount": 0,
+      "candidateFile": "public\\data\\amb-aem-candidates\\santa-coloma-de-gramenet.geojson",
+      "status": "CANDIDATO"
+    },
+    {
+      "id": "082824",
+      "municipality": "Tiana",
+      "candidateCount": 1,
+      "currentAmbCount": 0,
+      "candidateFile": "public\\data\\amb-aem-candidates\\tiana.geojson",
+      "status": "CANDIDATO"
+    },
+    {
+      "id": "082896",
+      "municipality": "Torrelles de Llobregat",
+      "candidateCount": 3,
+      "currentAmbCount": 0,
+      "candidateFile": "public\\data\\amb-aem-candidates\\torrelles-de-llobregat.geojson",
+      "status": "CANDIDATO"
+    },
+    {
+      "id": "083015",
+      "municipality": "Viladecans",
+      "candidateCount": 7,
+      "currentAmbCount": 0,
+      "candidateFile": "public\\data\\amb-aem-candidates\\viladecans.geojson",
+      "status": "CANDIDATO"
+    }
+  ]
+}

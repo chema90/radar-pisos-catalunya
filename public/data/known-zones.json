@@ -1,0 +1,3586 @@
+{
+  "source": "Fuentes municipales verificadas",
+  "accessedAt": "2026-08-10",
+  "zones": [
+    {
+      "municipality": "Altafulla",
+      "name": "Altafulla",
+      "kind": "Nucli de població",
+      "official": true,
+      "source": "Ajuntament d'Altafulla",
+      "sourceUrl": "https://altafulla.cat/el-municipi/la-vila"
+    },
+    {
+      "municipality": "Altafulla",
+      "name": "Brises del Mar",
+      "kind": "Nucli de població",
+      "official": true,
+      "source": "Ajuntament d'Altafulla",
+      "sourceUrl": "https://altafulla.cat/el-municipi/la-vila"
+    },
+    {
+      "municipality": "Altafulla",
+      "name": "les Botigues de Mar",
+      "kind": "Barri marítim / nucli",
+      "official": true,
+      "source": "Ajuntament d'Altafulla",
+      "sourceUrl": "https://altafulla.cat/el-municipi/la-vila"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "Baró de Viver",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Sant Andreu"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "Can Baró",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Horta-Guinardó"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "Can Peguera",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Nou Barris"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "Canyelles",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Nou Barris"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "Ciutat Meridiana",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Nou Barris"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "Diagonal Mar i el Front Marítim del Poblenou",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Sant Martí"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "Horta",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Horta-Guinardó"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "Hostafrancs",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Sants-Montjuïc"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "Montbau",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Horta-Guinardó"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "Navas",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Sant Andreu"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "Pedralbes",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Les Corts"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "Porta",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Nou Barris"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "Provençals del Poblenou",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Sant Martí"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "Sant Andreu",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Sant Andreu"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "Sant Antoni",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Eixample"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "Sant Genís dels Agudells",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Horta-Guinardó"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "Sant Gervasi - Galvany",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Sarrià-Sant Gervasi"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "Sant Gervasi - la Bonanova",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Sarrià-Sant Gervasi"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "Sant Martí de Provençals",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Sant Martí"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "Sant Pere, Santa Caterina i la Ribera",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Ciutat Vella"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "Sants",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Sants-Montjuïc"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "Sants - Badal",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Sants-Montjuïc"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "Sarrià",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Sarrià-Sant Gervasi"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "Torre Baró",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Nou Barris"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "Vallbona",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Nou Barris"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "Vallcarca i els Penitents",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Gràcia"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "Vallvidrera, el Tibidabo i les Planes",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Sarrià-Sant Gervasi"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "Verdun",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Nou Barris"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "Vilapicina i la Torre Llobeta",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Nou Barris"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "el Baix Guinardó",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Horta-Guinardó"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "el Barri Gòtic",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Ciutat Vella"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "el Besòs i el Maresme",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Sant Martí"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "el Bon Pastor",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Sant Andreu"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "el Camp d'en Grassot i Gràcia Nova",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Gràcia"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "el Camp de l'Arpa del Clot",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Sant Martí"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "el Carmel",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Horta-Guinardó"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "el Clot",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Sant Martí"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "el Coll",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Gràcia"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "el Congrés i els Indians",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Sant Andreu"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "el Fort Pienc",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Eixample"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "el Guinardó",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Horta-Guinardó"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "el Parc i la Llacuna del Poblenou",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Sant Martí"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "el Poble-sec",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Sants-Montjuïc"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "el Poblenou",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Sant Martí"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "el Putxet i el Farró",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Sarrià-Sant Gervasi"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "el Raval",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Ciutat Vella"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "el Turó de la Peira",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Nou Barris"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "l'Antiga Esquerra de l'Eixample",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Eixample"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "la Barceloneta",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Ciutat Vella"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "la Bordeta",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Sants-Montjuïc"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "la Clota",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Horta-Guinardó"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "la Dreta de l'Eixample",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Eixample"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "la Font d'en Fargues",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Horta-Guinardó"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "la Font de la Guatlla",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Sants-Montjuïc"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "la Guineueta",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Nou Barris"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "la Marina de Port",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Sants-Montjuïc"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "la Marina del Prat Vermell",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Sants-Montjuïc"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "la Maternitat i Sant Ramon",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Les Corts"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "la Nova Esquerra de l'Eixample",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Eixample"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "la Prosperitat",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Nou Barris"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "la Sagrada Família",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Eixample"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "la Sagrera",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Sant Andreu"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "la Salut",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Gràcia"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "la Teixonera",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Horta-Guinardó"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "la Trinitat Nova",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Nou Barris"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "la Trinitat Vella",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Sant Andreu"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "la Vall d'Hebron",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Horta-Guinardó"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "la Verneda i la Pau",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Sant Martí"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "la Vila Olímpica del Poblenou",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Sant Martí"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "la Vila de Gràcia",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Gràcia"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "les Corts",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Les Corts"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "les Roquetes",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Nou Barris"
+    },
+    {
+      "municipality": "Barcelona",
+      "name": "les Tres Torres",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Barcelona · Open Data BCN",
+      "sourceUrl": "https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris",
+      "district": "Sarrià-Sant Gervasi"
+    },
+    {
+      "municipality": "Blanes",
+      "name": "Ca la Guidó - Mas Carolet",
+      "kind": "Àmbit veïnal documentat",
+      "official": false,
+      "source": "Ajuntament de Blanes · associacions de veïns",
+      "sourceUrl": "https://www.blanes.cat/docweb/participa.local.av"
+    },
+    {
+      "municipality": "Blanes",
+      "name": "Can Borell",
+      "kind": "Àmbit veïnal documentat",
+      "official": false,
+      "source": "Ajuntament de Blanes · associacions de veïns",
+      "sourceUrl": "https://www.blanes.cat/docweb/participa.local.av"
+    },
+    {
+      "municipality": "Blanes",
+      "name": "Ctra. de Lloret - La Pedrera",
+      "kind": "Àmbit veïnal documentat",
+      "official": false,
+      "source": "Ajuntament de Blanes · associacions de veïns",
+      "sourceUrl": "https://www.blanes.cat/docweb/participa.local.av"
+    },
+    {
+      "municipality": "Blanes",
+      "name": "Dintre Vila",
+      "kind": "Àmbit veïnal documentat",
+      "official": false,
+      "source": "Ajuntament de Blanes · associacions de veïns",
+      "sourceUrl": "https://www.blanes.cat/docweb/participa.local.av"
+    },
+    {
+      "municipality": "Blanes",
+      "name": "Els Pins",
+      "kind": "Àmbit veïnal documentat",
+      "official": false,
+      "source": "Ajuntament de Blanes · associacions de veïns",
+      "sourceUrl": "https://www.blanes.cat/docweb/participa.local.av"
+    },
+    {
+      "municipality": "Blanes",
+      "name": "La Plantera",
+      "kind": "Àmbit veïnal documentat",
+      "official": false,
+      "source": "Ajuntament de Blanes · associacions de veïns",
+      "sourceUrl": "https://www.blanes.cat/docweb/participa.local.av"
+    },
+    {
+      "municipality": "Blanes",
+      "name": "Mas Borinot",
+      "kind": "Àmbit veïnal documentat",
+      "official": false,
+      "source": "Ajuntament de Blanes · associacions de veïns",
+      "sourceUrl": "https://www.blanes.cat/docweb/participa.local.av"
+    },
+    {
+      "municipality": "Blanes",
+      "name": "Mas Cremat",
+      "kind": "Àmbit veïnal documentat",
+      "official": false,
+      "source": "Ajuntament de Blanes · associacions de veïns",
+      "sourceUrl": "https://www.blanes.cat/docweb/participa.local.av"
+    },
+    {
+      "municipality": "Blanes",
+      "name": "Mas Enlaire",
+      "kind": "Àmbit veïnal documentat",
+      "official": false,
+      "source": "Ajuntament de Blanes · associacions de veïns",
+      "sourceUrl": "https://www.blanes.cat/docweb/participa.local.av"
+    },
+    {
+      "municipality": "Blanes",
+      "name": "Mas Florit",
+      "kind": "Àmbit veïnal documentat",
+      "official": false,
+      "source": "Ajuntament de Blanes · associacions de veïns",
+      "sourceUrl": "https://www.blanes.cat/docweb/participa.local.av"
+    },
+    {
+      "municipality": "Blanes",
+      "name": "Mont-Ferrant",
+      "kind": "Àmbit veïnal documentat",
+      "official": false,
+      "source": "Ajuntament de Blanes · associacions de veïns",
+      "sourceUrl": "https://www.blanes.cat/docweb/participa.local.av"
+    },
+    {
+      "municipality": "Blanes",
+      "name": "Port de Blanes",
+      "kind": "Àmbit veïnal documentat",
+      "official": false,
+      "source": "Ajuntament de Blanes · associacions de veïns",
+      "sourceUrl": "https://www.blanes.cat/docweb/participa.local.av"
+    },
+    {
+      "municipality": "Blanes",
+      "name": "Puig de la Dona",
+      "kind": "Àmbit veïnal documentat",
+      "official": false,
+      "source": "Ajuntament de Blanes · associacions de veïns",
+      "sourceUrl": "https://www.blanes.cat/docweb/participa.local.av"
+    },
+    {
+      "municipality": "Blanes",
+      "name": "Quatre Vents",
+      "kind": "Àmbit veïnal documentat",
+      "official": false,
+      "source": "Ajuntament de Blanes · associacions de veïns",
+      "sourceUrl": "https://www.blanes.cat/docweb/participa.local.av"
+    },
+    {
+      "municipality": "Blanes",
+      "name": "Racó d'en Portes",
+      "kind": "Àmbit veïnal documentat",
+      "official": false,
+      "source": "Ajuntament de Blanes · associacions de veïns",
+      "sourceUrl": "https://www.blanes.cat/docweb/participa.local.av"
+    },
+    {
+      "municipality": "Blanes",
+      "name": "Raval",
+      "kind": "Àmbit veïnal documentat",
+      "official": false,
+      "source": "Ajuntament de Blanes · associacions de veïns",
+      "sourceUrl": "https://www.blanes.cat/docweb/participa.local.av"
+    },
+    {
+      "municipality": "Blanes",
+      "name": "S'Auguer",
+      "kind": "Àmbit veïnal documentat",
+      "official": false,
+      "source": "Ajuntament de Blanes · associacions de veïns",
+      "sourceUrl": "https://www.blanes.cat/docweb/participa.local.av"
+    },
+    {
+      "municipality": "Blanes",
+      "name": "Sa Carbonera",
+      "kind": "Àmbit veïnal documentat",
+      "official": false,
+      "source": "Ajuntament de Blanes · associacions de veïns",
+      "sourceUrl": "https://www.blanes.cat/docweb/participa.local.av"
+    },
+    {
+      "municipality": "Blanes",
+      "name": "Valldolig",
+      "kind": "Àmbit veïnal documentat",
+      "official": false,
+      "source": "Ajuntament de Blanes · associacions de veïns",
+      "sourceUrl": "https://www.blanes.cat/docweb/participa.local.av"
+    },
+    {
+      "municipality": "Blanes",
+      "name": "Vilar Petit - Mas Moixa",
+      "kind": "Àmbit veïnal documentat",
+      "official": false,
+      "source": "Ajuntament de Blanes · associacions de veïns",
+      "sourceUrl": "https://www.blanes.cat/docweb/participa.local.av"
+    },
+    {
+      "municipality": "Corbera de Llobregat",
+      "name": "Corbera Alta",
+      "kind": "Nucli urbà / nucli històric",
+      "official": true,
+      "source": "Ajuntament de Corbera de Llobregat",
+      "sourceUrl": "https://www.corberadellobregat.cat/actualitat/agenda/corbera-feudal-i-senyorial-.html"
+    },
+    {
+      "municipality": "Corbera de Llobregat",
+      "name": "Corbera Baixa",
+      "kind": "Nucli urbà",
+      "official": true,
+      "source": "Ajuntament de Corbera de Llobregat",
+      "sourceUrl": "https://www.corberadellobregat.cat/municipi/equipaments/zones-infantils-del-municipi.html"
+    },
+    {
+      "municipality": "Cornellà de Llobregat",
+      "name": "Almeda",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Cornellà de Llobregat",
+      "sourceUrl": "https://www.cornella.cat/ca/viure-a-cornella/participacio-ciutadana/regidors-i-regidores-de-barri"
+    },
+    {
+      "municipality": "Cornellà de Llobregat",
+      "name": "Centre",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Cornellà de Llobregat",
+      "sourceUrl": "https://www.cornella.cat/ca/viure-a-cornella/participacio-ciutadana/regidors-i-regidores-de-barri"
+    },
+    {
+      "municipality": "Cornellà de Llobregat",
+      "name": "El Pedró",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Cornellà de Llobregat",
+      "sourceUrl": "https://www.cornella.cat/ca/viure-a-cornella/participacio-ciutadana/regidors-i-regidores-de-barri"
+    },
+    {
+      "municipality": "Cornellà de Llobregat",
+      "name": "Fontsanta-Fatjó",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Cornellà de Llobregat",
+      "sourceUrl": "https://www.cornella.cat/ca/viure-a-cornella/participacio-ciutadana/regidors-i-regidores-de-barri"
+    },
+    {
+      "municipality": "Cornellà de Llobregat",
+      "name": "La Gavarra",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Cornellà de Llobregat",
+      "sourceUrl": "https://www.cornella.cat/ca/viure-a-cornella/participacio-ciutadana/regidors-i-regidores-de-barri"
+    },
+    {
+      "municipality": "Cornellà de Llobregat",
+      "name": "Riera",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Cornellà de Llobregat",
+      "sourceUrl": "https://www.cornella.cat/ca/viure-a-cornella/participacio-ciutadana/regidors-i-regidores-de-barri"
+    },
+    {
+      "municipality": "Cornellà de Llobregat",
+      "name": "Sant Ildefons",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Cornellà de Llobregat",
+      "sourceUrl": "https://www.cornella.cat/ca/viure-a-cornella/participacio-ciutadana/regidors-i-regidores-de-barri"
+    },
+    {
+      "municipality": "Esplugues de Llobregat",
+      "name": "Can Clota",
+      "kind": "Barrio",
+      "official": true,
+      "source": "Ajuntament d'Esplugues de Llobregat",
+      "sourceUrl": "https://www.esplugues.cat/ciutat/coneix-esplugues/"
+    },
+    {
+      "municipality": "Esplugues de Llobregat",
+      "name": "Can Vidalet",
+      "kind": "Barrio",
+      "official": true,
+      "source": "Ajuntament d'Esplugues de Llobregat",
+      "sourceUrl": "https://www.esplugues.cat/ciutat/coneix-esplugues/"
+    },
+    {
+      "municipality": "Esplugues de Llobregat",
+      "name": "Centre",
+      "kind": "Barrio",
+      "official": true,
+      "source": "Ajuntament d'Esplugues de Llobregat",
+      "sourceUrl": "https://www.esplugues.cat/ciutat/coneix-esplugues/"
+    },
+    {
+      "municipality": "Esplugues de Llobregat",
+      "name": "Ciutat Diagonal",
+      "kind": "Barrio",
+      "official": true,
+      "source": "Ajuntament d'Esplugues de Llobregat",
+      "sourceUrl": "https://www.esplugues.cat/ciutat/coneix-esplugues/"
+    },
+    {
+      "municipality": "Esplugues de Llobregat",
+      "name": "El Gall",
+      "kind": "Barrio",
+      "official": true,
+      "source": "Ajuntament d'Esplugues de Llobregat",
+      "sourceUrl": "https://www.esplugues.cat/ciutat/coneix-esplugues/"
+    },
+    {
+      "municipality": "Esplugues de Llobregat",
+      "name": "Finestrelles",
+      "kind": "Barrio",
+      "official": true,
+      "source": "Ajuntament d'Esplugues de Llobregat",
+      "sourceUrl": "https://www.esplugues.cat/ciutat/coneix-esplugues/"
+    },
+    {
+      "municipality": "Esplugues de Llobregat",
+      "name": "La Mallola",
+      "kind": "Barrio",
+      "official": true,
+      "source": "Ajuntament d'Esplugues de Llobregat",
+      "sourceUrl": "https://www.esplugues.cat/ciutat/coneix-esplugues/"
+    },
+    {
+      "municipality": "Esplugues de Llobregat",
+      "name": "La Miranda",
+      "kind": "Barrio",
+      "official": true,
+      "source": "Ajuntament d'Esplugues de Llobregat",
+      "sourceUrl": "https://www.esplugues.cat/ciutat/coneix-esplugues/"
+    },
+    {
+      "municipality": "Esplugues de Llobregat",
+      "name": "La Plana",
+      "kind": "Barrio",
+      "official": true,
+      "source": "Ajuntament d'Esplugues de Llobregat",
+      "sourceUrl": "https://www.esplugues.cat/ciutat/coneix-esplugues/"
+    },
+    {
+      "municipality": "Esplugues de Llobregat",
+      "name": "Montesa",
+      "kind": "Barrio",
+      "official": true,
+      "source": "Ajuntament d'Esplugues de Llobregat",
+      "sourceUrl": "https://www.esplugues.cat/ciutat/coneix-esplugues/"
+    },
+    {
+      "municipality": "Granollers",
+      "name": "Can Bassa",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Granollers · àmbits territorials i LIMIT BARRIS",
+      "sourceUrl": "https://www.granollers.cat/noticies/sala-de-premsa/es-posa-en-marxa-la-tercera-edicio-dels-pressupostos-participatius"
+    },
+    {
+      "municipality": "Granollers",
+      "name": "Can Gili",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Granollers · àmbits territorials i LIMIT BARRIS",
+      "sourceUrl": "https://www.granollers.cat/noticies/sala-de-premsa/es-posa-en-marxa-la-tercera-edicio-dels-pressupostos-participatius"
+    },
+    {
+      "municipality": "Granollers",
+      "name": "Can Mònic",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Granollers · àmbits territorials i LIMIT BARRIS",
+      "sourceUrl": "https://www.granollers.cat/noticies/sala-de-premsa/es-posa-en-marxa-la-tercera-edicio-dels-pressupostos-participatius"
+    },
+    {
+      "municipality": "Granollers",
+      "name": "Congost",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Granollers · àmbits territorials i LIMIT BARRIS",
+      "sourceUrl": "https://www.granollers.cat/noticies/sala-de-premsa/es-posa-en-marxa-la-tercera-edicio-dels-pressupostos-participatius"
+    },
+    {
+      "municipality": "Granollers",
+      "name": "Font Verda",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Granollers · àmbits territorials i LIMIT BARRIS",
+      "sourceUrl": "https://www.granollers.cat/noticies/sala-de-premsa/es-posa-en-marxa-la-tercera-edicio-dels-pressupostos-participatius"
+    },
+    {
+      "municipality": "Granollers",
+      "name": "Granollers Centre",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Granollers · àmbits territorials i LIMIT BARRIS",
+      "sourceUrl": "https://www.granollers.cat/noticies/sala-de-premsa/es-posa-en-marxa-la-tercera-edicio-dels-pressupostos-participatius"
+    },
+    {
+      "municipality": "Granollers",
+      "name": "Granollers Nord",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Granollers · àmbits territorials i LIMIT BARRIS",
+      "sourceUrl": "https://www.granollers.cat/noticies/sala-de-premsa/es-posa-en-marxa-la-tercera-edicio-dels-pressupostos-participatius"
+    },
+    {
+      "municipality": "Granollers",
+      "name": "Instituts",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Granollers · àmbits territorials i LIMIT BARRIS",
+      "sourceUrl": "https://www.granollers.cat/noticies/sala-de-premsa/es-posa-en-marxa-la-tercera-edicio-dels-pressupostos-participatius"
+    },
+    {
+      "municipality": "Granollers",
+      "name": "Joan Prim Centre",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Granollers · àmbits territorials i LIMIT BARRIS",
+      "sourceUrl": "https://www.granollers.cat/noticies/sala-de-premsa/es-posa-en-marxa-la-tercera-edicio-dels-pressupostos-participatius"
+    },
+    {
+      "municipality": "Granollers",
+      "name": "Lledoner",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Granollers · àmbits territorials i LIMIT BARRIS",
+      "sourceUrl": "https://www.granollers.cat/noticies/sala-de-premsa/es-posa-en-marxa-la-tercera-edicio-dels-pressupostos-participatius"
+    },
+    {
+      "municipality": "Granollers",
+      "name": "Palou",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Granollers · àmbits territorials i LIMIT BARRIS",
+      "sourceUrl": "https://www.granollers.cat/noticies/sala-de-premsa/es-posa-en-marxa-la-tercera-edicio-dels-pressupostos-participatius"
+    },
+    {
+      "municipality": "Granollers",
+      "name": "Ponent",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Granollers · àmbits territorials i LIMIT BARRIS",
+      "sourceUrl": "https://www.granollers.cat/noticies/sala-de-premsa/es-posa-en-marxa-la-tercera-edicio-dels-pressupostos-participatius"
+    },
+    {
+      "municipality": "Granollers",
+      "name": "Sant Miquel",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Granollers · àmbits territorials i LIMIT BARRIS",
+      "sourceUrl": "https://www.granollers.cat/noticies/sala-de-premsa/es-posa-en-marxa-la-tercera-edicio-dels-pressupostos-participatius"
+    },
+    {
+      "municipality": "Granollers",
+      "name": "Sota el Camí Ral",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Granollers · àmbits territorials i LIMIT BARRIS",
+      "sourceUrl": "https://www.granollers.cat/noticies/sala-de-premsa/es-posa-en-marxa-la-tercera-edicio-dels-pressupostos-participatius"
+    },
+    {
+      "municipality": "Granollers",
+      "name": "Tres Torres",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Granollers · àmbits territorials i LIMIT BARRIS",
+      "sourceUrl": "https://www.granollers.cat/noticies/sala-de-premsa/es-posa-en-marxa-la-tercera-edicio-dels-pressupostos-participatius"
+    },
+    {
+      "municipality": "Granollers",
+      "name": "l'Hostal",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Granollers · àmbits territorials i LIMIT BARRIS",
+      "sourceUrl": "https://www.granollers.cat/noticies/sala-de-premsa/es-posa-en-marxa-la-tercera-edicio-dels-pressupostos-participatius"
+    },
+    {
+      "municipality": "Lleida",
+      "name": "Balàfia",
+      "kind": "Barri",
+      "official": true,
+      "source": "La Paeria · Barris",
+      "sourceUrl": "https://www.paeria.cat/ca/ciutat/coneixer-lleida/barris"
+    },
+    {
+      "municipality": "Lleida",
+      "name": "Cappont",
+      "kind": "Barri",
+      "official": true,
+      "source": "La Paeria · Barris",
+      "sourceUrl": "https://www.paeria.cat/ca/ciutat/coneixer-lleida/barris"
+    },
+    {
+      "municipality": "Lleida",
+      "name": "Centre Històric",
+      "kind": "Barri",
+      "official": true,
+      "source": "La Paeria · Barris",
+      "sourceUrl": "https://www.paeria.cat/ca/ciutat/coneixer-lleida/barris"
+    },
+    {
+      "municipality": "Lleida",
+      "name": "Ciutat Jardí",
+      "kind": "Barri",
+      "official": true,
+      "source": "La Paeria · Barris",
+      "sourceUrl": "https://www.paeria.cat/ca/ciutat/coneixer-lleida/barris"
+    },
+    {
+      "municipality": "Lleida",
+      "name": "La Bordeta",
+      "kind": "Barri",
+      "official": true,
+      "source": "La Paeria · Barris",
+      "sourceUrl": "https://www.paeria.cat/ca/ciutat/coneixer-lleida/barris"
+    },
+    {
+      "municipality": "Lleida",
+      "name": "La Mariola",
+      "kind": "Barri",
+      "official": true,
+      "source": "La Paeria · Barris",
+      "sourceUrl": "https://www.paeria.cat/ca/ciutat/coneixer-lleida/barris"
+    },
+    {
+      "municipality": "Lleida",
+      "name": "Magraners",
+      "kind": "Barri",
+      "official": true,
+      "source": "La Paeria · Barris",
+      "sourceUrl": "https://www.paeria.cat/ca/ciutat/coneixer-lleida/barris"
+    },
+    {
+      "municipality": "Lleida",
+      "name": "Pardinyes",
+      "kind": "Barri",
+      "official": true,
+      "source": "La Paeria · Barris",
+      "sourceUrl": "https://www.paeria.cat/ca/ciutat/coneixer-lleida/barris"
+    },
+    {
+      "municipality": "Lleida",
+      "name": "Rambla de Ferran - Estació",
+      "kind": "Barri",
+      "official": true,
+      "source": "La Paeria · Barris",
+      "sourceUrl": "https://www.paeria.cat/ca/ciutat/coneixer-lleida/barris"
+    },
+    {
+      "municipality": "Lleida",
+      "name": "Secà de Sant Pere",
+      "kind": "Barri",
+      "official": true,
+      "source": "La Paeria · Barris",
+      "sourceUrl": "https://www.paeria.cat/ca/ciutat/coneixer-lleida/barris"
+    },
+    {
+      "municipality": "Lleida",
+      "name": "Universitat-Zona Alta",
+      "kind": "Barri",
+      "official": true,
+      "source": "La Paeria · Barris",
+      "sourceUrl": "https://www.paeria.cat/ca/ciutat/coneixer-lleida/barris"
+    },
+    {
+      "municipality": "Lleida",
+      "name": "Zona Alta-Camp d'esports-Fleming",
+      "kind": "Barri",
+      "official": true,
+      "source": "La Paeria · Barris",
+      "sourceUrl": "https://www.paeria.cat/ca/ciutat/coneixer-lleida/barris"
+    },
+    {
+      "municipality": "Lloret de Mar",
+      "name": "Can Ballell",
+      "kind": "Barri documentat",
+      "official": true,
+      "source": "Ajuntament de Lloret de Mar",
+      "sourceUrl": "https://www.lloret.cat/ca/seccions/territori"
+    },
+    {
+      "municipality": "Lloret de Mar",
+      "name": "Can Carbó i Mas Baell",
+      "kind": "Barri documentat",
+      "official": true,
+      "source": "Ajuntament de Lloret de Mar",
+      "sourceUrl": "https://www.lloret.cat/ca/seccions/territori"
+    },
+    {
+      "municipality": "Lloret de Mar",
+      "name": "Can Sabata",
+      "kind": "Barri documentat",
+      "official": true,
+      "source": "Ajuntament de Lloret de Mar",
+      "sourceUrl": "https://www.lloret.cat/ca/seccions/territori"
+    },
+    {
+      "municipality": "Lloret de Mar",
+      "name": "El Molí",
+      "kind": "Barri documentat",
+      "official": true,
+      "source": "Ajuntament de Lloret de Mar",
+      "sourceUrl": "https://www.lloret.cat/ca/seccions/territori"
+    },
+    {
+      "municipality": "Lloret de Mar",
+      "name": "El Rieral",
+      "kind": "Barri documentat",
+      "official": true,
+      "source": "Ajuntament de Lloret de Mar",
+      "sourceUrl": "https://www.lloret.cat/ca/seccions/territori"
+    },
+    {
+      "municipality": "Lloret de Mar",
+      "name": "Fenals",
+      "kind": "Barri documentat",
+      "official": true,
+      "source": "Ajuntament de Lloret de Mar",
+      "sourceUrl": "https://www.lloret.cat/ca/seccions/territori"
+    },
+    {
+      "municipality": "Lloret de Mar",
+      "name": "Mas Vilà i Can Ribalaigua",
+      "kind": "Barri documentat",
+      "official": true,
+      "source": "Ajuntament de Lloret de Mar",
+      "sourceUrl": "https://www.lloret.cat/ca/seccions/territori"
+    },
+    {
+      "municipality": "Lloret de Mar",
+      "name": "Pescadors",
+      "kind": "Barri documentat",
+      "official": true,
+      "source": "Ajuntament de Lloret de Mar",
+      "sourceUrl": "https://www.lloret.cat/ca/seccions/territori"
+    },
+    {
+      "municipality": "Lloret de Mar",
+      "name": "Puigventós",
+      "kind": "Barri documentat",
+      "official": true,
+      "source": "Ajuntament de Lloret de Mar",
+      "sourceUrl": "https://www.lloret.cat/ca/seccions/territori"
+    },
+    {
+      "municipality": "Lloret de Mar",
+      "name": "Santa Clotilde",
+      "kind": "Barri documentat",
+      "official": true,
+      "source": "Ajuntament de Lloret de Mar",
+      "sourceUrl": "https://www.lloret.cat/ca/seccions/territori"
+    },
+    {
+      "municipality": "Mataró",
+      "name": "Centre",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Mataró · Mapa de barris / límit GIS",
+      "sourceUrl": "https://mapes.mataro.cat/"
+    },
+    {
+      "municipality": "Mataró",
+      "name": "Cerdanyola",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Mataró · Mapa de barris / límit GIS",
+      "sourceUrl": "https://mapes.mataro.cat/"
+    },
+    {
+      "municipality": "Mataró",
+      "name": "Cirera",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Mataró · Mapa de barris / límit GIS",
+      "sourceUrl": "https://mapes.mataro.cat/"
+    },
+    {
+      "municipality": "Mataró",
+      "name": "Eixample",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Mataró · Mapa de barris / límit GIS",
+      "sourceUrl": "https://mapes.mataro.cat/"
+    },
+    {
+      "municipality": "Mataró",
+      "name": "La Llàntia",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Mataró · Mapa de barris / límit GIS",
+      "sourceUrl": "https://mapes.mataro.cat/"
+    },
+    {
+      "municipality": "Mataró",
+      "name": "Molins-Torner",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Mataró · Mapa de barris / límit GIS",
+      "sourceUrl": "https://mapes.mataro.cat/"
+    },
+    {
+      "municipality": "Mataró",
+      "name": "Palau-Escorxador",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Mataró · Mapa de barris / límit GIS",
+      "sourceUrl": "https://mapes.mataro.cat/"
+    },
+    {
+      "municipality": "Mataró",
+      "name": "Peramàs",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Mataró · Mapa de barris / límit GIS",
+      "sourceUrl": "https://mapes.mataro.cat/"
+    },
+    {
+      "municipality": "Mataró",
+      "name": "Pla d'en Boet",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Mataró · Mapa de barris / límit GIS",
+      "sourceUrl": "https://mapes.mataro.cat/"
+    },
+    {
+      "municipality": "Mataró",
+      "name": "Rocafonda",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Mataró · Mapa de barris / límit GIS",
+      "sourceUrl": "https://mapes.mataro.cat/"
+    },
+    {
+      "municipality": "Mataró",
+      "name": "Vista Alegre",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Mataró · Mapa de barris / límit GIS",
+      "sourceUrl": "https://mapes.mataro.cat/"
+    },
+    {
+      "municipality": "Mollet del Vallès",
+      "name": "Can Borrell",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Mollet del Vallès · Plànol i Regidories de Barris",
+      "sourceUrl": "https://www.molletvalles.cat/ca/la-ciutat/planol-de-barris"
+    },
+    {
+      "municipality": "Mollet del Vallès",
+      "name": "Can Pantiquet",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Mollet del Vallès · Plànol i Regidories de Barris",
+      "sourceUrl": "https://www.molletvalles.cat/ca/la-ciutat/planol-de-barris"
+    },
+    {
+      "municipality": "Mollet del Vallès",
+      "name": "Centre",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Mollet del Vallès · Plànol i Regidories de Barris",
+      "sourceUrl": "https://www.molletvalles.cat/ca/la-ciutat/planol-de-barris"
+    },
+    {
+      "municipality": "Mollet del Vallès",
+      "name": "Col·legis Nous",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Mollet del Vallès · Plànol i Regidories de Barris",
+      "sourceUrl": "https://www.molletvalles.cat/ca/la-ciutat/planol-de-barris"
+    },
+    {
+      "municipality": "Mollet del Vallès",
+      "name": "El Calderí",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Mollet del Vallès · Plànol i Regidories de Barris",
+      "sourceUrl": "https://www.molletvalles.cat/ca/la-ciutat/planol-de-barris"
+    },
+    {
+      "municipality": "Mollet del Vallès",
+      "name": "Estació de França",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Mollet del Vallès · Plànol i Regidories de Barris",
+      "sourceUrl": "https://www.molletvalles.cat/ca/la-ciutat/planol-de-barris"
+    },
+    {
+      "municipality": "Mollet del Vallès",
+      "name": "Estació del Nord",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Mollet del Vallès · Plànol i Regidories de Barris",
+      "sourceUrl": "https://www.molletvalles.cat/ca/la-ciutat/planol-de-barris"
+    },
+    {
+      "municipality": "Mollet del Vallès",
+      "name": "Gallecs",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Mollet del Vallès · Plànol i Regidories de Barris",
+      "sourceUrl": "https://www.molletvalles.cat/ca/la-ciutat/planol-de-barris"
+    },
+    {
+      "municipality": "Mollet del Vallès",
+      "name": "La Casilla",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Mollet del Vallès · Plànol i Regidories de Barris",
+      "sourceUrl": "https://www.molletvalles.cat/ca/la-ciutat/planol-de-barris"
+    },
+    {
+      "municipality": "Mollet del Vallès",
+      "name": "Lourdes",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Mollet del Vallès · Plànol i Regidories de Barris",
+      "sourceUrl": "https://www.molletvalles.cat/ca/la-ciutat/planol-de-barris"
+    },
+    {
+      "municipality": "Mollet del Vallès",
+      "name": "Plana Lledó",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Mollet del Vallès · Plànol i Regidories de Barris",
+      "sourceUrl": "https://www.molletvalles.cat/ca/la-ciutat/planol-de-barris"
+    },
+    {
+      "municipality": "Mollet del Vallès",
+      "name": "Riera Seca",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Mollet del Vallès · Plànol i Regidories de Barris",
+      "sourceUrl": "https://www.molletvalles.cat/ca/la-ciutat/planol-de-barris"
+    },
+    {
+      "municipality": "Mollet del Vallès",
+      "name": "Santa Rosa",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Mollet del Vallès · Plànol i Regidories de Barris",
+      "sourceUrl": "https://www.molletvalles.cat/ca/la-ciutat/planol-de-barris"
+    },
+    {
+      "municipality": "Montcada i Reixac",
+      "name": "Can Cuiàs",
+      "kind": "Barri / nucli",
+      "official": true,
+      "source": "Ajuntament de Montcada i Reixac",
+      "sourceUrl": "https://www.montcada.cat/el-municipi/informacio-del-municipi/presentacio-de-la-ciutat"
+    },
+    {
+      "municipality": "Montcada i Reixac",
+      "name": "Can Pomada",
+      "kind": "Barri / nucli",
+      "official": true,
+      "source": "Ajuntament de Montcada i Reixac",
+      "sourceUrl": "https://www.montcada.cat/el-municipi/informacio-del-municipi/presentacio-de-la-ciutat"
+    },
+    {
+      "municipality": "Montcada i Reixac",
+      "name": "Can Sant Joan (Bifurcació)",
+      "kind": "Barri / nucli",
+      "official": true,
+      "source": "Ajuntament de Montcada i Reixac",
+      "sourceUrl": "https://www.montcada.cat/el-municipi/informacio-del-municipi/presentacio-de-la-ciutat"
+    },
+    {
+      "municipality": "Montcada i Reixac",
+      "name": "Carrerada (Montcada Nova)",
+      "kind": "Barri / nucli",
+      "official": true,
+      "source": "Ajuntament de Montcada i Reixac",
+      "sourceUrl": "https://www.montcada.cat/el-municipi/informacio-del-municipi/presentacio-de-la-ciutat"
+    },
+    {
+      "municipality": "Montcada i Reixac",
+      "name": "Font Pudenta",
+      "kind": "Barri / nucli",
+      "official": true,
+      "source": "Ajuntament de Montcada i Reixac",
+      "sourceUrl": "https://www.montcada.cat/el-municipi/informacio-del-municipi/presentacio-de-la-ciutat"
+    },
+    {
+      "municipality": "Montcada i Reixac",
+      "name": "La Ribera (Valentine)",
+      "kind": "Barri / nucli",
+      "official": true,
+      "source": "Ajuntament de Montcada i Reixac",
+      "sourceUrl": "https://www.montcada.cat/el-municipi/informacio-del-municipi/presentacio-de-la-ciutat"
+    },
+    {
+      "municipality": "Montcada i Reixac",
+      "name": "Mas Duran",
+      "kind": "Barri / nucli",
+      "official": true,
+      "source": "Ajuntament de Montcada i Reixac",
+      "sourceUrl": "https://www.montcada.cat/el-municipi/informacio-del-municipi/presentacio-de-la-ciutat"
+    },
+    {
+      "municipality": "Montcada i Reixac",
+      "name": "Mas Rampinyo",
+      "kind": "Barri / nucli",
+      "official": true,
+      "source": "Ajuntament de Montcada i Reixac",
+      "sourceUrl": "https://www.montcada.cat/el-municipi/informacio-del-municipi/presentacio-de-la-ciutat"
+    },
+    {
+      "municipality": "Montcada i Reixac",
+      "name": "Montcada Centre",
+      "kind": "Barri / nucli",
+      "official": true,
+      "source": "Ajuntament de Montcada i Reixac",
+      "sourceUrl": "https://www.montcada.cat/el-municipi/informacio-del-municipi/presentacio-de-la-ciutat"
+    },
+    {
+      "municipality": "Montcada i Reixac",
+      "name": "Pla d'en Coll",
+      "kind": "Barri / nucli",
+      "official": true,
+      "source": "Ajuntament de Montcada i Reixac",
+      "sourceUrl": "https://www.montcada.cat/el-municipi/informacio-del-municipi/presentacio-de-la-ciutat"
+    },
+    {
+      "municipality": "Montcada i Reixac",
+      "name": "Terra Nostra (Santa Maria de Montcada)",
+      "kind": "Barri / nucli",
+      "official": true,
+      "source": "Ajuntament de Montcada i Reixac",
+      "sourceUrl": "https://www.montcada.cat/el-municipi/informacio-del-municipi/presentacio-de-la-ciutat"
+    },
+    {
+      "municipality": "Montcada i Reixac",
+      "name": "Vallençana-Reixac",
+      "kind": "Barri / nucli",
+      "official": true,
+      "source": "Ajuntament de Montcada i Reixac",
+      "sourceUrl": "https://www.montcada.cat/el-municipi/informacio-del-municipi/presentacio-de-la-ciutat"
+    },
+    {
+      "municipality": "Roda de Berà",
+      "name": "el Roc de Sant Gaietà",
+      "kind": "Urbanització / nucli",
+      "official": true,
+      "source": "Ajuntament de Roda de Berà",
+      "sourceUrl": "https://web.rodadebera.cat/turisme/punts-interes/roc-sant-gaieta"
+    },
+    {
+      "municipality": "Rubí",
+      "name": "25 de Setembre",
+      "kind": "Barri / àmbit veïnal",
+      "official": true,
+      "source": "Ajuntament de Rubí · Alcaldessa als barris",
+      "sourceUrl": "https://gis.rubi.cat/ab/"
+    },
+    {
+      "municipality": "Rubí",
+      "name": "Ca N’Oriol",
+      "kind": "Barri / àmbit veïnal",
+      "official": true,
+      "source": "Ajuntament de Rubí · Alcaldessa als barris",
+      "sourceUrl": "https://gis.rubi.cat/ab/"
+    },
+    {
+      "municipality": "Rubí",
+      "name": "Ca n'Alzamora",
+      "kind": "Barri / àmbit veïnal",
+      "official": true,
+      "source": "Ajuntament de Rubí · Alcaldessa als barris",
+      "sourceUrl": "https://gis.rubi.cat/ab/"
+    },
+    {
+      "municipality": "Rubí",
+      "name": "Can Barceló - Vallespark",
+      "kind": "Barri / àmbit veïnal",
+      "official": true,
+      "source": "Ajuntament de Rubí · Alcaldessa als barris",
+      "sourceUrl": "https://gis.rubi.cat/ab/"
+    },
+    {
+      "municipality": "Rubí",
+      "name": "Can Fatjó",
+      "kind": "Barri / àmbit veïnal",
+      "official": true,
+      "source": "Ajuntament de Rubí · Alcaldessa als barris",
+      "sourceUrl": "https://gis.rubi.cat/ab/"
+    },
+    {
+      "municipality": "Rubí",
+      "name": "Can Rosés",
+      "kind": "Barri / àmbit veïnal",
+      "official": true,
+      "source": "Ajuntament de Rubí · Alcaldessa als barris",
+      "sourceUrl": "https://gis.rubi.cat/ab/"
+    },
+    {
+      "municipality": "Rubí",
+      "name": "Can Serrafosà - La Perla",
+      "kind": "Barri / àmbit veïnal",
+      "official": true,
+      "source": "Ajuntament de Rubí · Alcaldessa als barris",
+      "sourceUrl": "https://gis.rubi.cat/ab/"
+    },
+    {
+      "municipality": "Rubí",
+      "name": "Can Solà",
+      "kind": "Barri / àmbit veïnal",
+      "official": true,
+      "source": "Ajuntament de Rubí · Alcaldessa als barris",
+      "sourceUrl": "https://gis.rubi.cat/ab/"
+    },
+    {
+      "municipality": "Rubí",
+      "name": "Can Vallhonrat",
+      "kind": "Barri / àmbit veïnal",
+      "official": true,
+      "source": "Ajuntament de Rubí · Alcaldessa als barris",
+      "sourceUrl": "https://gis.rubi.cat/ab/"
+    },
+    {
+      "municipality": "Rubí",
+      "name": "Can Ximelis",
+      "kind": "Barri / àmbit veïnal",
+      "official": true,
+      "source": "Ajuntament de Rubí · Alcaldessa als barris",
+      "sourceUrl": "https://gis.rubi.cat/ab/"
+    },
+    {
+      "municipality": "Rubí",
+      "name": "Castellnou - Can Mir",
+      "kind": "Barri / àmbit veïnal",
+      "official": true,
+      "source": "Ajuntament de Rubí · Alcaldessa als barris",
+      "sourceUrl": "https://gis.rubi.cat/ab/"
+    },
+    {
+      "municipality": "Rubí",
+      "name": "Centre",
+      "kind": "Barri / àmbit veïnal",
+      "official": true,
+      "source": "Ajuntament de Rubí · Alcaldessa als barris",
+      "sourceUrl": "https://gis.rubi.cat/ab/"
+    },
+    {
+      "municipality": "Rubí",
+      "name": "El Mercat",
+      "kind": "Barri / àmbit veïnal",
+      "official": true,
+      "source": "Ajuntament de Rubí · Alcaldessa als barris",
+      "sourceUrl": "https://gis.rubi.cat/ab/"
+    },
+    {
+      "municipality": "Rubí",
+      "name": "El Pinar",
+      "kind": "Barri / àmbit veïnal",
+      "official": true,
+      "source": "Ajuntament de Rubí · Alcaldessa als barris",
+      "sourceUrl": "https://gis.rubi.cat/ab/"
+    },
+    {
+      "municipality": "Rubí",
+      "name": "Els Avets",
+      "kind": "Barri / àmbit veïnal",
+      "official": true,
+      "source": "Ajuntament de Rubí · Alcaldessa als barris",
+      "sourceUrl": "https://gis.rubi.cat/ab/"
+    },
+    {
+      "municipality": "Rubí",
+      "name": "Les Torres",
+      "kind": "Barri / àmbit veïnal",
+      "official": true,
+      "source": "Ajuntament de Rubí · Alcaldessa als barris",
+      "sourceUrl": "https://gis.rubi.cat/ab/"
+    },
+    {
+      "municipality": "Rubí",
+      "name": "Plana Can Bertran",
+      "kind": "Barri / àmbit veïnal",
+      "official": true,
+      "source": "Ajuntament de Rubí · Alcaldessa als barris",
+      "sourceUrl": "https://gis.rubi.cat/ab/"
+    },
+    {
+      "municipality": "Rubí",
+      "name": "Plana del Castell",
+      "kind": "Barri / àmbit veïnal",
+      "official": true,
+      "source": "Ajuntament de Rubí · Alcaldessa als barris",
+      "sourceUrl": "https://gis.rubi.cat/ab/"
+    },
+    {
+      "municipality": "Rubí",
+      "name": "Progrés - Rubí 2000",
+      "kind": "Barri / àmbit veïnal",
+      "official": true,
+      "source": "Ajuntament de Rubí · Alcaldessa als barris",
+      "sourceUrl": "https://gis.rubi.cat/ab/"
+    },
+    {
+      "municipality": "Rubí",
+      "name": "Sant Jordi Park",
+      "kind": "Barri / àmbit veïnal",
+      "official": true,
+      "source": "Ajuntament de Rubí · Alcaldessa als barris",
+      "sourceUrl": "https://gis.rubi.cat/ab/"
+    },
+    {
+      "municipality": "Rubí",
+      "name": "Sant Muç",
+      "kind": "Barri / àmbit veïnal",
+      "official": true,
+      "source": "Ajuntament de Rubí · Alcaldessa als barris",
+      "sourceUrl": "https://gis.rubi.cat/ab/"
+    },
+    {
+      "municipality": "Rubí",
+      "name": "Sector Z",
+      "kind": "Barri / àmbit veïnal",
+      "official": true,
+      "source": "Ajuntament de Rubí · Alcaldessa als barris",
+      "sourceUrl": "https://gis.rubi.cat/ab/"
+    },
+    {
+      "municipality": "Rubí",
+      "name": "Zona Nord - La Serreta",
+      "kind": "Barri / àmbit veïnal",
+      "official": true,
+      "source": "Ajuntament de Rubí · Alcaldessa als barris",
+      "sourceUrl": "https://gis.rubi.cat/ab/"
+    },
+    {
+      "municipality": "Sabadell",
+      "name": "Avinguda - Eixample",
+      "kind": "Barrio",
+      "official": true,
+      "source": "Ajuntament de Sabadell · Divisió territorial de la ciutat",
+      "sourceUrl": "https://web.sabadell.cat/actuacions/89-districtes/28732-divisio-territorial-de-la-ciutat"
+    },
+    {
+      "municipality": "Sabadell",
+      "name": "Ca n’Oriac",
+      "kind": "Barrio",
+      "official": true,
+      "source": "Ajuntament de Sabadell · Divisió territorial de la ciutat",
+      "sourceUrl": "https://web.sabadell.cat/actuacions/89-districtes/28732-divisio-territorial-de-la-ciutat"
+    },
+    {
+      "municipality": "Sabadell",
+      "name": "Campoamor",
+      "kind": "Barrio",
+      "official": true,
+      "source": "Ajuntament de Sabadell · Divisió territorial de la ciutat",
+      "sourceUrl": "https://web.sabadell.cat/actuacions/89-districtes/28732-divisio-territorial-de-la-ciutat"
+    },
+    {
+      "municipality": "Sabadell",
+      "name": "Can Deu",
+      "kind": "Barrio",
+      "official": true,
+      "source": "Ajuntament de Sabadell · Divisió territorial de la ciutat",
+      "sourceUrl": "https://web.sabadell.cat/actuacions/89-districtes/28732-divisio-territorial-de-la-ciutat"
+    },
+    {
+      "municipality": "Sabadell",
+      "name": "Can Feu",
+      "kind": "Barrio",
+      "official": true,
+      "source": "Ajuntament de Sabadell · Divisió territorial de la ciutat",
+      "sourceUrl": "https://web.sabadell.cat/actuacions/89-districtes/28732-divisio-territorial-de-la-ciutat"
+    },
+    {
+      "municipality": "Sabadell",
+      "name": "Can Gambús",
+      "kind": "Barrio",
+      "official": true,
+      "source": "Ajuntament de Sabadell · Divisió territorial de la ciutat",
+      "sourceUrl": "https://web.sabadell.cat/actuacions/89-districtes/28732-divisio-territorial-de-la-ciutat"
+    },
+    {
+      "municipality": "Sabadell",
+      "name": "Can Llong",
+      "kind": "Barrio",
+      "official": true,
+      "source": "Ajuntament de Sabadell · Divisió territorial de la ciutat",
+      "sourceUrl": "https://web.sabadell.cat/actuacions/89-districtes/28732-divisio-territorial-de-la-ciutat"
+    },
+    {
+      "municipality": "Sabadell",
+      "name": "Can Puiggener",
+      "kind": "Barrio",
+      "official": true,
+      "source": "Ajuntament de Sabadell · Divisió territorial de la ciutat",
+      "sourceUrl": "https://web.sabadell.cat/actuacions/89-districtes/28732-divisio-territorial-de-la-ciutat"
+    },
+    {
+      "municipality": "Sabadell",
+      "name": "Can Roqueta (ZE)",
+      "kind": "Barrio",
+      "official": true,
+      "source": "Ajuntament de Sabadell · Divisió territorial de la ciutat",
+      "sourceUrl": "https://web.sabadell.cat/actuacions/89-districtes/28732-divisio-territorial-de-la-ciutat"
+    },
+    {
+      "municipality": "Sabadell",
+      "name": "Can Rull",
+      "kind": "Barrio",
+      "official": true,
+      "source": "Ajuntament de Sabadell · Divisió territorial de la ciutat",
+      "sourceUrl": "https://web.sabadell.cat/actuacions/89-districtes/28732-divisio-territorial-de-la-ciutat"
+    },
+    {
+      "municipality": "Sabadell",
+      "name": "Castellarnau",
+      "kind": "Barrio",
+      "official": true,
+      "source": "Ajuntament de Sabadell · Divisió territorial de la ciutat",
+      "sourceUrl": "https://web.sabadell.cat/actuacions/89-districtes/28732-divisio-territorial-de-la-ciutat"
+    },
+    {
+      "municipality": "Sabadell",
+      "name": "Cifuentes",
+      "kind": "Barrio",
+      "official": true,
+      "source": "Ajuntament de Sabadell · Divisió territorial de la ciutat",
+      "sourceUrl": "https://web.sabadell.cat/actuacions/89-districtes/28732-divisio-territorial-de-la-ciutat"
+    },
+    {
+      "municipality": "Sabadell",
+      "name": "Covadonga",
+      "kind": "Barrio",
+      "official": true,
+      "source": "Ajuntament de Sabadell · Divisió territorial de la ciutat",
+      "sourceUrl": "https://web.sabadell.cat/actuacions/89-districtes/28732-divisio-territorial-de-la-ciutat"
+    },
+    {
+      "municipality": "Sabadell",
+      "name": "Espronceda",
+      "kind": "Barrio",
+      "official": true,
+      "source": "Ajuntament de Sabadell · Divisió territorial de la ciutat",
+      "sourceUrl": "https://web.sabadell.cat/actuacions/89-districtes/28732-divisio-territorial-de-la-ciutat"
+    },
+    {
+      "municipality": "Sabadell",
+      "name": "Gràcia",
+      "kind": "Barrio",
+      "official": true,
+      "source": "Ajuntament de Sabadell · Divisió territorial de la ciutat",
+      "sourceUrl": "https://web.sabadell.cat/actuacions/89-districtes/28732-divisio-territorial-de-la-ciutat"
+    },
+    {
+      "municipality": "Sabadell",
+      "name": "Hostafrancs",
+      "kind": "Barrio",
+      "official": true,
+      "source": "Ajuntament de Sabadell · Divisió territorial de la ciutat",
+      "sourceUrl": "https://web.sabadell.cat/actuacions/89-districtes/28732-divisio-territorial-de-la-ciutat"
+    },
+    {
+      "municipality": "Sabadell",
+      "name": "Nostra Llar",
+      "kind": "Barrio",
+      "official": true,
+      "source": "Ajuntament de Sabadell · Divisió territorial de la ciutat",
+      "sourceUrl": "https://web.sabadell.cat/actuacions/89-districtes/28732-divisio-territorial-de-la-ciutat"
+    },
+    {
+      "municipality": "Sabadell",
+      "name": "Rodal Berardo",
+      "kind": "Barrio",
+      "official": true,
+      "source": "Ajuntament de Sabadell · Divisió territorial de la ciutat",
+      "sourceUrl": "https://web.sabadell.cat/actuacions/89-districtes/28732-divisio-territorial-de-la-ciutat"
+    },
+    {
+      "municipality": "Sabadell",
+      "name": "Rodal Est",
+      "kind": "Barrio",
+      "official": true,
+      "source": "Ajuntament de Sabadell · Divisió territorial de la ciutat",
+      "sourceUrl": "https://web.sabadell.cat/actuacions/89-districtes/28732-divisio-territorial-de-la-ciutat"
+    },
+    {
+      "municipality": "Sabadell",
+      "name": "Rodal Oest",
+      "kind": "Barrio",
+      "official": true,
+      "source": "Ajuntament de Sabadell · Divisió territorial de la ciutat",
+      "sourceUrl": "https://web.sabadell.cat/actuacions/89-districtes/28732-divisio-territorial-de-la-ciutat"
+    },
+    {
+      "municipality": "Sabadell",
+      "name": "Rodal Sant Julià d’Altura",
+      "kind": "Barrio",
+      "official": true,
+      "source": "Ajuntament de Sabadell · Divisió territorial de la ciutat",
+      "sourceUrl": "https://web.sabadell.cat/actuacions/89-districtes/28732-divisio-territorial-de-la-ciutat"
+    },
+    {
+      "municipality": "Sabadell",
+      "name": "Rodal Togores",
+      "kind": "Barrio",
+      "official": true,
+      "source": "Ajuntament de Sabadell · Divisió territorial de la ciutat",
+      "sourceUrl": "https://web.sabadell.cat/actuacions/89-districtes/28732-divisio-territorial-de-la-ciutat"
+    },
+    {
+      "municipality": "Sabadell",
+      "name": "Rodal la Serra de Sant Iscle",
+      "kind": "Barrio",
+      "official": true,
+      "source": "Ajuntament de Sabadell · Divisió territorial de la ciutat",
+      "sourceUrl": "https://web.sabadell.cat/actuacions/89-districtes/28732-divisio-territorial-de-la-ciutat"
+    },
+    {
+      "municipality": "Sabadell",
+      "name": "Sant Julià",
+      "kind": "Barrio",
+      "official": true,
+      "source": "Ajuntament de Sabadell · Divisió territorial de la ciutat",
+      "sourceUrl": "https://web.sabadell.cat/actuacions/89-districtes/28732-divisio-territorial-de-la-ciutat"
+    },
+    {
+      "municipality": "Sabadell",
+      "name": "Sant Pau de Riu-sec (ZE)",
+      "kind": "Barrio",
+      "official": true,
+      "source": "Ajuntament de Sabadell · Divisió territorial de la ciutat",
+      "sourceUrl": "https://web.sabadell.cat/actuacions/89-districtes/28732-divisio-territorial-de-la-ciutat"
+    },
+    {
+      "municipality": "Sabadell",
+      "name": "Sol i Padrís",
+      "kind": "Barrio",
+      "official": true,
+      "source": "Ajuntament de Sabadell · Divisió territorial de la ciutat",
+      "sourceUrl": "https://web.sabadell.cat/actuacions/89-districtes/28732-divisio-territorial-de-la-ciutat"
+    },
+    {
+      "municipality": "Sabadell",
+      "name": "Torre-romeu",
+      "kind": "Barrio",
+      "official": true,
+      "source": "Ajuntament de Sabadell · Divisió territorial de la ciutat",
+      "sourceUrl": "https://web.sabadell.cat/actuacions/89-districtes/28732-divisio-territorial-de-la-ciutat"
+    },
+    {
+      "municipality": "Sabadell",
+      "name": "Torreguitart",
+      "kind": "Barrio",
+      "official": true,
+      "source": "Ajuntament de Sabadell · Divisió territorial de la ciutat",
+      "sourceUrl": "https://web.sabadell.cat/actuacions/89-districtes/28732-divisio-territorial-de-la-ciutat"
+    },
+    {
+      "municipality": "Sabadell",
+      "name": "el Centre",
+      "kind": "Barrio",
+      "official": true,
+      "source": "Ajuntament de Sabadell · Divisió territorial de la ciutat",
+      "sourceUrl": "https://web.sabadell.cat/actuacions/89-districtes/28732-divisio-territorial-de-la-ciutat"
+    },
+    {
+      "municipality": "Sabadell",
+      "name": "el Poblenou",
+      "kind": "Barrio",
+      "official": true,
+      "source": "Ajuntament de Sabadell · Divisió territorial de la ciutat",
+      "sourceUrl": "https://web.sabadell.cat/actuacions/89-districtes/28732-divisio-territorial-de-la-ciutat"
+    },
+    {
+      "municipality": "Sabadell",
+      "name": "el Raval d’Amàlia",
+      "kind": "Barrio",
+      "official": true,
+      "source": "Ajuntament de Sabadell · Divisió territorial de la ciutat",
+      "sourceUrl": "https://web.sabadell.cat/actuacions/89-districtes/28732-divisio-territorial-de-la-ciutat"
+    },
+    {
+      "municipality": "Sabadell",
+      "name": "el Torrent del Capellà",
+      "kind": "Barrio",
+      "official": true,
+      "source": "Ajuntament de Sabadell · Divisió territorial de la ciutat",
+      "sourceUrl": "https://web.sabadell.cat/actuacions/89-districtes/28732-divisio-territorial-de-la-ciutat"
+    },
+    {
+      "municipality": "Sabadell",
+      "name": "els Merinals",
+      "kind": "Barrio",
+      "official": true,
+      "source": "Ajuntament de Sabadell · Divisió territorial de la ciutat",
+      "sourceUrl": "https://web.sabadell.cat/actuacions/89-districtes/28732-divisio-territorial-de-la-ciutat"
+    },
+    {
+      "municipality": "Sabadell",
+      "name": "la Concòrdia",
+      "kind": "Barrio",
+      "official": true,
+      "source": "Ajuntament de Sabadell · Divisió territorial de la ciutat",
+      "sourceUrl": "https://web.sabadell.cat/actuacions/89-districtes/28732-divisio-territorial-de-la-ciutat"
+    },
+    {
+      "municipality": "Sabadell",
+      "name": "la Creu Alta",
+      "kind": "Barrio",
+      "official": true,
+      "source": "Ajuntament de Sabadell · Divisió territorial de la ciutat",
+      "sourceUrl": "https://web.sabadell.cat/actuacions/89-districtes/28732-divisio-territorial-de-la-ciutat"
+    },
+    {
+      "municipality": "Sabadell",
+      "name": "la Creu de Barberà",
+      "kind": "Barrio",
+      "official": true,
+      "source": "Ajuntament de Sabadell · Divisió territorial de la ciutat",
+      "sourceUrl": "https://web.sabadell.cat/actuacions/89-districtes/28732-divisio-territorial-de-la-ciutat"
+    },
+    {
+      "municipality": "Sabadell",
+      "name": "la Plana del Pintor",
+      "kind": "Barrio",
+      "official": true,
+      "source": "Ajuntament de Sabadell · Divisió territorial de la ciutat",
+      "sourceUrl": "https://web.sabadell.cat/actuacions/89-districtes/28732-divisio-territorial-de-la-ciutat"
+    },
+    {
+      "municipality": "Sabadell",
+      "name": "la Roureda",
+      "kind": "Barrio",
+      "official": true,
+      "source": "Ajuntament de Sabadell · Divisió territorial de la ciutat",
+      "sourceUrl": "https://web.sabadell.cat/actuacions/89-districtes/28732-divisio-territorial-de-la-ciutat"
+    },
+    {
+      "municipality": "Sabadell",
+      "name": "la Serra d’en Camaró",
+      "kind": "Barrio",
+      "official": true,
+      "source": "Ajuntament de Sabadell · Divisió territorial de la ciutat",
+      "sourceUrl": "https://web.sabadell.cat/actuacions/89-districtes/28732-divisio-territorial-de-la-ciutat"
+    },
+    {
+      "municipality": "Sabadell",
+      "name": "les Termes",
+      "kind": "Barrio",
+      "official": true,
+      "source": "Ajuntament de Sabadell · Divisió territorial de la ciutat",
+      "sourceUrl": "https://web.sabadell.cat/actuacions/89-districtes/28732-divisio-territorial-de-la-ciutat"
+    },
+    {
+      "municipality": "Sant Andreu de la Barca",
+      "name": "Can Prats",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Sant Andreu de la Barca · Regidories de Barri",
+      "sourceUrl": "https://sabarca.cat/regidories-de-barri"
+    },
+    {
+      "municipality": "Sant Andreu de la Barca",
+      "name": "El Centre",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Sant Andreu de la Barca · Regidories de Barri",
+      "sourceUrl": "https://sabarca.cat/regidories-de-barri"
+    },
+    {
+      "municipality": "Sant Andreu de la Barca",
+      "name": "El Palau",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Sant Andreu de la Barca · Regidories de Barri",
+      "sourceUrl": "https://sabarca.cat/regidories-de-barri"
+    },
+    {
+      "municipality": "Sant Andreu de la Barca",
+      "name": "La Colònia",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Sant Andreu de la Barca · Regidories de Barri",
+      "sourceUrl": "https://sabarca.cat/regidories-de-barri"
+    },
+    {
+      "municipality": "Sant Andreu de la Barca",
+      "name": "La Plana",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Sant Andreu de la Barca · Regidories de Barri",
+      "sourceUrl": "https://sabarca.cat/regidories-de-barri"
+    },
+    {
+      "municipality": "Sant Andreu de la Barca",
+      "name": "La Solana",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Sant Andreu de la Barca · Regidories de Barri",
+      "sourceUrl": "https://sabarca.cat/regidories-de-barri"
+    },
+    {
+      "municipality": "Sant Andreu de la Barca",
+      "name": "Nucli Antic",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Sant Andreu de la Barca · Regidories de Barri",
+      "sourceUrl": "https://sabarca.cat/regidories-de-barri"
+    },
+    {
+      "municipality": "Sant Andreu de la Barca",
+      "name": "Pla de l'Estació",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Sant Andreu de la Barca · Regidories de Barri",
+      "sourceUrl": "https://sabarca.cat/regidories-de-barri"
+    },
+    {
+      "municipality": "Sant Boi de Llobregat",
+      "name": "Camps Blancs",
+      "kind": "Barri / àmbit veïnal",
+      "official": true,
+      "source": "Ajuntament de Sant Boi de Llobregat",
+      "sourceUrl": "https://www.santboi.cat/entitats"
+    },
+    {
+      "municipality": "Sant Boi de Llobregat",
+      "name": "Casablanca",
+      "kind": "Barri / àmbit veïnal",
+      "official": true,
+      "source": "Ajuntament de Sant Boi de Llobregat",
+      "sourceUrl": "https://www.santboi.cat/entitats"
+    },
+    {
+      "municipality": "Sant Boi de Llobregat",
+      "name": "Centre",
+      "kind": "Barri / àmbit veïnal",
+      "official": true,
+      "source": "Ajuntament de Sant Boi de Llobregat",
+      "sourceUrl": "https://www.santboi.cat/entitats"
+    },
+    {
+      "municipality": "Sant Boi de Llobregat",
+      "name": "Marianao",
+      "kind": "Barri / àmbit veïnal",
+      "official": true,
+      "source": "Ajuntament de Sant Boi de Llobregat",
+      "sourceUrl": "https://www.santboi.cat/entitats"
+    },
+    {
+      "municipality": "Sant Boi de Llobregat",
+      "name": "Molí Nou - Ciutat Cooperativa",
+      "kind": "Barri / àmbit veïnal",
+      "official": true,
+      "source": "Ajuntament de Sant Boi de Llobregat",
+      "sourceUrl": "https://www.santboi.cat/entitats"
+    },
+    {
+      "municipality": "Sant Boi de Llobregat",
+      "name": "Vinyets - Molí Vell",
+      "kind": "Barri / àmbit veïnal",
+      "official": true,
+      "source": "Ajuntament de Sant Boi de Llobregat",
+      "sourceUrl": "https://www.santboi.cat/entitats"
+    },
+    {
+      "municipality": "Sant Cugat del Vallès",
+      "name": "Arxiu",
+      "kind": "Barri · proposta municipal de delimitació 2024",
+      "official": true,
+      "source": "Ajuntament de Sant Cugat · Delimitació de barris",
+      "sourceUrl": "https://decidim.santcugat.cat/processes/planolconsellsdebarri?locale=ca"
+    },
+    {
+      "municipality": "Sant Cugat del Vallès",
+      "name": "Bell Indret",
+      "kind": "Barri · proposta municipal de delimitació 2024",
+      "official": true,
+      "source": "Ajuntament de Sant Cugat · Delimitació de barris",
+      "sourceUrl": "https://decidim.santcugat.cat/processes/planolconsellsdebarri?locale=ca"
+    },
+    {
+      "municipality": "Sant Cugat del Vallès",
+      "name": "Buscarons",
+      "kind": "Barri · proposta municipal de delimitació 2024",
+      "official": true,
+      "source": "Ajuntament de Sant Cugat · Delimitació de barris",
+      "sourceUrl": "https://decidim.santcugat.cat/processes/planolconsellsdebarri?locale=ca"
+    },
+    {
+      "municipality": "Sant Cugat del Vallès",
+      "name": "Ca n’Ametller",
+      "kind": "Barri · proposta municipal de delimitació 2024",
+      "official": true,
+      "source": "Ajuntament de Sant Cugat · Delimitació de barris",
+      "sourceUrl": "https://decidim.santcugat.cat/processes/planolconsellsdebarri?locale=ca"
+    },
+    {
+      "municipality": "Sant Cugat del Vallès",
+      "name": "Calado",
+      "kind": "Barri · proposta municipal de delimitació 2024",
+      "official": true,
+      "source": "Ajuntament de Sant Cugat · Delimitació de barris",
+      "sourceUrl": "https://decidim.santcugat.cat/processes/planolconsellsdebarri?locale=ca"
+    },
+    {
+      "municipality": "Sant Cugat del Vallès",
+      "name": "Can Barata",
+      "kind": "Barri · proposta municipal de delimitació 2024",
+      "official": true,
+      "source": "Ajuntament de Sant Cugat · Delimitació de barris",
+      "sourceUrl": "https://decidim.santcugat.cat/processes/planolconsellsdebarri?locale=ca"
+    },
+    {
+      "municipality": "Sant Cugat del Vallès",
+      "name": "Can Bell",
+      "kind": "Barri · proposta municipal de delimitació 2024",
+      "official": true,
+      "source": "Ajuntament de Sant Cugat · Delimitació de barris",
+      "sourceUrl": "https://decidim.santcugat.cat/processes/planolconsellsdebarri?locale=ca"
+    },
+    {
+      "municipality": "Sant Cugat del Vallès",
+      "name": "Can Borrull",
+      "kind": "Barri · proposta municipal de delimitació 2024",
+      "official": true,
+      "source": "Ajuntament de Sant Cugat · Delimitació de barris",
+      "sourceUrl": "https://decidim.santcugat.cat/processes/planolconsellsdebarri?locale=ca"
+    },
+    {
+      "municipality": "Sant Cugat del Vallès",
+      "name": "Can Cabassa",
+      "kind": "Barri · proposta municipal de delimitació 2024",
+      "official": true,
+      "source": "Ajuntament de Sant Cugat · Delimitació de barris",
+      "sourceUrl": "https://decidim.santcugat.cat/processes/planolconsellsdebarri?locale=ca"
+    },
+    {
+      "municipality": "Sant Cugat del Vallès",
+      "name": "Can Cortés",
+      "kind": "Barri · proposta municipal de delimitació 2024",
+      "official": true,
+      "source": "Ajuntament de Sant Cugat · Delimitació de barris",
+      "sourceUrl": "https://decidim.santcugat.cat/processes/planolconsellsdebarri?locale=ca"
+    },
+    {
+      "municipality": "Sant Cugat del Vallès",
+      "name": "Can Gatxet",
+      "kind": "Barri · proposta municipal de delimitació 2024",
+      "official": true,
+      "source": "Ajuntament de Sant Cugat · Delimitació de barris",
+      "sourceUrl": "https://decidim.santcugat.cat/processes/planolconsellsdebarri?locale=ca"
+    },
+    {
+      "municipality": "Sant Cugat del Vallès",
+      "name": "Can Gordi",
+      "kind": "Barri · proposta municipal de delimitació 2024",
+      "official": true,
+      "source": "Ajuntament de Sant Cugat · Delimitació de barris",
+      "sourceUrl": "https://decidim.santcugat.cat/processes/planolconsellsdebarri?locale=ca"
+    },
+    {
+      "municipality": "Sant Cugat del Vallès",
+      "name": "Can Llobet",
+      "kind": "Barri · proposta municipal de delimitació 2024",
+      "official": true,
+      "source": "Ajuntament de Sant Cugat · Delimitació de barris",
+      "sourceUrl": "https://decidim.santcugat.cat/processes/planolconsellsdebarri?locale=ca"
+    },
+    {
+      "municipality": "Sant Cugat del Vallès",
+      "name": "Can Magí Nord",
+      "kind": "Barri · proposta municipal de delimitació 2024",
+      "official": true,
+      "source": "Ajuntament de Sant Cugat · Delimitació de barris",
+      "sourceUrl": "https://decidim.santcugat.cat/processes/planolconsellsdebarri?locale=ca"
+    },
+    {
+      "municipality": "Sant Cugat del Vallès",
+      "name": "Can Magí Sud",
+      "kind": "Barri · proposta municipal de delimitació 2024",
+      "official": true,
+      "source": "Ajuntament de Sant Cugat · Delimitació de barris",
+      "sourceUrl": "https://decidim.santcugat.cat/processes/planolconsellsdebarri?locale=ca"
+    },
+    {
+      "municipality": "Sant Cugat del Vallès",
+      "name": "Can Mates Est",
+      "kind": "Barri · proposta municipal de delimitació 2024",
+      "official": true,
+      "source": "Ajuntament de Sant Cugat · Delimitació de barris",
+      "sourceUrl": "https://decidim.santcugat.cat/processes/planolconsellsdebarri?locale=ca"
+    },
+    {
+      "municipality": "Sant Cugat del Vallès",
+      "name": "Can Mates Nord",
+      "kind": "Barri · proposta municipal de delimitació 2024",
+      "official": true,
+      "source": "Ajuntament de Sant Cugat · Delimitació de barris",
+      "sourceUrl": "https://decidim.santcugat.cat/processes/planolconsellsdebarri?locale=ca"
+    },
+    {
+      "municipality": "Sant Cugat del Vallès",
+      "name": "Can Mates Oest",
+      "kind": "Barri · proposta municipal de delimitació 2024",
+      "official": true,
+      "source": "Ajuntament de Sant Cugat · Delimitació de barris",
+      "sourceUrl": "https://decidim.santcugat.cat/processes/planolconsellsdebarri?locale=ca"
+    },
+    {
+      "municipality": "Sant Cugat del Vallès",
+      "name": "Can Sant Joan Nord",
+      "kind": "Barri · proposta municipal de delimitació 2024",
+      "official": true,
+      "source": "Ajuntament de Sant Cugat · Delimitació de barris",
+      "sourceUrl": "https://decidim.santcugat.cat/processes/planolconsellsdebarri?locale=ca"
+    },
+    {
+      "municipality": "Sant Cugat del Vallès",
+      "name": "Can Sant Joan Sud",
+      "kind": "Barri · proposta municipal de delimitació 2024",
+      "official": true,
+      "source": "Ajuntament de Sant Cugat · Delimitació de barris",
+      "sourceUrl": "https://decidim.santcugat.cat/processes/planolconsellsdebarri?locale=ca"
+    },
+    {
+      "municipality": "Sant Cugat del Vallès",
+      "name": "Can Trabal",
+      "kind": "Barri · proposta municipal de delimitació 2024",
+      "official": true,
+      "source": "Ajuntament de Sant Cugat · Delimitació de barris",
+      "sourceUrl": "https://decidim.santcugat.cat/processes/planolconsellsdebarri?locale=ca"
+    },
+    {
+      "municipality": "Sant Cugat del Vallès",
+      "name": "Casino",
+      "kind": "Barri · proposta municipal de delimitació 2024",
+      "official": true,
+      "source": "Ajuntament de Sant Cugat · Delimitació de barris",
+      "sourceUrl": "https://decidim.santcugat.cat/processes/planolconsellsdebarri?locale=ca"
+    },
+    {
+      "municipality": "Sant Cugat del Vallès",
+      "name": "Centre",
+      "kind": "Barri · proposta municipal de delimitació 2024",
+      "official": true,
+      "source": "Ajuntament de Sant Cugat · Delimitació de barris",
+      "sourceUrl": "https://decidim.santcugat.cat/processes/planolconsellsdebarri?locale=ca"
+    },
+    {
+      "municipality": "Sant Cugat del Vallès",
+      "name": "Coll Favà",
+      "kind": "Barri · proposta municipal de delimitació 2024",
+      "official": true,
+      "source": "Ajuntament de Sant Cugat · Delimitació de barris",
+      "sourceUrl": "https://decidim.santcugat.cat/processes/planolconsellsdebarri?locale=ca"
+    },
+    {
+      "municipality": "Sant Cugat del Vallès",
+      "name": "Colònia Oller",
+      "kind": "Barri · proposta municipal de delimitació 2024",
+      "official": true,
+      "source": "Ajuntament de Sant Cugat · Delimitació de barris",
+      "sourceUrl": "https://decidim.santcugat.cat/processes/planolconsellsdebarri?locale=ca"
+    },
+    {
+      "municipality": "Sant Cugat del Vallès",
+      "name": "Costa del Golf",
+      "kind": "Barri · proposta municipal de delimitació 2024",
+      "official": true,
+      "source": "Ajuntament de Sant Cugat · Delimitació de barris",
+      "sourceUrl": "https://decidim.santcugat.cat/processes/planolconsellsdebarri?locale=ca"
+    },
+    {
+      "municipality": "Sant Cugat del Vallès",
+      "name": "Eixample Sud",
+      "kind": "Barri · proposta municipal de delimitació 2024",
+      "official": true,
+      "source": "Ajuntament de Sant Cugat · Delimitació de barris",
+      "sourceUrl": "https://decidim.santcugat.cat/processes/planolconsellsdebarri?locale=ca"
+    },
+    {
+      "municipality": "Sant Cugat del Vallès",
+      "name": "El Colomer",
+      "kind": "Barri · proposta municipal de delimitació 2024",
+      "official": true,
+      "source": "Ajuntament de Sant Cugat · Delimitació de barris",
+      "sourceUrl": "https://decidim.santcugat.cat/processes/planolconsellsdebarri?locale=ca"
+    },
+    {
+      "municipality": "Sant Cugat del Vallès",
+      "name": "Galliners",
+      "kind": "Barri · proposta municipal de delimitació 2024",
+      "official": true,
+      "source": "Ajuntament de Sant Cugat · Delimitació de barris",
+      "sourceUrl": "https://decidim.santcugat.cat/processes/planolconsellsdebarri?locale=ca"
+    },
+    {
+      "municipality": "Sant Cugat del Vallès",
+      "name": "Golf",
+      "kind": "Barri · proposta municipal de delimitació 2024",
+      "official": true,
+      "source": "Ajuntament de Sant Cugat · Delimitació de barris",
+      "sourceUrl": "https://decidim.santcugat.cat/processes/planolconsellsdebarri?locale=ca"
+    },
+    {
+      "municipality": "Sant Cugat del Vallès",
+      "name": "La Guinardera",
+      "kind": "Barri · proposta municipal de delimitació 2024",
+      "official": true,
+      "source": "Ajuntament de Sant Cugat · Delimitació de barris",
+      "sourceUrl": "https://decidim.santcugat.cat/processes/planolconsellsdebarri?locale=ca"
+    },
+    {
+      "municipality": "Sant Cugat del Vallès",
+      "name": "La Muntanyesa",
+      "kind": "Barri · proposta municipal de delimitació 2024",
+      "official": true,
+      "source": "Ajuntament de Sant Cugat · Delimitació de barris",
+      "sourceUrl": "https://decidim.santcugat.cat/processes/planolconsellsdebarri?locale=ca"
+    },
+    {
+      "municipality": "Sant Cugat del Vallès",
+      "name": "La Serreta",
+      "kind": "Barri · proposta municipal de delimitació 2024",
+      "official": true,
+      "source": "Ajuntament de Sant Cugat · Delimitació de barris",
+      "sourceUrl": "https://decidim.santcugat.cat/processes/planolconsellsdebarri?locale=ca"
+    },
+    {
+      "municipality": "Sant Cugat del Vallès",
+      "name": "Les Planes",
+      "kind": "Barri · proposta municipal de delimitació 2024",
+      "official": true,
+      "source": "Ajuntament de Sant Cugat · Delimitació de barris",
+      "sourceUrl": "https://decidim.santcugat.cat/processes/planolconsellsdebarri?locale=ca"
+    },
+    {
+      "municipality": "Sant Cugat del Vallès",
+      "name": "Mas Fortuny",
+      "kind": "Barri · proposta municipal de delimitació 2024",
+      "official": true,
+      "source": "Ajuntament de Sant Cugat · Delimitació de barris",
+      "sourceUrl": "https://decidim.santcugat.cat/processes/planolconsellsdebarri?locale=ca"
+    },
+    {
+      "municipality": "Sant Cugat del Vallès",
+      "name": "Mas Gener",
+      "kind": "Barri · proposta municipal de delimitació 2024",
+      "official": true,
+      "source": "Ajuntament de Sant Cugat · Delimitació de barris",
+      "sourceUrl": "https://decidim.santcugat.cat/processes/planolconsellsdebarri?locale=ca"
+    },
+    {
+      "municipality": "Sant Cugat del Vallès",
+      "name": "Mira-sol",
+      "kind": "Barri · proposta municipal de delimitació 2024",
+      "official": true,
+      "source": "Ajuntament de Sant Cugat · Delimitació de barris",
+      "sourceUrl": "https://decidim.santcugat.cat/processes/planolconsellsdebarri?locale=ca"
+    },
+    {
+      "municipality": "Sant Cugat del Vallès",
+      "name": "Monestir",
+      "kind": "Barri · proposta municipal de delimitació 2024",
+      "official": true,
+      "source": "Ajuntament de Sant Cugat · Delimitació de barris",
+      "sourceUrl": "https://decidim.santcugat.cat/processes/planolconsellsdebarri?locale=ca"
+    },
+    {
+      "municipality": "Sant Cugat del Vallès",
+      "name": "Parc Central",
+      "kind": "Barri · proposta municipal de delimitació 2024",
+      "official": true,
+      "source": "Ajuntament de Sant Cugat · Delimitació de barris",
+      "sourceUrl": "https://decidim.santcugat.cat/processes/planolconsellsdebarri?locale=ca"
+    },
+    {
+      "municipality": "Sant Cugat del Vallès",
+      "name": "Pla de la Pagesa",
+      "kind": "Barri · proposta municipal de delimitació 2024",
+      "official": true,
+      "source": "Ajuntament de Sant Cugat · Delimitació de barris",
+      "sourceUrl": "https://decidim.santcugat.cat/processes/planolconsellsdebarri?locale=ca"
+    },
+    {
+      "municipality": "Sant Cugat del Vallès",
+      "name": "Roquetes",
+      "kind": "Barri · proposta municipal de delimitació 2024",
+      "official": true,
+      "source": "Ajuntament de Sant Cugat · Delimitació de barris",
+      "sourceUrl": "https://decidim.santcugat.cat/processes/planolconsellsdebarri?locale=ca"
+    },
+    {
+      "municipality": "Sant Cugat del Vallès",
+      "name": "Sant Domènec Est",
+      "kind": "Barri · proposta municipal de delimitació 2024",
+      "official": true,
+      "source": "Ajuntament de Sant Cugat · Delimitació de barris",
+      "sourceUrl": "https://decidim.santcugat.cat/processes/planolconsellsdebarri?locale=ca"
+    },
+    {
+      "municipality": "Sant Cugat del Vallès",
+      "name": "Sant Domènec Oest",
+      "kind": "Barri · proposta municipal de delimitació 2024",
+      "official": true,
+      "source": "Ajuntament de Sant Cugat · Delimitació de barris",
+      "sourceUrl": "https://decidim.santcugat.cat/processes/planolconsellsdebarri?locale=ca"
+    },
+    {
+      "municipality": "Sant Cugat del Vallès",
+      "name": "Sant Francesc",
+      "kind": "Barri · proposta municipal de delimitació 2024",
+      "official": true,
+      "source": "Ajuntament de Sant Cugat · Delimitació de barris",
+      "sourceUrl": "https://decidim.santcugat.cat/processes/planolconsellsdebarri?locale=ca"
+    },
+    {
+      "municipality": "Sant Cugat del Vallès",
+      "name": "Sol i Aire",
+      "kind": "Barri · proposta municipal de delimitació 2024",
+      "official": true,
+      "source": "Ajuntament de Sant Cugat · Delimitació de barris",
+      "sourceUrl": "https://decidim.santcugat.cat/processes/planolconsellsdebarri?locale=ca"
+    },
+    {
+      "municipality": "Sant Cugat del Vallès",
+      "name": "Torre Blanca",
+      "kind": "Barri · proposta municipal de delimitació 2024",
+      "official": true,
+      "source": "Ajuntament de Sant Cugat · Delimitació de barris",
+      "sourceUrl": "https://decidim.santcugat.cat/processes/planolconsellsdebarri?locale=ca"
+    },
+    {
+      "municipality": "Sant Cugat del Vallès",
+      "name": "Torre Negra",
+      "kind": "Barri · proposta municipal de delimitació 2024",
+      "official": true,
+      "source": "Ajuntament de Sant Cugat · Delimitació de barris",
+      "sourceUrl": "https://decidim.santcugat.cat/processes/planolconsellsdebarri?locale=ca"
+    },
+    {
+      "municipality": "Sant Cugat del Vallès",
+      "name": "Turó del Fumet",
+      "kind": "Barri · proposta municipal de delimitació 2024",
+      "official": true,
+      "source": "Ajuntament de Sant Cugat · Delimitació de barris",
+      "sourceUrl": "https://decidim.santcugat.cat/processes/planolconsellsdebarri?locale=ca"
+    },
+    {
+      "municipality": "Sant Cugat del Vallès",
+      "name": "Volpelleres",
+      "kind": "Barri · proposta municipal de delimitació 2024",
+      "official": true,
+      "source": "Ajuntament de Sant Cugat · Delimitació de barris",
+      "sourceUrl": "https://decidim.santcugat.cat/processes/planolconsellsdebarri?locale=ca"
+    },
+    {
+      "municipality": "Sant Feliu de Guíxols",
+      "name": "L'Eixample",
+      "kind": "Propuesta municipal/didáctica de barrios (2009)",
+      "official": false,
+      "source": "Arxiu Municipal de Sant Feliu de Guíxols · propuesta",
+      "sourceUrl": "https://www.arxiumunicipal.guixols.cat/tallers-d-historia/els-barris-de-sant-feliu.html"
+    },
+    {
+      "municipality": "Sant Feliu de Guíxols",
+      "name": "Nucli històric",
+      "kind": "Propuesta municipal/didáctica de barrios (2009)",
+      "official": false,
+      "source": "Arxiu Municipal de Sant Feliu de Guíxols · propuesta",
+      "sourceUrl": "https://www.arxiumunicipal.guixols.cat/tallers-d-historia/els-barris-de-sant-feliu.html"
+    },
+    {
+      "municipality": "Sant Feliu de Guíxols",
+      "name": "Paratges i urbanitzacions",
+      "kind": "Propuesta municipal/didáctica de barrios (2009)",
+      "official": false,
+      "source": "Arxiu Municipal de Sant Feliu de Guíxols · propuesta",
+      "sourceUrl": "https://www.arxiumunicipal.guixols.cat/tallers-d-historia/els-barris-de-sant-feliu.html"
+    },
+    {
+      "municipality": "Sant Feliu de Guíxols",
+      "name": "Port-Calassanç",
+      "kind": "Propuesta municipal/didáctica de barrios (2009)",
+      "official": false,
+      "source": "Arxiu Municipal de Sant Feliu de Guíxols · propuesta",
+      "sourceUrl": "https://www.arxiumunicipal.guixols.cat/tallers-d-historia/els-barris-de-sant-feliu.html"
+    },
+    {
+      "municipality": "Sant Feliu de Guíxols",
+      "name": "Sant Elm",
+      "kind": "Propuesta municipal/didáctica de barrios (2009)",
+      "official": false,
+      "source": "Arxiu Municipal de Sant Feliu de Guíxols · propuesta",
+      "sourceUrl": "https://www.arxiumunicipal.guixols.cat/tallers-d-historia/els-barris-de-sant-feliu.html"
+    },
+    {
+      "municipality": "Sant Feliu de Guíxols",
+      "name": "Sant Pol",
+      "kind": "Propuesta municipal/didáctica de barrios (2009)",
+      "official": false,
+      "source": "Arxiu Municipal de Sant Feliu de Guíxols · propuesta",
+      "sourceUrl": "https://www.arxiumunicipal.guixols.cat/tallers-d-historia/els-barris-de-sant-feliu.html"
+    },
+    {
+      "municipality": "Sant Feliu de Guíxols",
+      "name": "Tueda",
+      "kind": "Propuesta municipal/didáctica de barrios (2009)",
+      "official": false,
+      "source": "Arxiu Municipal de Sant Feliu de Guíxols · propuesta",
+      "sourceUrl": "https://www.arxiumunicipal.guixols.cat/tallers-d-historia/els-barris-de-sant-feliu.html"
+    },
+    {
+      "municipality": "Sant Feliu de Guíxols",
+      "name": "Vilartagues i Tueda de Dalt",
+      "kind": "Propuesta municipal/didáctica de barrios (2009)",
+      "official": false,
+      "source": "Arxiu Municipal de Sant Feliu de Guíxols · propuesta",
+      "sourceUrl": "https://www.arxiumunicipal.guixols.cat/tallers-d-historia/els-barris-de-sant-feliu.html"
+    },
+    {
+      "municipality": "Sant Feliu de Guíxols",
+      "name": "Volta de l'Ametller-Les Forques",
+      "kind": "Propuesta municipal/didáctica de barrios (2009)",
+      "official": false,
+      "source": "Arxiu Municipal de Sant Feliu de Guíxols · propuesta",
+      "sourceUrl": "https://www.arxiumunicipal.guixols.cat/tallers-d-historia/els-barris-de-sant-feliu.html"
+    },
+    {
+      "municipality": "Sant Joan Despí",
+      "name": "Centre",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Sant Joan Despí · Els barris",
+      "sourceUrl": "https://sjdespi.cat/sant-joan-despi/els-barris"
+    },
+    {
+      "municipality": "Sant Joan Despí",
+      "name": "Les Begudes",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Sant Joan Despí · Els barris",
+      "sourceUrl": "https://sjdespi.cat/sant-joan-despi/els-barris"
+    },
+    {
+      "municipality": "Sant Joan Despí",
+      "name": "Les Planes",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Sant Joan Despí · Els barris",
+      "sourceUrl": "https://sjdespi.cat/sant-joan-despi/els-barris"
+    },
+    {
+      "municipality": "Sant Joan Despí",
+      "name": "Pla del Vent - Torreblanca",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Sant Joan Despí · Els barris",
+      "sourceUrl": "https://sjdespi.cat/sant-joan-despi/els-barris"
+    },
+    {
+      "municipality": "Sant Joan Despí",
+      "name": "Residencial Sant Joan",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Sant Joan Despí · Els barris",
+      "sourceUrl": "https://sjdespi.cat/sant-joan-despi/els-barris"
+    },
+    {
+      "municipality": "Sant Pere de Ribes",
+      "name": "Can Lloses-Can Marcer",
+      "kind": "Urbanización",
+      "official": true,
+      "source": "Ajuntament de Sant Pere de Ribes",
+      "sourceUrl": "https://www.santperederibes.cat/municipi"
+    },
+    {
+      "municipality": "Sant Pere de Ribes",
+      "name": "Can Pere de la Plana",
+      "kind": "Urbanización",
+      "official": true,
+      "source": "Ajuntament de Sant Pere de Ribes",
+      "sourceUrl": "https://www.santperederibes.cat/municipi"
+    },
+    {
+      "municipality": "Sant Pere de Ribes",
+      "name": "Els Cards",
+      "kind": "Urbanización",
+      "official": true,
+      "source": "Ajuntament de Sant Pere de Ribes",
+      "sourceUrl": "https://www.santperederibes.cat/municipi"
+    },
+    {
+      "municipality": "Sant Pere de Ribes",
+      "name": "Els Colls",
+      "kind": "Urbanización",
+      "official": true,
+      "source": "Ajuntament de Sant Pere de Ribes",
+      "sourceUrl": "https://www.santperederibes.cat/municipi"
+    },
+    {
+      "municipality": "Sant Pere de Ribes",
+      "name": "Els Garrofers",
+      "kind": "Urbanización",
+      "official": true,
+      "source": "Ajuntament de Sant Pere de Ribes",
+      "sourceUrl": "https://www.santperederibes.cat/municipi"
+    },
+    {
+      "municipality": "Sant Pere de Ribes",
+      "name": "La Vilanoveta",
+      "kind": "Núcleo",
+      "official": true,
+      "source": "Ajuntament de Sant Pere de Ribes",
+      "sourceUrl": "https://www.santperederibes.cat/municipi"
+    },
+    {
+      "municipality": "Sant Pere de Ribes",
+      "name": "Les Roquetes",
+      "kind": "Núcleo",
+      "official": true,
+      "source": "Ajuntament de Sant Pere de Ribes",
+      "sourceUrl": "https://www.santperederibes.cat/municipi"
+    },
+    {
+      "municipality": "Sant Pere de Ribes",
+      "name": "Mas Alba",
+      "kind": "Urbanización",
+      "official": true,
+      "source": "Ajuntament de Sant Pere de Ribes",
+      "sourceUrl": "https://www.santperederibes.cat/municipi"
+    },
+    {
+      "municipality": "Sant Pere de Ribes",
+      "name": "Mas Parés de Dalt",
+      "kind": "Urbanización",
+      "official": true,
+      "source": "Ajuntament de Sant Pere de Ribes",
+      "sourceUrl": "https://www.santperederibes.cat/municipi"
+    },
+    {
+      "municipality": "Sant Pere de Ribes",
+      "name": "Mas d'en Serra",
+      "kind": "Urbanización",
+      "official": true,
+      "source": "Ajuntament de Sant Pere de Ribes",
+      "sourceUrl": "https://www.santperederibes.cat/municipi"
+    },
+    {
+      "municipality": "Sant Pere de Ribes",
+      "name": "Palou",
+      "kind": "Barrio de Ribes",
+      "official": true,
+      "source": "Ajuntament de Sant Pere de Ribes",
+      "sourceUrl": "https://www.santperederibes.cat/municipi"
+    },
+    {
+      "municipality": "Sant Pere de Ribes",
+      "name": "Puigmoltó",
+      "kind": "Núcleo",
+      "official": true,
+      "source": "Ajuntament de Sant Pere de Ribes",
+      "sourceUrl": "https://www.santperederibes.cat/municipi"
+    },
+    {
+      "municipality": "Sant Pere de Ribes",
+      "name": "Ribes",
+      "kind": "Núcleo",
+      "official": true,
+      "source": "Ajuntament de Sant Pere de Ribes",
+      "sourceUrl": "https://www.santperederibes.cat/municipi"
+    },
+    {
+      "municipality": "Sant Pere de Ribes",
+      "name": "Rocamar",
+      "kind": "Urbanización",
+      "official": true,
+      "source": "Ajuntament de Sant Pere de Ribes",
+      "sourceUrl": "https://www.santperederibes.cat/municipi"
+    },
+    {
+      "municipality": "Sant Pere de Ribes",
+      "name": "Vallpineda",
+      "kind": "Urbanización",
+      "official": true,
+      "source": "Ajuntament de Sant Pere de Ribes",
+      "sourceUrl": "https://www.santperederibes.cat/municipi"
+    },
+    {
+      "municipality": "Sant Pere de Ribes",
+      "name": "Viñedos-Can Macià",
+      "kind": "Urbanización",
+      "official": true,
+      "source": "Ajuntament de Sant Pere de Ribes",
+      "sourceUrl": "https://www.santperederibes.cat/municipi"
+    },
+    {
+      "municipality": "Sant Sadurní d'Anoia",
+      "name": "Ajuntament",
+      "kind": "Barri tradicional",
+      "official": true,
+      "source": "Ajuntament de Sant Sadurní d'Anoia",
+      "sourceUrl": "https://santsadurni.cat/festadelsbarris"
+    },
+    {
+      "municipality": "Sant Sadurní d'Anoia",
+      "name": "Cavallers",
+      "kind": "Barri tradicional",
+      "official": true,
+      "source": "Ajuntament de Sant Sadurní d'Anoia",
+      "sourceUrl": "https://santsadurni.cat/festadelsbarris"
+    },
+    {
+      "municipality": "Sant Sadurní d'Anoia",
+      "name": "Diputació",
+      "kind": "Barri tradicional",
+      "official": true,
+      "source": "Ajuntament de Sant Sadurní d'Anoia",
+      "sourceUrl": "https://santsadurni.cat/festadelsbarris"
+    },
+    {
+      "municipality": "Sant Sadurní d'Anoia",
+      "name": "Església",
+      "kind": "Barri tradicional",
+      "official": true,
+      "source": "Ajuntament de Sant Sadurní d'Anoia",
+      "sourceUrl": "https://santsadurni.cat/festadelsbarris"
+    },
+    {
+      "municipality": "Sant Sadurní d'Anoia",
+      "name": "Montserrat",
+      "kind": "Barri tradicional",
+      "official": true,
+      "source": "Ajuntament de Sant Sadurní d'Anoia",
+      "sourceUrl": "https://santsadurni.cat/festadelsbarris"
+    },
+    {
+      "municipality": "Sant Sadurní d'Anoia",
+      "name": "Raval",
+      "kind": "Barri tradicional",
+      "official": true,
+      "source": "Ajuntament de Sant Sadurní d'Anoia",
+      "sourceUrl": "https://santsadurni.cat/festadelsbarris"
+    },
+    {
+      "municipality": "Sant Sadurní d'Anoia",
+      "name": "Sant Antoni",
+      "kind": "Barri tradicional",
+      "official": true,
+      "source": "Ajuntament de Sant Sadurní d'Anoia",
+      "sourceUrl": "https://santsadurni.cat/festadelsbarris"
+    },
+    {
+      "municipality": "Santa Coloma de Gramenet",
+      "name": "Can Calvet",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Santa Coloma de Gramenet",
+      "sourceUrl": "https://www.gramenet.cat/ajuntament/districtes/contacte-districtes/"
+    },
+    {
+      "municipality": "Santa Coloma de Gramenet",
+      "name": "Can Franquesa",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Santa Coloma de Gramenet",
+      "sourceUrl": "https://www.gramenet.cat/ajuntament/districtes/contacte-districtes/"
+    },
+    {
+      "municipality": "Santa Coloma de Gramenet",
+      "name": "Can Mariner",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Santa Coloma de Gramenet",
+      "sourceUrl": "https://www.gramenet.cat/ajuntament/districtes/contacte-districtes/"
+    },
+    {
+      "municipality": "Santa Coloma de Gramenet",
+      "name": "Cementiri Vell",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Santa Coloma de Gramenet",
+      "sourceUrl": "https://www.gramenet.cat/ajuntament/districtes/contacte-districtes/"
+    },
+    {
+      "municipality": "Santa Coloma de Gramenet",
+      "name": "Centre",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Santa Coloma de Gramenet",
+      "sourceUrl": "https://www.gramenet.cat/ajuntament/districtes/contacte-districtes/"
+    },
+    {
+      "municipality": "Santa Coloma de Gramenet",
+      "name": "Fondo",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Santa Coloma de Gramenet",
+      "sourceUrl": "https://www.gramenet.cat/ajuntament/districtes/contacte-districtes/"
+    },
+    {
+      "municipality": "Santa Coloma de Gramenet",
+      "name": "Guinardera",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Santa Coloma de Gramenet",
+      "sourceUrl": "https://www.gramenet.cat/ajuntament/districtes/contacte-districtes/"
+    },
+    {
+      "municipality": "Santa Coloma de Gramenet",
+      "name": "Les Oliveres",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Santa Coloma de Gramenet",
+      "sourceUrl": "https://www.gramenet.cat/ajuntament/districtes/contacte-districtes/"
+    },
+    {
+      "municipality": "Santa Coloma de Gramenet",
+      "name": "Llatí",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Santa Coloma de Gramenet",
+      "sourceUrl": "https://www.gramenet.cat/ajuntament/districtes/contacte-districtes/"
+    },
+    {
+      "municipality": "Santa Coloma de Gramenet",
+      "name": "Raval",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Santa Coloma de Gramenet",
+      "sourceUrl": "https://www.gramenet.cat/ajuntament/districtes/contacte-districtes/"
+    },
+    {
+      "municipality": "Santa Coloma de Gramenet",
+      "name": "Riera Alta",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Santa Coloma de Gramenet",
+      "sourceUrl": "https://www.gramenet.cat/ajuntament/districtes/contacte-districtes/"
+    },
+    {
+      "municipality": "Santa Coloma de Gramenet",
+      "name": "Riu Nord",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Santa Coloma de Gramenet",
+      "sourceUrl": "https://www.gramenet.cat/ajuntament/districtes/contacte-districtes/"
+    },
+    {
+      "municipality": "Santa Coloma de Gramenet",
+      "name": "Riu Sud",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Santa Coloma de Gramenet",
+      "sourceUrl": "https://www.gramenet.cat/ajuntament/districtes/contacte-districtes/"
+    },
+    {
+      "municipality": "Santa Coloma de Gramenet",
+      "name": "Safaretjos",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Santa Coloma de Gramenet",
+      "sourceUrl": "https://www.gramenet.cat/ajuntament/districtes/contacte-districtes/"
+    },
+    {
+      "municipality": "Santa Coloma de Gramenet",
+      "name": "Santa Rosa",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Santa Coloma de Gramenet",
+      "sourceUrl": "https://www.gramenet.cat/ajuntament/districtes/contacte-districtes/"
+    },
+    {
+      "municipality": "Santa Coloma de Gramenet",
+      "name": "Serra de Marina",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Santa Coloma de Gramenet",
+      "sourceUrl": "https://www.gramenet.cat/ajuntament/districtes/contacte-districtes/"
+    },
+    {
+      "municipality": "Santa Coloma de Gramenet",
+      "name": "Singuerlín",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Santa Coloma de Gramenet",
+      "sourceUrl": "https://www.gramenet.cat/ajuntament/districtes/contacte-districtes/"
+    },
+    {
+      "municipality": "Santa Perpètua de Mogoda",
+      "name": "Can Filuà",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Santa Perpètua de Mogoda",
+      "sourceUrl": "https://www.staperpetua.cat/el-municipi/"
+    },
+    {
+      "municipality": "Santa Perpètua de Mogoda",
+      "name": "Can Folguera",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Santa Perpètua de Mogoda",
+      "sourceUrl": "https://www.staperpetua.cat/el-municipi/"
+    },
+    {
+      "municipality": "Santa Perpètua de Mogoda",
+      "name": "Can Taió",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Santa Perpètua de Mogoda",
+      "sourceUrl": "https://www.staperpetua.cat/el-municipi/"
+    },
+    {
+      "municipality": "Santa Perpètua de Mogoda",
+      "name": "Centre Vila",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Santa Perpètua de Mogoda",
+      "sourceUrl": "https://www.staperpetua.cat/el-municipi/"
+    },
+    {
+      "municipality": "Santa Perpètua de Mogoda",
+      "name": "La Creueta",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Santa Perpètua de Mogoda",
+      "sourceUrl": "https://www.staperpetua.cat/el-municipi/"
+    },
+    {
+      "municipality": "Santa Perpètua de Mogoda",
+      "name": "La Florida",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Santa Perpètua de Mogoda",
+      "sourceUrl": "https://www.staperpetua.cat/el-municipi/"
+    },
+    {
+      "municipality": "Santa Perpètua de Mogoda",
+      "name": "La Mogoda",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Santa Perpètua de Mogoda",
+      "sourceUrl": "https://www.staperpetua.cat/el-municipi/"
+    },
+    {
+      "municipality": "Santa Perpètua de Mogoda",
+      "name": "Mas Costa",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Santa Perpètua de Mogoda",
+      "sourceUrl": "https://www.staperpetua.cat/el-municipi/"
+    },
+    {
+      "municipality": "Tarragona",
+      "name": "Barris Marítims",
+      "kind": "Zona municipal",
+      "official": true,
+      "source": "Ajuntament de Tarragona · Mapa de zones 2013",
+      "sourceUrl": "https://www.tarragona.cat/la-ciutat/poblacio/fitxers/altres/plano-zones-empadronament",
+      "code": "3"
+    },
+    {
+      "municipality": "Tarragona",
+      "name": "Bonavista",
+      "kind": "Zona municipal",
+      "official": true,
+      "source": "Ajuntament de Tarragona · Mapa de zones 2013",
+      "sourceUrl": "https://www.tarragona.cat/la-ciutat/poblacio/fitxers/altres/plano-zones-empadronament",
+      "code": "8"
+    },
+    {
+      "municipality": "Tarragona",
+      "name": "Campclar",
+      "kind": "Zona municipal",
+      "official": true,
+      "source": "Ajuntament de Tarragona · Mapa de zones 2013",
+      "sourceUrl": "https://www.tarragona.cat/la-ciutat/poblacio/fitxers/altres/plano-zones-empadronament",
+      "code": "7"
+    },
+    {
+      "municipality": "Tarragona",
+      "name": "Eixample Tarragona",
+      "kind": "Zona municipal",
+      "official": true,
+      "source": "Ajuntament de Tarragona · Mapa de zones 2013",
+      "sourceUrl": "https://www.tarragona.cat/la-ciutat/poblacio/fitxers/altres/plano-zones-empadronament",
+      "code": "2"
+    },
+    {
+      "municipality": "Tarragona",
+      "name": "Nou Eixample Nord",
+      "kind": "Zona municipal",
+      "official": true,
+      "source": "Ajuntament de Tarragona · Mapa de zones 2013",
+      "sourceUrl": "https://www.tarragona.cat/la-ciutat/poblacio/fitxers/altres/plano-zones-empadronament",
+      "code": "4"
+    },
+    {
+      "municipality": "Tarragona",
+      "name": "Nou Eixample Sud",
+      "kind": "Zona municipal",
+      "official": true,
+      "source": "Ajuntament de Tarragona · Mapa de zones 2013",
+      "sourceUrl": "https://www.tarragona.cat/la-ciutat/poblacio/fitxers/altres/plano-zones-empadronament",
+      "code": "5"
+    },
+    {
+      "municipality": "Tarragona",
+      "name": "Part Alta",
+      "kind": "Zona municipal",
+      "official": true,
+      "source": "Ajuntament de Tarragona · Mapa de zones 2013",
+      "sourceUrl": "https://www.tarragona.cat/la-ciutat/poblacio/fitxers/altres/plano-zones-empadronament",
+      "code": "1"
+    },
+    {
+      "municipality": "Tarragona",
+      "name": "Sant Pere i Sant Pau",
+      "kind": "Zona municipal",
+      "official": true,
+      "source": "Ajuntament de Tarragona · Mapa de zones 2013",
+      "sourceUrl": "https://www.tarragona.cat/la-ciutat/poblacio/fitxers/altres/plano-zones-empadronament",
+      "code": "11"
+    },
+    {
+      "municipality": "Tarragona",
+      "name": "Sant Salvador",
+      "kind": "Zona municipal",
+      "official": true,
+      "source": "Ajuntament de Tarragona · Mapa de zones 2013",
+      "sourceUrl": "https://www.tarragona.cat/la-ciutat/poblacio/fitxers/altres/plano-zones-empadronament",
+      "code": "10"
+    },
+    {
+      "municipality": "Tarragona",
+      "name": "Torreforta i barris adjacents",
+      "kind": "Zona municipal",
+      "official": true,
+      "source": "Ajuntament de Tarragona · Mapa de zones 2013",
+      "sourceUrl": "https://www.tarragona.cat/la-ciutat/poblacio/fitxers/altres/plano-zones-empadronament",
+      "code": "6"
+    },
+    {
+      "municipality": "Tarragona",
+      "name": "Urbanitzacions de Llevant",
+      "kind": "Zona municipal",
+      "official": true,
+      "source": "Ajuntament de Tarragona · Mapa de zones 2013",
+      "sourceUrl": "https://www.tarragona.cat/la-ciutat/poblacio/fitxers/altres/plano-zones-empadronament",
+      "code": "12"
+    },
+    {
+      "municipality": "Tiana",
+      "name": "Mas Ram",
+      "kind": "Barrio",
+      "official": true,
+      "source": "Ajuntament de Tiana · Pla Local d’Adaptació al Canvi Climàtic",
+      "sourceUrl": "https://tiana.cat/wp-content/uploads/2023/03/PLACC_TIANA.pdf"
+    },
+    {
+      "municipality": "Tiana",
+      "name": "Nucli antic",
+      "kind": "Núcleo",
+      "official": true,
+      "source": "Ajuntament de Tiana · Pla Local d’Adaptació al Canvi Climàtic",
+      "sourceUrl": "https://tiana.cat/wp-content/uploads/2023/03/PLACC_TIANA.pdf"
+    },
+    {
+      "municipality": "Tiana",
+      "name": "la Virreina",
+      "kind": "Barrio",
+      "official": true,
+      "source": "Ajuntament de Tiana · Pla Local d’Adaptació al Canvi Climàtic",
+      "sourceUrl": "https://tiana.cat/wp-content/uploads/2023/03/PLACC_TIANA.pdf"
+    },
+    {
+      "municipality": "Vic",
+      "name": "Caputxins",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Vic · Pla Director de Barris",
+      "sourceUrl": "https://www.vic.cat/serveis/ciutadania/ciutadania/suport-municipal-als-barris"
+    },
+    {
+      "municipality": "Vic",
+      "name": "Carrer Sant Pere",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Vic · Pla Director de Barris",
+      "sourceUrl": "https://www.vic.cat/serveis/ciutadania/ciutadania/suport-municipal-als-barris"
+    },
+    {
+      "municipality": "Vic",
+      "name": "Centre històric",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Vic · Pla Director de Barris",
+      "sourceUrl": "https://www.vic.cat/serveis/ciutadania/ciutadania/suport-municipal-als-barris"
+    },
+    {
+      "municipality": "Vic",
+      "name": "Estadi",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Vic · Pla Director de Barris",
+      "sourceUrl": "https://www.vic.cat/serveis/ciutadania/ciutadania/suport-municipal-als-barris"
+    },
+    {
+      "municipality": "Vic",
+      "name": "Horta Vermella",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Vic · Pla Director de Barris",
+      "sourceUrl": "https://www.vic.cat/serveis/ciutadania/ciutadania/suport-municipal-als-barris"
+    },
+    {
+      "municipality": "Vic",
+      "name": "La Calla",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Vic · Pla Director de Barris",
+      "sourceUrl": "https://www.vic.cat/serveis/ciutadania/ciutadania/suport-municipal-als-barris"
+    },
+    {
+      "municipality": "Vic",
+      "name": "La Guixa",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Vic · Pla Director de Barris",
+      "sourceUrl": "https://www.vic.cat/serveis/ciutadania/ciutadania/suport-municipal-als-barris"
+    },
+    {
+      "municipality": "Vic",
+      "name": "Nord",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Vic · Pla Director de Barris",
+      "sourceUrl": "https://www.vic.cat/serveis/ciutadania/ciutadania/suport-municipal-als-barris"
+    },
+    {
+      "municipality": "Vic",
+      "name": "Osona",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Vic · Pla Director de Barris",
+      "sourceUrl": "https://www.vic.cat/serveis/ciutadania/ciutadania/suport-municipal-als-barris"
+    },
+    {
+      "municipality": "Vic",
+      "name": "Remei",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Vic · Pla Director de Barris",
+      "sourceUrl": "https://www.vic.cat/serveis/ciutadania/ciutadania/suport-municipal-als-barris"
+    },
+    {
+      "municipality": "Vic",
+      "name": "Sant Anna",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Vic · Pla Director de Barris",
+      "sourceUrl": "https://www.vic.cat/serveis/ciutadania/ciutadania/suport-municipal-als-barris"
+    },
+    {
+      "municipality": "Vic",
+      "name": "Sant Llàtzer i les Quatres Estacions",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Vic · Pla Director de Barris",
+      "sourceUrl": "https://www.vic.cat/serveis/ciutadania/ciutadania/suport-municipal-als-barris"
+    },
+    {
+      "municipality": "Vic",
+      "name": "Serra-de-senferm",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Vic · Pla Director de Barris",
+      "sourceUrl": "https://www.vic.cat/serveis/ciutadania/ciutadania/suport-municipal-als-barris"
+    },
+    {
+      "municipality": "Vic",
+      "name": "Sucre",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Vic · Pla Director de Barris",
+      "sourceUrl": "https://www.vic.cat/serveis/ciutadania/ciutadania/suport-municipal-als-barris"
+    },
+    {
+      "municipality": "Vilafranca del Penedès",
+      "name": "Barceloneta-Sant Magí",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Vilafranca del Penedès",
+      "sourceUrl": "https://contractaciopublica.cat/portal-api/descarrega-document/302015698/624084B4F450FB873CF2523E979EF631"
+    },
+    {
+      "municipality": "Vilafranca del Penedès",
+      "name": "Centre de la Vila",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Vilafranca del Penedès",
+      "sourceUrl": "https://contractaciopublica.cat/portal-api/descarrega-document/302015698/624084B4F450FB873CF2523E979EF631"
+    },
+    {
+      "municipality": "Vilafranca del Penedès",
+      "name": "La Girada",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Vilafranca del Penedès",
+      "sourceUrl": "https://contractaciopublica.cat/portal-api/descarrega-document/302015698/624084B4F450FB873CF2523E979EF631"
+    },
+    {
+      "municipality": "Vilafranca del Penedès",
+      "name": "Les Clotes",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Vilafranca del Penedès",
+      "sourceUrl": "https://contractaciopublica.cat/portal-api/descarrega-document/302015698/624084B4F450FB873CF2523E979EF631"
+    },
+    {
+      "municipality": "Vilafranca del Penedès",
+      "name": "Molí d'en Rovira",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Vilafranca del Penedès",
+      "sourceUrl": "https://contractaciopublica.cat/portal-api/descarrega-document/302015698/624084B4F450FB873CF2523E979EF631"
+    },
+    {
+      "municipality": "Vilafranca del Penedès",
+      "name": "Poble Nou",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Vilafranca del Penedès",
+      "sourceUrl": "https://contractaciopublica.cat/portal-api/descarrega-document/302015698/624084B4F450FB873CF2523E979EF631"
+    },
+    {
+      "municipality": "Vilafranca del Penedès",
+      "name": "Sant Julià",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Vilafranca del Penedès",
+      "sourceUrl": "https://contractaciopublica.cat/portal-api/descarrega-document/302015698/624084B4F450FB873CF2523E979EF631"
+    },
+    {
+      "municipality": "Vilafranca del Penedès",
+      "name": "l'Espirall",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Vilafranca del Penedès",
+      "sourceUrl": "https://contractaciopublica.cat/portal-api/descarrega-document/302015698/624084B4F450FB873CF2523E979EF631"
+    },
+    {
+      "municipality": "Vilanova i la Geltrú",
+      "name": "Barri de Mar",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Vilanova i la Geltrú",
+      "sourceUrl": "https://www.vilanova.cat/participacio/descripcio_dels_barris"
+    },
+    {
+      "municipality": "Vilanova i la Geltrú",
+      "name": "Can Marquès",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Vilanova i la Geltrú",
+      "sourceUrl": "https://www.vilanova.cat/participacio/descripcio_dels_barris"
+    },
+    {
+      "municipality": "Vilanova i la Geltrú",
+      "name": "Casernes",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Vilanova i la Geltrú",
+      "sourceUrl": "https://www.vilanova.cat/participacio/descripcio_dels_barris"
+    },
+    {
+      "municipality": "Vilanova i la Geltrú",
+      "name": "Centrevila",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Vilanova i la Geltrú",
+      "sourceUrl": "https://www.vilanova.cat/participacio/descripcio_dels_barris"
+    },
+    {
+      "municipality": "Vilanova i la Geltrú",
+      "name": "Fondo Somella",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Vilanova i la Geltrú",
+      "sourceUrl": "https://www.vilanova.cat/participacio/descripcio_dels_barris"
+    },
+    {
+      "municipality": "Vilanova i la Geltrú",
+      "name": "L'Aragai",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Vilanova i la Geltrú",
+      "sourceUrl": "https://www.vilanova.cat/participacio/descripcio_dels_barris"
+    },
+    {
+      "municipality": "Vilanova i la Geltrú",
+      "name": "L'Armanyà",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Vilanova i la Geltrú",
+      "sourceUrl": "https://www.vilanova.cat/participacio/descripcio_dels_barris"
+    },
+    {
+      "municipality": "Vilanova i la Geltrú",
+      "name": "La Collada - Els Sis Camins",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Vilanova i la Geltrú",
+      "sourceUrl": "https://www.vilanova.cat/participacio/descripcio_dels_barris"
+    },
+    {
+      "municipality": "Vilanova i la Geltrú",
+      "name": "La Geltrú",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Vilanova i la Geltrú",
+      "sourceUrl": "https://www.vilanova.cat/participacio/descripcio_dels_barris"
+    },
+    {
+      "municipality": "Vilanova i la Geltrú",
+      "name": "Masia Nova",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Vilanova i la Geltrú",
+      "sourceUrl": "https://www.vilanova.cat/participacio/descripcio_dels_barris"
+    },
+    {
+      "municipality": "Vilanova i la Geltrú",
+      "name": "Molí de Vent",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Vilanova i la Geltrú",
+      "sourceUrl": "https://www.vilanova.cat/participacio/descripcio_dels_barris"
+    },
+    {
+      "municipality": "Vilanova i la Geltrú",
+      "name": "Nucli Antic",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Vilanova i la Geltrú",
+      "sourceUrl": "https://www.vilanova.cat/participacio/descripcio_dels_barris"
+    },
+    {
+      "municipality": "Vilanova i la Geltrú",
+      "name": "Plaça de La Sardana",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Vilanova i la Geltrú",
+      "sourceUrl": "https://www.vilanova.cat/participacio/descripcio_dels_barris"
+    },
+    {
+      "municipality": "Vilanova i la Geltrú",
+      "name": "Prat de Vilanova",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Vilanova i la Geltrú",
+      "sourceUrl": "https://www.vilanova.cat/participacio/descripcio_dels_barris"
+    },
+    {
+      "municipality": "Vilanova i la Geltrú",
+      "name": "Ribes Roges",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Vilanova i la Geltrú",
+      "sourceUrl": "https://www.vilanova.cat/participacio/descripcio_dels_barris"
+    },
+    {
+      "municipality": "Vilanova i la Geltrú",
+      "name": "Sant Joan",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Vilanova i la Geltrú",
+      "sourceUrl": "https://www.vilanova.cat/participacio/descripcio_dels_barris"
+    },
+    {
+      "municipality": "Vilanova i la Geltrú",
+      "name": "Santa Maria",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Vilanova i la Geltrú",
+      "sourceUrl": "https://www.vilanova.cat/participacio/descripcio_dels_barris"
+    },
+    {
+      "municipality": "Vilanova i la Geltrú",
+      "name": "Tacó",
+      "kind": "Barri",
+      "official": true,
+      "source": "Ajuntament de Vilanova i la Geltrú",
+      "sourceUrl": "https://www.vilanova.cat/participacio/descripcio_dels_barris"
+    },
+    {
+      "municipality": "el Masnou",
+      "name": "Bellresguard",
+      "kind": "Barrio",
+      "official": true,
+      "source": "Ajuntament del Masnou · procés participatiu PMUS",
+      "sourceUrl": "https://www.elmasnou.cat/actualitat/noticies/la-ciutadania-fa-un-munt-de-propostes-durant-el-proces-participatiu-del-pla-de-mobilitat"
+    },
+    {
+      "municipality": "el Masnou",
+      "name": "La Colomina",
+      "kind": "Barrio",
+      "official": true,
+      "source": "Ajuntament del Masnou · urbanització de la Colomina",
+      "sourceUrl": "https://elmasnou.cat/actualitat/noticies/comencen-les-obres-durbanitzacio-a-la-zona-nord-del-barri-de-la-colomina"
+    },
+    {
+      "municipality": "el Masnou",
+      "name": "Masnou Alt",
+      "kind": "Barrio",
+      "official": true,
+      "source": "Ajuntament del Masnou · procés participatiu PMUS",
+      "sourceUrl": "https://www.elmasnou.cat/actualitat/noticies/la-ciutadania-fa-un-munt-de-propostes-durant-el-proces-participatiu-del-pla-de-mobilitat"
+    },
+    {
+      "municipality": "el Masnou",
+      "name": "Masnou Centre",
+      "kind": "Barrio",
+      "official": true,
+      "source": "Ajuntament del Masnou · Pla local d’habitatge",
+      "sourceUrl": "https://www.elmasnou.cat/media/repository/habitatge/Pla_Local_Habitatge_Abril2021.pdf"
+    },
+    {
+      "municipality": "el Masnou",
+      "name": "Ocata",
+      "kind": "Barrio",
+      "official": true,
+      "source": "Ajuntament del Masnou · procés participatiu PMUS",
+      "sourceUrl": "https://www.elmasnou.cat/actualitat/noticies/la-ciutadania-fa-un-munt-de-propostes-durant-el-proces-participatiu-del-pla-de-mobilitat"
+    }
+  ]
+}

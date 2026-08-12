@@ -1,0 +1,14 @@
+girona:
+  priority: 1
+  status: partial
+  source_reviewed: true
+  geometry_reviewed: false
+  interest_zones_matched: 8
+  unresolved_aliases: []
+barcelona:
+  priority: 1
+  status: pending
+  source_reviewed: false
+  geometry_reviewed: false
+  interest_zones_matched: 15
+  unresolved_aliases: []

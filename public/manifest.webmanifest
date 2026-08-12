@@ -1,0 +1,10 @@
+{
+  "name": "Radar de pisos Catalunya",
+  "short_name": "Radar pisos",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#f4614c",
+  "description": "Radar de municipios, barrios y pisos vistos de Cataluña.",
+  "orientation": "portrait-primary"
+}

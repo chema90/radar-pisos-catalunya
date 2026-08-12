@@ -1,0 +1,119 @@
+- id: icgc-divisions-administratives
+  municipality: Catalunya
+  organization: Institut Cartogràfic i Geològic de Catalunya (ICGC)
+  title: Divisions administratives de Catalunya — municipis 1:50.000
+  url: https://geoserveis.icgc.cat/vector01/rest/services/divisions_administratives_wms/MapServer/13/query
+  source_type: official
+  format: GeoJSON
+  license: CC BY 4.0
+  accessed_at: 2026-08-02
+  declared_updated_at: 2026-05
+  source_level: municipal-boundary
+  adapter: scripts/build_municipality_catalog.py
+  checksum: generated-on-refresh
+  notes: Catálogo y límites municipales oficiales; las divisiones internas requieren fuentes municipales.
+- id: sant-pere-de-ribes-municipi
+  municipality: Sant Pere de Ribes
+  organization: Ajuntament de Sant Pere de Ribes
+  title: El Municipi — nuclis de població i urbanitzacions
+  url: https://www.santperederibes.cat/municipi
+  source_type: official
+  format: HTML
+  accessed_at: 2026-08-02
+  source_level: nucleus-and-urbanization-list
+  notes: Ribes i les Roquetes són els nuclis més poblats; també enumera Puigmoltó, la Vilanoveta i les urbanitzacions del municipi.
+- id: barcelona-barris-open-data
+  municipality: Barcelona
+  organization: Ajuntament de Barcelona
+  title: Districtes i barris de Barcelona
+  url: https://opendata-ajuntament.barcelona.cat/data/ca/dataset/20170706-districtes-barris
+  source_type: official
+  format: JSON WKT / GeoJSON normalizado
+  accessed_at: 2026-08-02
+  source_level: neighbourhood-boundary
+  adapter: scripts/convert_barcelona_zones.mjs
+  notes: 73 barrios oficiales, incluido el Fort Pienc (código 05).
+- id: tarragona-barris-feature-service
+  municipality: Tarragona
+  organization: Ajuntament de Tarragona
+  title: Geoportal municipal — Barris
+  url: https://geoportal.tarragona.cat/server/rest/services/Hosted/Barris/FeatureServer/0
+  source_type: official
+  format: ArcGIS FeatureServer
+  accessed_at: 2026-08-02
+  source_level: neighbourhood-boundary
+  notes: Servicio vectorial poligonal. Actualmente solo 2 entidades llegan con el campo nom informado y el resto llega vacío; se conserva la cobertura parcial, no se autoimporta y ICGC permanece como cobertura principal.
+- id: sant-sadurni-barris
+  municipality: Sant Sadurní d'Anoia
+  organization: Ajuntament de Sant Sadurní d'Anoia
+  title: Festa dels Barris
+  url: https://santsadurni.cat/festadelsbarris
+  source_type: official
+  format: HTML
+  accessed_at: 2026-08-02
+  source_level: traditional-neighbourhood-list
+  notes: Lista oficial de siete barrios tradicionales; no se encontró una capa de polígonos descargable.
+- id: vilafranca-barris
+  municipality: Vilafranca del Penedès
+  organization: Ajuntament de Vilafranca del Penedès
+  title: Distribució dels barris
+  url: https://contractaciopublica.cat/portal-api/descarrega-document/302015698/624084B4F450FB873CF2523E979EF631
+  source_type: official
+  format: PDF
+  accessed_at: 2026-08-02
+  source_level: neighbourhood-list
+  notes: Lista municipal de ocho barrios; no se encontró GeoJSON directo.
+- id: maresme-muc
+  municipality: Maresme
+  organization: Consell Comarcal del Maresme
+  title: Mapa Urbanístic de Catalunya
+  url: https://seu-e.cat/es/web/ccmaresme/dades-obertes/-/dadesobertes/dataset/8b583ab7-d8db-4003-9aa7-0a1fa29971ee
+  source_type: official
+  format: SHP / GML / WMS
+  accessed_at: 2026-08-02
+  source_level: urban-planning
+  notes: Fuente territorial de respaldo; no equivale necesariamente a barrios.
+- id: sabadell-barris-wfs
+  municipality: Sabadell
+  organization: Ajuntament de Sabadell
+  title: Servei de descàrrega WFS — divisions territorials
+  url: https://geoserver.ajsabadell.cat/geoserver/sbdwfs/ows
+  source_type: official
+  format: OGC WFS
+  accessed_at: 2026-08-09
+  source_level: neighbourhood-boundary
+  adapter: scripts/import_zones.mjs
+  notes: El adaptador descubre las FeatureType y prioriza la capa de barris; evita sectores, distritos, secciones y callejero.
+- id: terrassa-barris-arcgis
+  municipality: Terrassa
+  organization: Ajuntament de Terrassa
+  title: Barris de Terrassa — pt_barri
+  url: https://emap.terrassa.cat/arcgis/rest/services/Utilitaris/ajt_divadm/MapServer/1
+  source_type: official
+  format: ArcGIS REST
+  accessed_at: 2026-08-09
+  source_level: neighbourhood-boundary
+  adapter: scripts/import_zones.mjs
+  notes: Capa poligonal municipal; campo de nombre NOM_BARRI.
+- id: hospitalet-barris-ckan
+  municipality: l'Hospitalet de Llobregat
+  organization: Ajuntament de l'Hospitalet de Llobregat
+  title: Divisions territorials — Barris
+  url: https://seu-e.cat/ca/web/hospitaletdellobregat/dades-obertes/-/dadesobertes/dataset/hospitaletdellobregat-divisions-territorials/resource/bd2277b0-dce7-4a92-a923-bbe6620175ea
+  source_type: official
+  format: CKAN/OData + CSV con WKT
+  accessed_at: 2026-08-09
+  source_level: neighbourhood-boundary
+  adapter: scripts/import_zones.mjs
+  notes: 13 barrios. La API/CSV incluye Geometria_WGS84_LonLat en WKT; el adaptador convierte POLYGON/MULTIPOLYGON a GeoJSON. El archivo CSV local se conserva como respaldo reproducible.
+- id: amb-aem
+  municipality: Àrea Metropolitana de Barcelona
+  organization: Àrea Metropolitana de Barcelona (AMB)
+  title: Àmbits Estadístics Metropolitans
+  url: https://geoportal.amb.cat/geoserveis/rest/services/PEstrategica/mascara_ambits_estadistics_3857/MapServer/1
+  source_type: official-secondary
+  format: ArcGIS REST / GeoJSON
+  accessed_at: 2026-08-09
+  source_level: statistical-area-boundary
+  adapter: scripts/import_amb_aem.mjs
+  notes: 268 ámbitos en los 36 municipios metropolitanos. Es una fuente poligonal de respaldo: no sustituye una capa municipal oficial completa. En muchos municipios coincide con barrios; en otros son ámbitos estadísticos acordados con el ayuntamiento.

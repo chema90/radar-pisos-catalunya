@@ -1,0 +1,185 @@
+INFORME AMB - RADAR DE PISOS
+============================
+
+Este informe NO activa ni sustituye datos. Solo indica qué fuente conviene revisar.
+
+Badalona
+  Barrios/zonas municipales guardados: 34 (oficiales)
+  Zonas AMB candidatas: 14
+  Decisión: USAR MUNICIPAL: ya existe una división municipal oficial válida.
+
+Badia del Vallès
+  Barrios/zonas municipales guardados: 0
+  Zonas AMB candidatas: 1
+  Decisión: REVISAR AMB: hay una propuesta AMB descargada, todavía no activa.
+
+Barberà del Vallès
+  Barrios/zonas municipales guardados: 0
+  Zonas AMB candidatas: 7
+  Decisión: REVISAR AMB: hay una propuesta AMB descargada, todavía no activa.
+
+Barcelona
+  Barrios/zonas municipales guardados: 73 (oficiales)
+  Zonas AMB candidatas: 73
+  Decisión: USAR MUNICIPAL: ya existe una división municipal oficial válida.
+
+Begues
+  Barrios/zonas municipales guardados: 0
+  Zonas AMB candidatas: 2
+  Decisión: REVISAR AMB: hay una propuesta AMB descargada, todavía no activa.
+
+Castellbisbal
+  Barrios/zonas municipales guardados: 0
+  Zonas AMB candidatas: 3
+  Decisión: REVISAR AMB: hay una propuesta AMB descargada, todavía no activa.
+
+Castelldefels
+  Barrios/zonas municipales guardados: 0
+  Zonas AMB candidatas: 5
+  Decisión: REVISAR AMB: hay una propuesta AMB descargada, todavía no activa.
+
+Cerdanyola del Vallès
+  Barrios/zonas municipales guardados: 0
+  Zonas AMB candidatas: 9
+  Decisión: REVISAR AMB: hay una propuesta AMB descargada, todavía no activa.
+
+Cervelló
+  Barrios/zonas municipales guardados: 0
+  Zonas AMB candidatas: 3
+  Decisión: REVISAR AMB: hay una propuesta AMB descargada, todavía no activa.
+
+Corbera de Llobregat
+  Barrios/zonas municipales guardados: 0
+  Zonas AMB candidatas: 7
+  Decisión: REVISAR AMB: hay una propuesta AMB descargada, todavía no activa.
+
+Cornellà de Llobregat
+  Barrios/zonas municipales guardados: 0
+  Zonas AMB candidatas: 7
+  Decisión: REVISAR AMB: hay una propuesta AMB descargada, todavía no activa.
+
+el Papiol
+  Barrios/zonas municipales guardados: 0
+  Zonas AMB candidatas: 1
+  Decisión: REVISAR AMB: hay una propuesta AMB descargada, todavía no activa.
+
+el Prat de Llobregat
+  Barrios/zonas municipales guardados: 0
+  Zonas AMB candidatas: 9
+  Decisión: REVISAR AMB: hay una propuesta AMB descargada, todavía no activa.
+
+Esplugues de Llobregat
+  Barrios/zonas municipales guardados: 0
+  Zonas AMB candidatas: 5
+  Decisión: REVISAR AMB: hay una propuesta AMB descargada, todavía no activa.
+
+Gavà
+  Barrios/zonas municipales guardados: 0
+  Zonas AMB candidatas: 5
+  Decisión: REVISAR AMB: hay una propuesta AMB descargada, todavía no activa.
+
+l'Hospitalet de Llobregat
+  Barrios/zonas municipales guardados: 13 (oficiales)
+  Zonas AMB candidatas: 13
+  Decisión: USAR MUNICIPAL: ya existe una división municipal oficial válida.
+
+la Palma de Cervelló
+  Barrios/zonas municipales guardados: 0
+  Zonas AMB candidatas: 1
+  Decisión: REVISAR AMB: hay una propuesta AMB descargada, todavía no activa.
+
+Molins de Rei
+  Barrios/zonas municipales guardados: 0
+  Zonas AMB candidatas: 5
+  Decisión: REVISAR AMB: hay una propuesta AMB descargada, todavía no activa.
+
+Montcada i Reixac
+  Barrios/zonas municipales guardados: 0
+  Zonas AMB candidatas: 6
+  Decisión: REVISAR AMB: hay una propuesta AMB descargada, todavía no activa.
+
+Montgat
+  Barrios/zonas municipales guardados: 0
+  Zonas AMB candidatas: 4
+  Decisión: REVISAR AMB: hay una propuesta AMB descargada, todavía no activa.
+
+Pallejà
+  Barrios/zonas municipales guardados: 0
+  Zonas AMB candidatas: 4
+  Decisión: REVISAR AMB: hay una propuesta AMB descargada, todavía no activa.
+
+Ripollet
+  Barrios/zonas municipales guardados: 0
+  Zonas AMB candidatas: 7
+  Decisión: REVISAR AMB: hay una propuesta AMB descargada, todavía no activa.
+
+Sant Adrià de Besòs
+  Barrios/zonas municipales guardados: 0
+  Zonas AMB candidatas: 6
+  Decisión: REVISAR AMB: hay una propuesta AMB descargada, todavía no activa.
+
+Sant Andreu de la Barca
+  Barrios/zonas municipales guardados: 8 (oficiales)
+  Zonas AMB candidatas: 5
+  Decisión: USAR MUNICIPAL: ya existe una división municipal oficial válida.
+
+Sant Boi de Llobregat
+  Barrios/zonas municipales guardados: 0
+  Zonas AMB candidatas: 6
+  Decisión: REVISAR AMB: hay una propuesta AMB descargada, todavía no activa.
+
+Sant Climent de Llobregat
+  Barrios/zonas municipales guardados: 0
+  Zonas AMB candidatas: 1
+  Decisión: REVISAR AMB: hay una propuesta AMB descargada, todavía no activa.
+
+Sant Cugat del Vallès
+  Barrios/zonas municipales guardados: 53 (oficiales)
+  Zonas AMB candidatas: 0
+  Decisión: NO USAR AMB: Sant Cugat tiene una capa municipal específica de barrios; hay que importar esa capa correctamente.
+
+Sant Feliu de Llobregat
+  Barrios/zonas municipales guardados: 10
+  Zonas AMB candidatas: 8
+  Decisión: REVISAR AMB: hay una propuesta AMB descargada, todavía no activa.
+
+Sant Joan Despí
+  Barrios/zonas municipales guardados: 0
+  Zonas AMB candidatas: 7
+  Decisión: REVISAR AMB: hay una propuesta AMB descargada, todavía no activa.
+
+Sant Just Desvern
+  Barrios/zonas municipales guardados: 0
+  Zonas AMB candidatas: 5
+  Decisión: REVISAR AMB: hay una propuesta AMB descargada, todavía no activa.
+
+Sant Vicenç dels Horts
+  Barrios/zonas municipales guardados: 0
+  Zonas AMB candidatas: 5
+  Decisión: REVISAR AMB: hay una propuesta AMB descargada, todavía no activa.
+
+Santa Coloma de Cervelló
+  Barrios/zonas municipales guardados: 0
+  Zonas AMB candidatas: 6
+  Decisión: REVISAR AMB: hay una propuesta AMB descargada, todavía no activa.
+
+Santa Coloma de Gramenet
+  Barrios/zonas municipales guardados: 0
+  Zonas AMB candidatas: 11
+  Decisión: REVISAR AMB: hay una propuesta AMB descargada, todavía no activa.
+
+Tiana
+  Barrios/zonas municipales guardados: 0
+  Zonas AMB candidatas: 1
+  Decisión: REVISAR AMB: hay una propuesta AMB descargada, todavía no activa.
+
+Torrelles de Llobregat
+  Barrios/zonas municipales guardados: 0
+  Zonas AMB candidatas: 3
+  Decisión: REVISAR AMB: hay una propuesta AMB descargada, todavía no activa.
+
+Viladecans
+  Barrios/zonas municipales guardados: 13 (oficiales)
+  Zonas AMB candidatas: 7
+  Decisión: USAR MUNICIPAL: ya existe una división municipal oficial válida.
+

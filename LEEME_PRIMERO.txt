@@ -1,0 +1,136 @@
+RADAR DE PISOS CATALUNYA - V33
+
+USA SOLO ESTOS TRES ARCHIVOS, EN ESTE ORDEN:
+
+  1. 01_ACTUALIZAR_DATOS.cmd
+  2. 02_COMPROBAR_RADAR.cmd
+  3. 03_ARRANCAR_RADAR.cmd
+
+La primera vez necesita Node.js 22.15 o superior y puede ejecutar npm ci
+para instalar las dependencias. Eso solo reconstruye node_modules; no toca
+tus preferencias ni tus geodatos.
+
+QUE HACE EL PASO 01
+-------------------
+- Intenta actualizar capas municipales oficiales y SOLO las guarda si superan
+  las comprobaciones de número, nombres, geometría y ubicación territorial.
+- Sant Cugat y Valldoreix quedan protegidos por su geometría nativa ya auditada.
+- Vilanova obtiene los 18 barrios desde el WMS municipal (polígonos + capa de
+  etiquetas) y valida su encaje territorial antes de guardarlos.
+- Viladecans consulta el FeatureServer municipal Població per Barris y solo
+  activa la capa si supera las validaciones.
+- Tarragona consulta directamente la capa municipal Hosted/Barris y, si pasa
+  la validación, conserva además las 11 zonas municipales amplias ya auditadas.
+- Esplugues consulta el geoportal Nexus municipal actual buscando WFS/WMS/ArcGIS.
+  Solo se acepta una división que contenga los 10 barrios oficiales.
+- DIBA se usa como REFERENCIA de núcleos/urbanizaciones para Maresme, Vilafranca,
+  Sant Sadurní, Vilanova, Corbera y Esplugues. Nunca se etiqueta como barrio.
+- Descarga AMB solo como CANDIDATO. No lo activa automáticamente.
+
+
+V33 · CAMBIOS IMPORTANTES
+------------------------
+- Corregido de forma estructural el formulario Crear desglose: los botones ya no
+  comparten la misma rejilla que los campos, por lo que Buscar límites online no
+  puede comprimirse a una columna estrecha.
+- Nueva fuente vectorial directa de barrios de Tarragona desde el Geoportal
+  municipal.
+- Búsqueda profunda actualizada: Rubí (23 ámbitos), Sant Andreu de la Barca
+  (8 barrios), Montcada i Reixac (12 barrios/núcleos), Santa Coloma y SITMUN.
+- No se han modificado los GeoJSON auditados de Sant Cugat ni Valldoreix.
+
+SANT CUGAT Y VALLDOREIX
+-----------------------
+La geometría sigue siendo exactamente la capa municipal auditada DIVTER_BARRIS
+(revisión 15/04/2024): 68 polígonos, separados en 53 zonas de Sant Cugat y 15
+de la EMD de Valldoreix. De Valldoreix hay 13 barrios residenciales + 2 zonas
+no residenciales. V26 corrige únicamente el COMPROBADOR: ahora reconoce los
+nombres nativos Can Casulleres y Montmany, por lo que ya no debe aparecer el
+falso aviso PENDIENTE. No se ha cambiado ningún polígono.
+
+VILANOVA I LA GELTRU
+--------------------
+El Ayuntamiento documenta 18 ámbitos de barrio y publica BARRIS y BARRIS_T en
+su WMS municipal. El actualizador obtiene los 18 polígonos, empareja espacialmente
+las 18 etiquetas y normaliza las coordenadas del KML desde píxel WMS al bbox
+municipal. Solo se guarda si los 18 nombres y la geometría superan la validación.
+
+SANT SADURNI Y VILAFRANCA
+-------------------------
+Sant Sadurní mantiene sus 7 barrios tradicionales oficiales. Vilafranca mantiene
+sus 8 barrios oficiales. No se asignan falsamente los polígonos ICGC de núcleos
+a esos barrios. DIBA puede añadir urbanizaciones/núcleos como capa de referencia.
+
+RODA DE BERA Y ALTAFULLA
+------------------------
+Roc de Sant Gaietà se identifica como urbanización/núcleo y enlaza con su
+polígono ICGC. Altafulla incorpora Altafulla centre, Brises del Mar y el barri
+marítim/Botigues de Mar, enlazados con polígonos ICGC mediante nombres/alias.
+
+CORBERA DE LLOBREGAT
+--------------------
+Se distinguen Corbera Baixa y Corbera Alta como núcleos conocidos. No se inventa
+una línea de separación porque no se ha localizado un vector municipal público
+de esa división. Los nombres largos de ICGC (Can Montmany..., etc.) son
+urbanizaciones/topónimos reales, no errores ni barrios administrativos. DIBA
+puede añadir polígonos de urbanizaciones como referencia.
+
+SANT FELIU DE GUIXOLS
+---------------------
+Se mantienen los 9 ámbitos de la propuesta de barris de los Tallers d'Història
+del Arxiu Municipal como referencia no oficial. El propio archivo explica que
+se trata de una propuesta y de un dibujo sobre plano; sin fichero vectorial
+público no se fabrican polígonos.
+
+SEGURIDAD
+---------
+- Las preferencias se guardan en el navegador y estos scripts no las modifican.
+- Las capas nuevas se validan antes de sustituir una capa previa.
+- DIBA solo escribe archivos *-reference.geojson.
+- AMB queda como candidato hasta revisión.
+- Si una fuente remota falla, la capa local válida existente se conserva.
+
+
+NOVEDADES V27
+-------------
+- Vilanova: TLS controlado solo para gis.vilanova.cat.
+- Granollers: búsqueda/validación de LIMIT BARRIS municipal (16 barrios).
+- Lloret: Open Data GeoJSON de zonificaciones administrativas sustituye al SHP rechazado.
+- Mollet, Vic, Manresa, Olot y el Vendrell: sondas conservadoras de portales GIS oficiales.
+- No se digitalizan mapas/PDF ni se convierten núcleos o distritos en barrios.
+- Sant Cugat y Valldoreix no se modifican.
+
+Ejecuta en orden: 01_ACTUALIZAR_DATOS.cmd -> 02_COMPROBAR_RADAR.cmd -> 03_ARRANCAR_RADAR.cmd.
+
+
+NOVEDADES V28
+-------------
+- Vilanova: los 18 polígonos WMS se nombran mediante unión espacial con la capa `Barris (text)`; fallback GetFeatureInfo.
+- Granollers: se aceptan exclusivamente los 16 barrios municipales actuales.
+- Vic y Lloret: TLS controlado por host, nunca global.
+- Manresa: se ignoran namespaces OGC que no son servidores reales.
+- Sant Cugat y Valldoreix permanecen intactos.
+
+Ejecuta: 01_ACTUALIZAR_DATOS.cmd -> revisar salida -> 02_COMPROBAR_RADAR.cmd -> 03_ARRANCAR_RADAR.cmd.
+
+NOVEDADES V29
+-------------
+- Vilanova: normalización automática y validada de CRS/ejes para los 18 barrios obtenidos por WMS/KML.
+- Lloret: bloqueo explícito de secciones/distritos censales, electorales y sanitarios; solo se aceptan zonificaciones territoriales adecuadas.
+- Vic: rechazo limpio de respuestas HTML cuando un supuesto WMS no entrega XML OGC.
+- Sant Cugat y Valldoreix permanecen sin cambios.
+
+Consulta CAMBIOS_V29.md y VALIDACION_V29.txt para el detalle técnico.
+
+BUSQUEDA POR CALLE O DIRECCION
+------------------------------
+El buscador superior conserva la búsqueda instantánea por municipio/barrio/zona.
+Si no hay coincidencia local, pulsa Buscar o Enter: el Radar geocodifica la
+dirección, primero dentro del municipio abierto y después en toda Catalunya, y
+resuelve el municipio usando los polígonos locales del catálogo. Al encontrarla
+centra el mapa y marca el punto de forma temporal.
+
+INVESTIGACION DE BARRIOS
+------------------------
+Consulta data\reports\BUSQUEDA_PROFUNDA_BARRIOS_V32.md para el inventario de
+fuentes localizadas y la prioridad de próximas extracciones.

@@ -1,0 +1,53 @@
+{
+  "name": "radar-de-pisos-catalunya",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "test": "vitest run",
+    "check:data": "python scripts/validate_data.py",
+    "refresh:catalog": "python scripts/build_municipality_catalog.py",
+    "parse:interest": "python scripts/parse_interest_zones.py",
+    "zones": "node scripts/import_zones.mjs",
+    "zones:girona": "node scripts/convert_girona_zones.mjs",
+    "zones:girona-references": "node --use-system-ca scripts/build_girona_reference_zones.mjs",
+    "zones:sant-andreu": "node --use-system-ca scripts/import_sant_andreu_barris.mjs",
+    "zones:rubi": "node --use-system-ca scripts/import_rubi_ambits.mjs",
+    "zones:barcelona": "node scripts/convert_barcelona_zones.mjs",
+    "check:icgc": "python scripts/validate_icgc_coverage.py",
+    "zones:sabadell": "node --use-system-ca scripts/import_zones.mjs sabadell-barris",
+    "zones:terrassa": "node --use-system-ca scripts/import_zones.mjs terrassa-barris",
+    "zones:tarragona": "node --use-system-ca scripts/import_zones.mjs tarragona-zones-umt",
+    "zones:priority": "node --use-system-ca scripts/ensure_priority_city_zones.mjs",
+    "audit:zones": "python scripts/audit_interest_geometry.py",
+    "zones:badalona": "node scripts/import_zones.mjs badalona-barris",
+    "zones:sant-feliu": "node scripts/import_zones.mjs sant-feliu-barris",
+    "zones:xml-kml": "node scripts/import_zones.mjs badalona-barris sant-feliu-barris",
+    "zones:hospitalet": "node --use-system-ca scripts/import_zones.mjs hospitalet-barris",
+    "zones:esplugues": "node --use-system-ca scripts/import_zones.mjs esplugues-barris",
+    "zones:amb": "node --use-system-ca scripts/import_amb_aem.mjs",
+    "zones:amb:apply": "node scripts/import_amb_aem.mjs --apply",
+    "audit:amb": "node scripts/audit_amb_coverage.mjs",
+    "zones:diba-settlements": "node --use-system-ca scripts/import_diba_settlements.mjs"
+  },
+  "dependencies": {
+    "@ngageoint/geopackage": "^4.2.8",
+    "@tmcw/togeojson": "^7.1.2",
+    "@xmldom/xmldom": "^0.9.10",
+    "idb": "^8.0.3",
+    "leaflet": "^1.9.4",
+    "shpjs": "^6.2.0",
+    "proj4": "^2.21.0"
+  },
+  "devDependencies": {
+    "@types/leaflet": "^1.9.20",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.7",
+    "vitest": "^3.2.4"
+  },
+  "engines": {
+    "node": "^22.15.0 || >=23.8.0"
+  }
+}

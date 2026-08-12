@@ -1,0 +1,10 @@
+VALIDACION V31
+
+- 947 municipios: OK
+- 8271 polígonos ICGC: OK
+- 381 zonas conocidas: OK
+- scripts/import_zones.mjs: sintaxis Node OK
+- Vilanova: conversión de coordenadas de píxel WMS 2048x2048 al bbox municipal WGS84 añadida.
+- Ejemplo comprobado: (1376.285,835.349) -> aprox. (1.724151,41.243211), dentro del término de Vilanova.
+- Sant Cugat y Valldoreix: hashes idénticos a v30.
+- Lloret: se mantiene como zonificación estadística municipal (`zone`), no `barri`.

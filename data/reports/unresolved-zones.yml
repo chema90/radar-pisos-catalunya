@@ -1,0 +1,12 @@
+- term: TV3
+  municipality: Sant Joan Despí
+  status: reference-point
+  notes: Zona de referencia; no se declara barrio oficial hasta contrastar fuente municipal.
+- term: Centro Pueblo
+  municipality: Sant Pere de Ribes
+  status: ambiguous
+  notes: Denominación no oficial pendiente de contraste.
+- term: Gat Cendrer
+  municipality: Sant Sadurní d'Anoia
+  status: pending-review
+  notes: Microzona pendiente de una fuente municipal fiable.

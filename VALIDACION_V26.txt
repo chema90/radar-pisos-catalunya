@@ -1,0 +1,67 @@
+RADAR DE PISOS CATALUNYA · VALIDACIÓN V26
+===========================================
+
+BASE
+----
+V25 local validada por el usuario en Windows:
+- npm ci: correcto
+- 02_COMPROBAR_RADAR.cmd: TODO CORRECTO
+- build TypeScript/Vite: correcto
+
+CAMBIOS V26 VALIDADOS EN ESTA COPIA
+-----------------------------------
+1. Valldoreix
+   - archivo intacto: 15 polígonos
+   - 13 features kind=barri
+   - 13/13 nombres ancla reconocidos con la lógica real del comprobador
+   - solo se modifican los nombres esperados del checker: Can Casulleres y Montmany
+
+2. Roda de Berà / Altafulla
+   - el Roc de Sant Gaietà: polígono ICGC presente y válido
+   - Altafulla: polígono ICGC válido
+   - Brises del Mar: polígono ICGC válido
+   - les Botigues de Mar: polígono ICGC válido
+
+3. Corbera
+   - se añaden Corbera Alta y Corbera Baixa como núcleos conocidos (sin polígono inventado)
+   - se mantiene la capa ICGC de urbanizaciones
+   - alias Can Montmany de Maspassoles -> Can Montmany de Mas Peçoles
+
+4. Vilanova
+   - 18 nombres municipales incorporados
+   - fuente WMS BARRIS configurada
+   - el importador conserva el parámetro MapServer map=cartografia
+   - validación mínima: 18 features + nombres ancla + Polygon/MultiPolygon + término municipal
+   - si WFS (GeoJSON o GML) / WMS-KML no entrega vector válido: NO escribe nada
+
+5. Esplugues
+   - geoportal actualizado a Nexus
+   - siguen siendo obligatorios los 10 nombres oficiales
+   - descubrimiento ampliado a WMS además de WFS/ArcGIS
+   - si no hay vector válido: NO escribe nada
+
+6. DIBA
+   - corregido el lector para los campos actuales del SHP: Urbanitzac y Urb_id
+   - ampliados municipios objetivo: Vilanova, Corbera y Esplugues
+   - salida siempre como reference.geojson / kind=zone, nunca barrio
+
+COMPROBACIONES EJECUTADAS
+-------------------------
+- node --check scripts/import_zones.mjs: OK
+- node --check scripts/import_diba_settlements.mjs: OK
+- node --check scripts/ensure_priority_city_zones.mjs: OK
+- TypeScript modificado (transpile sintáctico): OK
+- scripts/validate_data.py: OK
+  947 municipios, 190 preferencias, 338 zonas conocidas
+- scripts/validate_icgc_coverage.py: OK
+  947 municipios, 8271 polígonos ICGC
+- Shapely en polígonos ICGC seleccionados: válidos
+
+COMPROBACIÓN FINAL EN WINDOWS
+-----------------------------
+Después de descomprimir V26:
+1. 01_ACTUALIZAR_DATOS.cmd
+2. 02_COMPROBAR_RADAR.cmd
+3. Solo si dice TODO CORRECTO: 03_ARRANCAR_RADAR.cmd
+
+V26 no incluye node_modules. npm ci lo reconstruye si hace falta.

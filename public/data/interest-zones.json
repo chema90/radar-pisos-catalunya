@@ -1,0 +1,1525 @@
+{
+  "generatedFrom": "config/ZONAS_INTERES.md",
+  "zones": [
+    {
+      "id": "barcelona--sant-andreu-de-palomar",
+      "municipality": "Barcelona",
+      "name": "Sant Andreu de Palomar",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "barcelona--horta",
+      "municipality": "Barcelona",
+      "name": "Horta",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "barcelona--font-d-en-fargues",
+      "municipality": "Barcelona",
+      "name": "Font d'en Fargues",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "barcelona--el-guinardo",
+      "municipality": "Barcelona",
+      "name": "El Guinardo",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "barcelona--les-corts",
+      "municipality": "Barcelona",
+      "name": "Les Corts",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "barcelona--sants",
+      "municipality": "Barcelona",
+      "name": "Sants",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "barcelona--hostafrancs",
+      "municipality": "Barcelona",
+      "name": "Hostafrancs",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "barcelona--camp-d-en-grassot-i-gracia-nova",
+      "municipality": "Barcelona",
+      "name": "Camp d'en Grassot i Gracia Nova",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "barcelona--la-vila-de-gracia",
+      "municipality": "Barcelona",
+      "name": "La Vila de Gracia",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "barcelona--sant-gervasi-galvany",
+      "municipality": "Barcelona",
+      "name": "Sant Gervasi - Galvany",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "barcelona--sant-gervasi-la-bonanova",
+      "municipality": "Barcelona",
+      "name": "Sant Gervasi - la Bonanova",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "barcelona--sarria",
+      "municipality": "Barcelona",
+      "name": "Sarria",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "barcelona--nova-esquerra-de-l-eixample",
+      "municipality": "Barcelona",
+      "name": "Nova Esquerra de l'Eixample",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "barcelona--antiga-esquerra-de-l-eixample",
+      "municipality": "Barcelona",
+      "name": "Antiga Esquerra de l'Eixample",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "barcelona--sant-antoni",
+      "municipality": "Barcelona",
+      "name": "Sant Antoni",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "sabadell--centre",
+      "municipality": "Sabadell",
+      "name": "Centre",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "sabadell--eix-macia",
+      "municipality": "Sabadell",
+      "name": "Eix Macia",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "sabadell--creu-alta",
+      "municipality": "Sabadell",
+      "name": "Creu Alta",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "sabadell--gracia",
+      "municipality": "Sabadell",
+      "name": "Gracia",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "sabadell--covadonga",
+      "municipality": "Sabadell",
+      "name": "Covadonga",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "terrassa--centre",
+      "municipality": "Terrassa",
+      "name": "Centre",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "terrassa--ca-n-aurell",
+      "municipality": "Terrassa",
+      "name": "Ca n'Aurell",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "terrassa--vallparadis",
+      "municipality": "Terrassa",
+      "name": "Vallparadis",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "terrassa--antic-poble-de-sant-pere",
+      "municipality": "Terrassa",
+      "name": "Antic Poble de Sant Pere",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "terrassa--escola-industrial",
+      "municipality": "Terrassa",
+      "name": "Escola Industrial",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "badalona--centre",
+      "municipality": "Badalona",
+      "name": "Centre",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "badalona--casagemes",
+      "municipality": "Badalona",
+      "name": "Casagemes",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "badalona--dalt-la-vila",
+      "municipality": "Badalona",
+      "name": "Dalt la Vila",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "badalona--canyado",
+      "municipality": "Badalona",
+      "name": "Canyado",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "hospitalet-de-llobregat--santa-eulalia",
+      "municipality": "Hospitalet de Llobregat",
+      "name": "Santa Eulalia",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "hospitalet-de-llobregat--centre",
+      "municipality": "Hospitalet de Llobregat",
+      "name": "Centre",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "vilanova-i-la-geltru--sant-joan",
+      "municipality": "Vilanova i la Geltru",
+      "name": "Sant Joan",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "vilanova-i-la-geltru--llimonet",
+      "municipality": "Vilanova i la Geltru",
+      "name": "Llimonet",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "vilanova-i-la-geltru--santa-maria",
+      "municipality": "Vilanova i la Geltru",
+      "name": "Santa Maria",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "sant-pere-de-ribes--centre",
+      "municipality": "Sant Pere de Ribes",
+      "name": "Centre",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "sant-pere-de-ribes--centro-pueblo",
+      "municipality": "Sant Pere de Ribes",
+      "name": "Centro Pueblo",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "girona--eixample",
+      "municipality": "Girona",
+      "name": "Eixample",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "girona--migdia",
+      "municipality": "Girona",
+      "name": "Migdia",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "girona--devesa",
+      "municipality": "Girona",
+      "name": "Devesa",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "girona--palau",
+      "municipality": "Girona",
+      "name": "Palau",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "girona--montilivi",
+      "municipality": "Girona",
+      "name": "Montilivi",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "girona--pericot",
+      "municipality": "Girona",
+      "name": "Pericot",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "girona--sant-narcis",
+      "municipality": "Girona",
+      "name": "Sant Narcis",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "girona--barri-vell",
+      "municipality": "Girona",
+      "name": "Barri Vell",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "tarragona--eixample",
+      "municipality": "Tarragona",
+      "name": "Eixample",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "tarragona--nou-eixample-nord",
+      "municipality": "Tarragona",
+      "name": "Nou Eixample Nord",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "tarragona--nou-eixample-sud",
+      "municipality": "Tarragona",
+      "name": "Nou Eixample Sud",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "tarragona--part-alta",
+      "municipality": "Tarragona",
+      "name": "Part Alta",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "tarragona--vall-de-l-arrabassada",
+      "municipality": "Tarragona",
+      "name": "Vall de l'Arrabassada",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "tarragona--via-augusta",
+      "municipality": "Tarragona",
+      "name": "Via Augusta",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "tarragona--cala-romana",
+      "municipality": "Tarragona",
+      "name": "Cala Romana",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "reus--centre",
+      "municipality": "Reus",
+      "name": "Centre",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "reus--passeig-prim",
+      "municipality": "Reus",
+      "name": "Passeig Prim",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "reus--mercat-central",
+      "municipality": "Reus",
+      "name": "Mercat Central",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "reus--mas-iglesias",
+      "municipality": "Reus",
+      "name": "Mas Iglesias",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "reus--jardins-de-reus",
+      "municipality": "Reus",
+      "name": "Jardins de Reus",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "sant-cugat-del-valles--centre",
+      "municipality": "Sant Cugat del Valles",
+      "name": "Centre",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "sant-cugat-del-valles--eixample",
+      "municipality": "Sant Cugat del Valles",
+      "name": "Eixample",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "sant-cugat-del-valles--sant-domenec",
+      "municipality": "Sant Cugat del Valles",
+      "name": "Sant Domenec",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "sant-cugat-del-valles--volpelleres",
+      "municipality": "Sant Cugat del Valles",
+      "name": "Volpelleres",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "sant-cugat-del-valles--mira-sol",
+      "municipality": "Sant Cugat del Valles",
+      "name": "Mira-sol",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "sant-cugat-del-valles--parc-central",
+      "municipality": "Sant Cugat del Valles",
+      "name": "Parc Central",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "sant-cugat-del-valles--coll-fava",
+      "municipality": "Sant Cugat del Valles",
+      "name": "Coll Fava",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "cerdanyola-del-valles--centre",
+      "municipality": "Cerdanyola del Valles",
+      "name": "Centre",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "cerdanyola-del-valles--serraparera",
+      "municipality": "Cerdanyola del Valles",
+      "name": "Serraparera",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "cerdanyola-del-valles--canaletes",
+      "municipality": "Cerdanyola del Valles",
+      "name": "Canaletes",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "cerdanyola-del-valles--guiera",
+      "municipality": "Cerdanyola del Valles",
+      "name": "Guiera",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "cerdanyola-del-valles--montflorit",
+      "municipality": "Cerdanyola del Valles",
+      "name": "Montflorit",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "sant-quirze-del-valles--centre",
+      "municipality": "Sant Quirze del Valles",
+      "name": "Centre",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "sant-quirze-del-valles--mas-duran",
+      "municipality": "Sant Quirze del Valles",
+      "name": "Mas Duran",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "sant-quirze-del-valles--can-pallars",
+      "municipality": "Sant Quirze del Valles",
+      "name": "Can Pallars",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "sant-quirze-del-valles--vallsuau",
+      "municipality": "Sant Quirze del Valles",
+      "name": "Vallsuau",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "sant-joan-despi--centre",
+      "municipality": "Sant Joan Despi",
+      "name": "Centre",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "sant-joan-despi--les-planes",
+      "municipality": "Sant Joan Despi",
+      "name": "Les Planes",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "sant-joan-despi--tv3",
+      "municipality": "Sant Joan Despi",
+      "name": "TV3",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "sant-joan-despi--pla-del-vent-torreblanca",
+      "municipality": "Sant Joan Despi",
+      "name": "Pla del Vent - Torreblanca",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "sant-just-desvern--centre",
+      "municipality": "Sant Just Desvern",
+      "name": "Centre",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "sant-just-desvern--can-sagrera",
+      "municipality": "Sant Just Desvern",
+      "name": "Can Sagrera",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "sant-just-desvern--la-miranda",
+      "municipality": "Sant Just Desvern",
+      "name": "La Miranda",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "sant-just-desvern--bellsoleig",
+      "municipality": "Sant Just Desvern",
+      "name": "Bellsoleig",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "esplugues-de-llobregat--centre",
+      "municipality": "Esplugues de Llobregat",
+      "name": "Centre",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "esplugues-de-llobregat--la-plana",
+      "municipality": "Esplugues de Llobregat",
+      "name": "La Plana",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "esplugues-de-llobregat--finestrelles",
+      "municipality": "Esplugues de Llobregat",
+      "name": "Finestrelles",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "esplugues-de-llobregat--can-clota",
+      "municipality": "Esplugues de Llobregat",
+      "name": "Can Clota",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "sant-feliu-de-llobregat--centre",
+      "municipality": "Sant Feliu de Llobregat",
+      "name": "Centre",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "sant-feliu-de-llobregat--roses-castellbell",
+      "municipality": "Sant Feliu de Llobregat",
+      "name": "Roses-Castellbell",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "sant-feliu-de-llobregat--mas-llui",
+      "municipality": "Sant Feliu de Llobregat",
+      "name": "Mas Llui",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "molins-de-rei--centre",
+      "municipality": "Molins de Rei",
+      "name": "Centre",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "molins-de-rei--riera-bonet",
+      "municipality": "Molins de Rei",
+      "name": "Riera Bonet",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "molins-de-rei--la-granja",
+      "municipality": "Molins de Rei",
+      "name": "La Granja",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "molins-de-rei--el-canal",
+      "municipality": "Molins de Rei",
+      "name": "El Canal",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "castelldefels--centre",
+      "municipality": "Castelldefels",
+      "name": "Centre",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "castelldefels--montmar",
+      "municipality": "Castelldefels",
+      "name": "Montmar",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "castelldefels--can-bou",
+      "municipality": "Castelldefels",
+      "name": "Can Bou",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "castelldefels--lluminetes",
+      "municipality": "Castelldefels",
+      "name": "Lluminetes",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "castelldefels--la-pineda",
+      "municipality": "Castelldefels",
+      "name": "La Pineda",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "castelldefels--bellamar",
+      "municipality": "Castelldefels",
+      "name": "Bellamar",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "gava--centre",
+      "municipality": "Gava",
+      "name": "Centre",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "gava--gava-mar",
+      "municipality": "Gava",
+      "name": "Gava Mar",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "gava--can-tintorer",
+      "municipality": "Gava",
+      "name": "Can Tintorer",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "gava--diagonal-balmes",
+      "municipality": "Gava",
+      "name": "Diagonal-Balmes",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "gava--les-bobiles",
+      "municipality": "Gava",
+      "name": "Les Bobiles",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "montgat--pla-de-montgat",
+      "municipality": "Montgat",
+      "name": "Pla de Montgat",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "montgat--barri-antic",
+      "municipality": "Montgat",
+      "name": "Barri Antic",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "montgat--casc-antic",
+      "municipality": "Montgat",
+      "name": "Casc Antic",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "montgat--sant-joan",
+      "municipality": "Montgat",
+      "name": "Sant Joan",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "montgat--monsolis",
+      "municipality": "Montgat",
+      "name": "Monsolis",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "montgat--cami-d-alella",
+      "municipality": "Montgat",
+      "name": "Cami d'Alella",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "montgat--can-ciurana",
+      "municipality": "Montgat",
+      "name": "Can Ciurana",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "granollers--centre",
+      "municipality": "Granollers",
+      "name": "Centre",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "granollers--tres-torres",
+      "municipality": "Granollers",
+      "name": "Tres Torres",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "granollers--font-verda",
+      "municipality": "Granollers",
+      "name": "Font Verda",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "granollers--lledoner",
+      "municipality": "Granollers",
+      "name": "Lledoner",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "granollers--instituts",
+      "municipality": "Granollers",
+      "name": "Instituts",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "vilafranca-del-penedes--la-girada",
+      "municipality": "Vilafranca del Penedes",
+      "name": "La Girada",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "vilafranca-del-penedes--zona-hospital",
+      "municipality": "Vilafranca del Penedes",
+      "name": "Zona Hospital",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "vilafranca-del-penedes--nord",
+      "municipality": "Vilafranca del Penedes",
+      "name": "Nord",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "sitges--centre",
+      "municipality": "Sitges",
+      "name": "Centre",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "sitges--vinyet",
+      "municipality": "Sitges",
+      "name": "Vinyet",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "sitges--sant-crispi",
+      "municipality": "Sitges",
+      "name": "Sant Crispi",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "sitges--poble-sec",
+      "municipality": "Sitges",
+      "name": "Poble Sec",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "sitges--la-plana",
+      "municipality": "Sitges",
+      "name": "La Plana",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "sitges--terramar",
+      "municipality": "Sitges",
+      "name": "Terramar",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "sant-sadurni-d-anoia--centre",
+      "municipality": "Sant Sadurni d'Anoia",
+      "name": "Centre",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "sant-sadurni-d-anoia--eixample",
+      "municipality": "Sant Sadurni d'Anoia",
+      "name": "Eixample",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "sant-sadurni-d-anoia--sant-antoni",
+      "municipality": "Sant Sadurni d'Anoia",
+      "name": "Sant Antoni",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "sant-sadurni-d-anoia--rambla-de-la-generalitat",
+      "municipality": "Sant Sadurni d'Anoia",
+      "name": "Rambla de la Generalitat",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "sant-sadurni-d-anoia--placa-de-l-ajuntament",
+      "municipality": "Sant Sadurni d'Anoia",
+      "name": "Placa de l'Ajuntament",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "sant-sadurni-d-anoia--placa-de-l-esglesia",
+      "municipality": "Sant Sadurni d'Anoia",
+      "name": "Placa de l'Esglesia",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "sant-sadurni-d-anoia--zona-estacion",
+      "municipality": "Sant Sadurni d'Anoia",
+      "name": "zona estacion",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "sant-sadurni-d-anoia--gat-cendrer",
+      "municipality": "Sant Sadurni d'Anoia",
+      "name": "Gat Cendrer",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "sant-sadurni-d-anoia--les-casetes",
+      "municipality": "Sant Sadurni d'Anoia",
+      "name": "Les Casetes",
+      "kind": "interest",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "barcelona-y-tarragona--tiana",
+      "municipality": "Barcelona y Tarragona",
+      "name": "Tiana",
+      "kind": "municipality",
+      "mode": "buy-rent",
+      "status": "list-only"
+    },
+    {
+      "id": "barcelona-y-tarragona--el-masnou",
+      "municipality": "Barcelona y Tarragona",
+      "name": "El Masnou",
+      "kind": "municipality",
+      "mode": "buy-rent",
+      "status": "list-only"
+    },
+    {
+      "id": "barcelona-y-tarragona--llorenc-del-penedes",
+      "municipality": "Barcelona y Tarragona",
+      "name": "Llorenc del Penedes",
+      "kind": "municipality",
+      "mode": "buy-rent",
+      "status": "list-only"
+    },
+    {
+      "id": "barcelona-y-tarragona--altafulla",
+      "municipality": "Barcelona y Tarragona",
+      "name": "Altafulla",
+      "kind": "municipality",
+      "mode": "buy-rent",
+      "status": "list-only"
+    },
+    {
+      "id": "barcelona-y-tarragona--creixell",
+      "municipality": "Barcelona y Tarragona",
+      "name": "Creixell",
+      "kind": "municipality",
+      "mode": "buy-rent",
+      "status": "list-only"
+    },
+    {
+      "id": "barcelona-y-tarragona--torredembarra",
+      "municipality": "Barcelona y Tarragona",
+      "name": "Torredembarra",
+      "kind": "municipality",
+      "mode": "buy-rent",
+      "status": "list-only"
+    },
+    {
+      "id": "girona-y-costa-brava--llanca",
+      "municipality": "Girona y Costa Brava",
+      "name": "Llanca",
+      "kind": "municipality",
+      "mode": "buy-rent",
+      "status": "list-only"
+    },
+    {
+      "id": "girona-y-costa-brava--el-port-de-la-selva",
+      "municipality": "Girona y Costa Brava",
+      "name": "El Port de la Selva",
+      "kind": "municipality",
+      "mode": "buy-rent",
+      "status": "list-only"
+    },
+    {
+      "id": "girona-y-costa-brava--colera",
+      "municipality": "Girona y Costa Brava",
+      "name": "Colera",
+      "kind": "municipality",
+      "mode": "buy-rent",
+      "status": "list-only"
+    },
+    {
+      "id": "girona-y-costa-brava--portbou",
+      "municipality": "Girona y Costa Brava",
+      "name": "Portbou",
+      "kind": "municipality",
+      "mode": "buy-rent",
+      "status": "list-only"
+    },
+    {
+      "id": "girona-y-costa-brava--l-escala",
+      "municipality": "Girona y Costa Brava",
+      "name": "L'Escala",
+      "kind": "municipality",
+      "mode": "buy-rent",
+      "status": "list-only"
+    },
+    {
+      "id": "girona-y-costa-brava--torroella-de-montgri",
+      "municipality": "Girona y Costa Brava",
+      "name": "Torroella de Montgri",
+      "kind": "municipality",
+      "mode": "buy-rent",
+      "status": "list-only"
+    },
+    {
+      "id": "girona-y-costa-brava--pals",
+      "municipality": "Girona y Costa Brava",
+      "name": "Pals",
+      "kind": "municipality",
+      "mode": "buy-rent",
+      "status": "list-only"
+    },
+    {
+      "id": "girona-y-costa-brava--begur",
+      "municipality": "Girona y Costa Brava",
+      "name": "Begur",
+      "kind": "municipality",
+      "mode": "buy-rent",
+      "status": "list-only"
+    },
+    {
+      "id": "girona-y-costa-brava--palafrugell",
+      "municipality": "Girona y Costa Brava",
+      "name": "Palafrugell",
+      "kind": "municipality",
+      "mode": "buy-rent",
+      "status": "list-only"
+    },
+    {
+      "id": "girona-y-costa-brava--sant-feliu-de-guixols",
+      "municipality": "Girona y Costa Brava",
+      "name": "Sant Feliu de Guixols",
+      "kind": "municipality",
+      "mode": "buy-rent",
+      "status": "list-only"
+    },
+    {
+      "id": "girona-y-costa-brava--banyoles",
+      "municipality": "Girona y Costa Brava",
+      "name": "Banyoles",
+      "kind": "municipality",
+      "mode": "buy-rent",
+      "status": "list-only"
+    },
+    {
+      "id": "girona-y-costa-brava--peralada",
+      "municipality": "Girona y Costa Brava",
+      "name": "Peralada",
+      "kind": "municipality",
+      "mode": "buy-rent",
+      "status": "list-only"
+    },
+    {
+      "id": "girona-y-costa-brava--figueres",
+      "municipality": "Girona y Costa Brava",
+      "name": "Figueres",
+      "kind": "municipality",
+      "mode": "buy-rent",
+      "status": "list-only"
+    },
+    {
+      "id": "girona-y-costa-brava--castello-d-empuries",
+      "municipality": "Girona y Costa Brava",
+      "name": "Castello d'Empuries",
+      "kind": "municipality",
+      "mode": "buy-rent",
+      "status": "list-only"
+    },
+    {
+      "id": "girona-y-costa-brava--roses",
+      "municipality": "Girona y Costa Brava",
+      "name": "Roses",
+      "kind": "municipality",
+      "mode": "buy-rent",
+      "status": "list-only"
+    },
+    {
+      "id": "girona-y-costa-brava--cadaques",
+      "municipality": "Girona y Costa Brava",
+      "name": "Cadaques",
+      "kind": "municipality",
+      "mode": "buy-rent",
+      "status": "list-only"
+    },
+    {
+      "id": "girona-y-costa-brava--calonge-i-sant-antoni",
+      "municipality": "Girona y Costa Brava",
+      "name": "Calonge i Sant Antoni",
+      "kind": "municipality",
+      "mode": "buy-rent",
+      "status": "list-only"
+    },
+    {
+      "id": "girona-y-costa-brava--santa-cristina-d-aro",
+      "municipality": "Girona y Costa Brava",
+      "name": "Santa Cristina d'Aro",
+      "kind": "municipality",
+      "mode": "buy-rent",
+      "status": "list-only"
+    },
+    {
+      "id": "solo-compra--premia-de-dalt",
+      "municipality": "Solo compra",
+      "name": "Premia de Dalt",
+      "kind": "municipality",
+      "mode": "buy-only",
+      "status": "list-only"
+    },
+    {
+      "id": "excluded--raval",
+      "municipality": null,
+      "name": "Raval",
+      "kind": "excluded",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "excluded--gotic",
+      "municipality": null,
+      "name": "Gotic",
+      "kind": "excluded",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "excluded--ciutat-vella",
+      "municipality": null,
+      "name": "Ciutat Vella",
+      "kind": "excluded",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "excluded--besos",
+      "municipality": null,
+      "name": "Besos",
+      "kind": "excluded",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "excluded--trinitat",
+      "municipality": null,
+      "name": "Trinitat",
+      "kind": "excluded",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "excluded--la-mina",
+      "municipality": null,
+      "name": "La Mina",
+      "kind": "excluded",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "excluded--roquetes",
+      "municipality": null,
+      "name": "Roquetes",
+      "kind": "excluded",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "excluded--les-roquetes",
+      "municipality": null,
+      "name": "Les Roquetes",
+      "kind": "excluded",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "excluded--collblanc",
+      "municipality": null,
+      "name": "Collblanc",
+      "kind": "excluded",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "excluded--progres-badalona",
+      "municipality": null,
+      "name": "Progres (Badalona)",
+      "kind": "excluded",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "excluded--segle-xx-terrassa",
+      "municipality": null,
+      "name": "Segle XX (Terrassa)",
+      "kind": "excluded",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "excluded--serrallo-tarragona",
+      "municipality": null,
+      "name": "Serrallo (Tarragona)",
+      "kind": "excluded",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "excluded--horts-de-miro-y-fortuny-reus",
+      "municipality": null,
+      "name": "Horts de Miro y Fortuny (Reus)",
+      "kind": "excluded",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "excluded--vilapicina-i-torre-llobeta",
+      "municipality": null,
+      "name": "Vilapicina i Torre Llobeta",
+      "kind": "excluded",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "excluded--la-bisbal-d-emporda",
+      "municipality": null,
+      "name": "La Bisbal d'Emporda",
+      "kind": "excluded",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "top--sant-andreu-de-palomar",
+      "municipality": null,
+      "name": "Sant Andreu de Palomar",
+      "kind": "top",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "top--horta",
+      "municipality": null,
+      "name": "Horta",
+      "kind": "top",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "top--font-d-en-fargues",
+      "municipality": null,
+      "name": "Font d'en Fargues",
+      "kind": "top",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "top--les-corts",
+      "municipality": null,
+      "name": "Les Corts",
+      "kind": "top",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "top--sabadell-centre",
+      "municipality": null,
+      "name": "Sabadell Centre",
+      "kind": "top",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "top--sabadell-creu-alta",
+      "municipality": null,
+      "name": "Sabadell Creu Alta",
+      "kind": "top",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "top--terrassa-centre",
+      "municipality": null,
+      "name": "Terrassa Centre",
+      "kind": "top",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "top--terrassa-vallparadis",
+      "municipality": null,
+      "name": "Terrassa Vallparadis",
+      "kind": "top",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "top--sant-cugat-centre",
+      "municipality": null,
+      "name": "Sant Cugat Centre",
+      "kind": "top",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "top--cerdanyola-centre",
+      "municipality": null,
+      "name": "Cerdanyola Centre",
+      "kind": "top",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "top--sant-joan-despi-centre",
+      "municipality": null,
+      "name": "Sant Joan Despi Centre",
+      "kind": "top",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "top--sant-feliu-centre",
+      "municipality": null,
+      "name": "Sant Feliu Centre",
+      "kind": "top",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "top--molins-de-rei-centre",
+      "municipality": null,
+      "name": "Molins de Rei Centre",
+      "kind": "top",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "top--vilanova-sant-joan",
+      "municipality": null,
+      "name": "Vilanova Sant Joan",
+      "kind": "top",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "top--vilanova-llimonet",
+      "municipality": null,
+      "name": "Vilanova Llimonet",
+      "kind": "top",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "top--vilanova-santa-maria",
+      "municipality": null,
+      "name": "Vilanova Santa Maria",
+      "kind": "top",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "top--girona-eixample",
+      "municipality": null,
+      "name": "Girona Eixample",
+      "kind": "top",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    },
+    {
+      "id": "top--girona-migdia",
+      "municipality": null,
+      "name": "Girona Migdia",
+      "kind": "top",
+      "mode": "buy-rent",
+      "status": "pending-review"
+    }
+  ]
+}

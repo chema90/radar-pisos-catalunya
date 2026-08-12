@@ -1,0 +1,20 @@
+RADAR DE PISOS CATALUNYA · VALIDACION V36
+Fecha: 12/08/2026
+
+SANT ANDREU DE LA BARCA
+- Fuente: Ajuntament de Sant Andreu de la Barca · Mapa de divisió dels actuals barris.
+- Técnica: ocho GeoJSON que carga directamente el visor municipal.
+- Resultado: 8/8 polígonos oficiales, con nombres municipales y selección individual.
+- Control: el actualizador rechaza cualquier respuesta distinta de los ocho barrios esperados.
+
+AUDITORÍA SIN ACTIVACIÓN
+- Santa Coloma de Gramenet: plano municipal PDF de 17 barrios; no hay vector descargable identificado.
+- Cornellà de Llobregat: plano y organización territorial municipal de 7 barrios; no hay vector descargable identificado.
+- Sant Boi de Llobregat: ArcGIS municipal revisado; ABS y secciones descartados porque no son barrios.
+- Sant Joan Despí: 5 barrios municipales conocidos; no hay vector municipal identificado. Los candidatos AMB no coinciden uno a uno y quedan inactivos.
+
+REGLAS RESPETADAS
+- AMB no se activa automáticamente.
+- DIBA no sustituye barrios municipales.
+- No se digitalizan ni inventan polígonos a partir de planos o imágenes.
+- Sant Cugat y Valldoreix quedan protegidos sin cambios.

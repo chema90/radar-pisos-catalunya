@@ -1,0 +1,35 @@
+RADAR DE PISOS CATALUNYA · VALIDACIÓN V27
+===========================================
+
+BASE
+----
+Versión de partida: v26 local validada por el usuario.
+Sant Cugat/Valldoreix: geometrías intactas.
+
+CAMBIOS SOMETIDOS A VALIDACIÓN
+------------------------------
+- Vilanova: fallback TLS limitado por hostname a gis.vilanova.cat.
+- Granollers: descubrimiento ArcGIS Online de LIMIT BARRIS / Divisió de barris.
+- Lloret: lector CKAN GeoJSON para Zonificacions administratives.
+- Portales: Mollet, Vic, Manresa, Olot y el Vendrell.
+- Nuevos nombres oficiales de referencia: Granollers (16), Mollet (13), Vic (14).
+
+COMPROBACIONES LOCALES
+-----------------------
+- JSON de configuración: válido.
+- known-zones.json: válido.
+- scripts/import_zones.mjs: node --check OK.
+- scripts/ensure_priority_city_zones.mjs: node --check OK.
+- TypeScript modificado / relacionado: parse sintáctico TypeScript OK.
+- validate_data.py: 947 municipios, 190 preferencias, 381 zonas conocidas.
+- validate_icgc_coverage.py: 947 municipios, 8271 polígonos (6209 poblamiento + 2062 industriales).
+
+VALIDACIÓN REMOTA PENDIENTE
+---------------------------
+Los servidores municipales solo se consultan al ejecutar 01_ACTUALIZAR_DATOS.cmd en Windows.
+Ninguna fuente nueva escribe una capa si falla red/TLS, no encuentra una capa explícita de barris, no alcanza la cobertura mínima, falla los nombres de control o queda fuera del término municipal.
+
+FUENTES SIN VECTOR DE BARRIO VALIDADO EN ESTA RONDA
+----------------------------------------------------
+Sant Feliu de Guíxols, Figueres, Blanes, Vilafranca del Penedès e Igualada.
+Se conservan referencias/nombres cuando existen, pero no se inventan límites.

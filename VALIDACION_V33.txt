@@ -1,0 +1,33 @@
+RADAR DE PISOS CATALUNYA · VALIDACION V33
+Fecha: 10/08/2026
+
+COMPROBACIONES LOCALES REALIZADAS
+- Catalogo/datos: 947 municipios, 190 preferencias, 424 zonas conocidas · OK
+- ICGC: 8271 poligonos (6209 poblamiento + 2062 industriales) · OK
+- config/gis-sources.json · JSON OK
+- public/data/known-zones.json · JSON OK
+- scripts/import_zones.mjs · sintaxis Node OK
+- scripts/ensure_priority_city_zones.mjs · sintaxis Node OK
+- src/main.ts · sintaxis TypeScript OK
+- src/official-zone-sources.ts · sintaxis TypeScript OK
+
+PROTECCION DE DATOS CONSOLIDADOS
+- Sant Cugat: SHA-256 identico a V32
+  e32c4902070f7c1323c70be5cc878dbdcbdc572a9ef4f8b3431b031d73f26488
+- Valldoreix: SHA-256 identico a V32
+  07dd9d3f1f4ca3525bc7c8fe711037bd5be310037d5f71900be712be7ae4029a
+
+V33
+- Crear desglose: correccion estructural del layout; IDs y handlers existentes conservados.
+- Tarragona: nueva fuente municipal Hosted/Barris/FeatureServer/0. La ejecucion de
+  01_ACTUALIZAR_DATOS.cmd debe validar en el equipo del usuario el numero real,
+  nombres de control y encaje territorial antes de guardar.
+- Las 11 zonas amplias de Tarragona se preservan como nivel complementario si ya
+  estaban validadas.
+- Rubi, Sant Andreu de la Barca y Montcada i Reixac: nombres oficiales añadidos
+  sin fabricar poligonos.
+
+LIMITACION DE ESTA VALIDACION
+No se ha ejecutado la descarga de servicios municipales externos ni el build npm
+completo dentro de este entorno. En Windows ejecutar 01_ACTUALIZAR_DATOS.cmd y,
+si termina correctamente, 02_COMPROBAR_RADAR.cmd antes de arrancar la aplicacion.

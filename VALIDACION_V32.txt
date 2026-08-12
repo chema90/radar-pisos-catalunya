@@ -1,0 +1,35 @@
+V32 · VALIDACIÓN LOCAL
+
+DATOS
+- python scripts/validate_data.py: OK · 947 municipios, 190 preferencias, 381 zonas conocidas.
+- python scripts/validate_icgc_coverage.py: OK · 8.271 polígonos ICGC (6.209 poblamiento + 2.062 industriales).
+- config/gis-sources.json: JSON válido · 22 fuentes, incluida viladecans-barris.
+
+CÓDIGO
+- scripts/import_zones.mjs: sintaxis Node OK.
+- scripts/ensure_priority_city_zones.mjs: sintaxis Node OK.
+- scripts/import_diba_settlements.mjs: sintaxis Node OK.
+- src/geocoding.ts, src/main.ts y src/official-zone-sources.ts: transpile TypeScript sin errores de sintaxis.
+- Prueba funcional de geometría del nuevo buscador: punto interior/exterior + prioridad EMD sobre municipio padre: OK.
+
+BUSCADOR
+- La búsqueda local existente se conserva.
+- Buscar/Enter activa geocodificación solo si no existe coincidencia local.
+- Primera búsqueda: dirección acotada al municipio actualmente abierto.
+- Fallback: Catalunya completa; el municipio se resuelve contra el catálogo geométrico local.
+- Resultado: cambia de municipio si procede, centra a zoom de calle y crea un marcador temporal.
+- No contiene excepciones específicas para Berguedà ni para El Vendrell.
+
+VILADECANS
+- Fuente oficial añadida: Població per Barris FeatureServer municipal.
+- Capa poligonal; nombre=nom_barri; código=barri; validación territorial y mínimo antes de escribir.
+
+PROTECCIONES
+- Sant Cugat SHA256: e32c4902070f7c1323c70be5cc878dbdcbdc572a9ef4f8b3431b031d73f26488
+- Valldoreix SHA256: 07dd9d3f1f4ca3525bc7c8fe711037bd5be310037d5f71900be712be7ae4029a
+- Ambos hashes son idénticos a V31.
+- Frontend de zonas, Municipio TOP, DIBA y política AMB no se han alterado salvo la lógica del buscador superior.
+
+LIMITACIÓN DEL ENTORNO DE VALIDACIÓN
+- No se pudo ejecutar npm ci/build completo aquí porque el registro npm interno devuelve 404 para wkx-0.4.8.
+- En Windows, 02_COMPROBAR_RADAR.cmd realizará el build real con las dependencias instaladas.

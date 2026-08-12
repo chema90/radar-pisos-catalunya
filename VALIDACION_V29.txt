@@ -1,0 +1,53 @@
+RADAR DE PISOS CATALUNYA · VALIDACIÓN V29
+=========================================
+
+BASE
+----
+v28 local probada por el usuario.
+
+VALIDACIONES LOCALES
+--------------------
+- validate_data.py: OK
+  947 municipios, 190 preferencias, 381 zonas conocidas.
+- validate_icgc_coverage.py: OK
+  947 municipios, 8271 polígonos ICGC
+  (6209 poblamiento + 2062 industriales).
+- scripts/import_zones.mjs: sintaxis Node OK.
+- scripts/ensure_priority_city_zones.mjs: sintaxis Node OK.
+- config/gis-sources.json: JSON válido.
+- ensure_priority_city_zones.mjs --recover-only: OK.
+
+PROTECCIÓN SANT CUGAT / VALLDOREIX
+----------------------------------
+Sant Cugat SHA-256:
+e32c4902070f7c1323c70be5cc878dbdcbdc572a9ef4f8b3431b031d73f26488
+Valldoreix SHA-256:
+07dd9d3f1f4ca3525bc7c8fe711037bd5be310037d5f71900be712be7ae4029a
+
+Los hashes son idénticos a v28: no se ha alterado su geometría.
+
+LLORET · PRUEBA DE FILTROS
+--------------------------
+Seccions censals wsg84 -> RECHAZADO
+Districtes censals      -> RECHAZADO
+ABS / salut             -> RECHAZADO
+Zones estadístiques     -> ACEPTABLE COMO CANDIDATO
+Zones comunicats incidències -> ACEPTABLE COMO CANDIDATO
+
+VILANOVA
+--------
+La ejecución v28 confirmó:
+- 18 polígonos vectoriales obtenidos por WMS/KML.
+- 18/18 nombres oficiales asignados espacialmente.
+- El único fallo restante era el CRS/orden de coordenadas.
+
+v29 añade selección automática de CRS/ejes basada en el propio límite
+municipal. No se fuerza ninguna transformación si no supera la validación.
+
+ARCHIVOS FUNCIONALES MODIFICADOS
+--------------------------------
+- config/gis-sources.json
+- scripts/import_zones.mjs
+- scripts/ensure_priority_city_zones.mjs
+
+No se ha modificado código del frontend.

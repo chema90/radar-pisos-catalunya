@@ -1,0 +1,34 @@
+RADAR DE PISOS CATALUNYA · VALIDACIÓN V28
+===========================================
+
+BASE
+----
+Versión de partida: v27 local.
+
+CAMBIOS COMPROBADOS
+--------------------
+- Vilanova: unión espacial de 18 polígonos con 18 nombres oficiales mediante WMS etiquetas/GetFeatureInfo.
+- Granollers: validación exacta 16/16 y bloqueo de recuperación de una capa anterior de 17.
+- Vic: TLS controlado solo para informaciourbanistica.vic.cat.
+- Lloret: TLS controlado solo para opendata.lloret.cat y sus recursos del mismo host.
+- Manresa: namespaces OGC excluidos de la lista de endpoints candidatos.
+
+VALIDACIONES LOCALES
+---------------------
+- scripts/import_zones.mjs: sintaxis Node OK.
+- scripts/ensure_priority_city_zones.mjs: sintaxis Node OK.
+- config/gis-sources.json: JSON válido.
+- scripts/validate_data.py: 947 municipios, 190 preferencias, 381 zonas conocidas.
+- scripts/validate_icgc_coverage.py: 947 municipios, 8271 polígonos ICGC.
+
+NO TOCADO
+---------
+- Sant Cugat: geometría auditada intacta.
+- Valldoreix: geometría auditada intacta.
+- main.ts / interfaz / Municipios vecinos: intactos.
+- DIBA y AMB: política y datos intactos.
+
+PRUEBA EN WINDOWS
+------------------
+Ejecutar primero 01_ACTUALIZAR_DATOS.cmd y revisar especialmente Vilanova, Granollers, Vic, Lloret y Manresa.
+Después, si termina sin error real, ejecutar 02_COMPROBAR_RADAR.cmd.

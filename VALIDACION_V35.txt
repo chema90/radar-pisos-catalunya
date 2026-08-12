@@ -1,0 +1,23 @@
+RADAR DE PISOS CATALUNYA · VALIDACION V35
+Fecha: 11/08/2026
+
+COMPROBACIONES REALIZADAS
+- Entorno: Node 24.18.0 y dependencias completas · OK
+- Datos: 947 municipios, 190 preferencias y 437 zonas conocidas · OK
+- ICGC: 8.271 polígonos (6.209 de poblamiento + 2.062 industriales) · OK
+- Pruebas automatizadas: 14/14 · OK
+- TypeScript y compilación de producción · OK
+- Vilanova i la Geltrú: 18 barrios · OK
+- Granollers: 16 barrios · OK
+- Valldoreix: 13 barrios residenciales + 2 zonas no residenciales · OK
+- Viladecans: 13 barrios · OK
+- Sant Cugat y Valldoreix: hashes SHA-256 protegidos sin cambios · OK
+
+PRUEBA VISUAL
+- Crear desglose de Girona: campos y acciones en filas separadas, sin compresión · OK
+- Dirección desde El Vendrell: `Berguedà, 3` mantiene El Vendrell, crea punto rojo y muestra «Clic para Maps / Earth» · OK
+- Consola de la aplicación: sin errores ni avisos relevantes · OK
+
+AVISOS CONOCIDOS
+- El empaquetado avisa del tamaño del módulo GeoPackage y de dependencias de Node externalizadas para navegador. La compilación y el uso en navegador completan correctamente.
+- Esplugues, Mollet, Vic, Manresa, Olot y El Vendrell siguen pendientes de una geometría municipal de barrios verificable. No se han inventado polígonos.

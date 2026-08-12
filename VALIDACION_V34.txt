@@ -1,0 +1,28 @@
+RADAR DE PISOS CATALUNYA · VALIDACION V34
+Fecha: 10/08/2026
+
+COMPROBACIONES LOCALES REALIZADAS
+- Catalogo/datos: 947 municipios, 190 preferencias, 437 zonas conocidas · OK
+- ICGC: 8271 poligonos (6209 poblamiento + 2062 industriales) · OK
+- config/gis-sources.json · JSON OK
+- public/data/known-zones.json · JSON OK
+- scripts/import_zones.mjs · sintaxis Node OK
+- scripts/ensure_priority_city_zones.mjs · sintaxis Node OK
+- src/main.ts · sintaxis TypeScript OK (transpileModule)
+- src/official-zone-sources.ts · sintaxis TypeScript OK
+
+V34
+- El punto rojo de una direccion conserva el comportamiento de V32/V33 y añade popup de clic con Google Maps y Google Earth usando las coordenadas exactas del punto.
+- No se modifica la logica de geocodificacion, cambio de municipio ni asignacion de zona.
+- Sant Joan Despi: 5 nombres oficiales añadidos como pendientes de poligono.
+- Santa Perpetua de Mogoda: 8 nombres oficiales añadidos como pendientes de poligono.
+- El layout corregido de Crear desglose de V33 se conserva sin cambios.
+
+PROTECCION DE DATOS CONSOLIDADOS
+- Sant Cugat: SHA-256 identico a V33
+  e32c4902070f7c1323c70be5cc878dbdcbdc572a9ef4f8b3431b031d73f26488
+- Valldoreix: SHA-256 identico a V33
+  07dd9d3f1f4ca3525bc7c8fe711037bd5be310037d5f71900be712be7ae4029a
+
+LIMITACION
+No se ha ejecutado el build npm completo en este entorno al no reconstruirse node_modules. En Windows usar 01_ACTUALIZAR_DATOS.cmd y 02_COMPROBAR_RADAR.cmd antes de arrancar.
